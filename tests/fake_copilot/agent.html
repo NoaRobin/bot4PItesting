@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Product Info Assistant (simulé)</title>
+<style>
+  body { font-family: sans-serif; margin: 0; display: flex; height: 100vh; }
+  nav { width: 200px; background: #eee; padding: 10px; }
+  main { flex: 1; display: flex; flex-direction: column; }
+  #log { flex: 1; overflow: auto; padding: 10px; }
+  .fai-UserMessage { background: #dde; margin: 6px 0 6px 30%; padding: 6px; }
+  [data-testid="copilot-message-reply-div"] { background: #f4f4f4; margin: 6px 30% 6px 0; padding: 6px; }
+  #composer { border: 1px solid #888; min-height: 40px; margin: 10px; padding: 6px; }
+</style>
+</head>
+<body>
+<nav><button id="new" type="button">Nouvelle conversation</button></nav>
+<main>
+  <div id="log"></div>
+  <div id="stopzone"></div>
+  <div id="composer" contenteditable="true" role="textbox" aria-label="Message Product Info Assistant"></div>
+  <button id="send" type="button" aria-label="Envoyer">Envoyer</button>
+</main>
+<script>
+// Comportement imitant l'écran réel : bulle « Mise en place en cours… », streaming,
+// bouton « Arrêter » pendant la génération, « Oops! Something happened » injectable.
+let ANSWERS = {}, OOPS_ONCE = [], DELAY = 400;
+const chatId = Math.random().toString(36).slice(2, 8);
+fetch('answers.json').then(r => r.json()).then(d => { ANSWERS = d.answers; OOPS_ONCE = d.oops_once || []; DELAY = d.delay || 400; });
+const log = document.getElementById('log');
+const composer = document.getElementById('composer');
+let busy = false;
+
+function userCount() { return log.querySelectorAll('.fai-UserMessage').length; }
+
+function send() {
+  const q = composer.innerText.trim();
+  if (!q || busy) return;
+  busy = true;
+  const u = document.createElement('div'); u.className = 'fai-UserMessage'; u.textContent = q; log.appendChild(u);
+  composer.innerText = '';
+  const tour = userCount();
+  const stop = document.createElement('button'); stop.textContent = 'Arrêter'; stop.type = 'button';
+  document.getElementById('stopzone').appendChild(stop);
+  const b = document.createElement('div'); b.setAttribute('data-testid', 'copilot-message-reply-div');
+  b.textContent = 'Mise en place en cours…'; log.appendChild(b);
+  let full;
+  const key = 'oops:' + q;
+  if (OOPS_ONCE.includes(q) && !localStorage.getItem(key)) {
+    localStorage.setItem(key, '1');
+    full = 'Oops! Something happened. Can you try again?';
+  } else {
+    full = (ANSWERS[q] || 'Résultat Aucune information disponible pour cette demande.') + ' [tour ' + tour + ' chat ' + chatId + ']';
+  }
+  setTimeout(() => {
+    let i = 0;
+    const tick = setInterval(() => {
+      i = Math.min(full.length, i + 12);
+      b.textContent = full.slice(0, i);
+      if (i >= full.length) { clearInterval(tick); stop.remove(); busy = false; }
+    }, 60);
+  }, DELAY);
+}
+
+composer.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } });
+document.getElementById('send').addEventListener('click', send);
+document.getElementById('new').addEventListener('click', () => { log.innerHTML = ''; composer.innerText = ''; });
+</script>
+</body>
+</html>
