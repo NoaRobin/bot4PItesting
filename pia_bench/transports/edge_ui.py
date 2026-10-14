@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 """Pilotage de l'interface de chat dans Edge (Playwright, profil persistant).
 
+Deux façons d'obtenir le navigateur (edge.mode) :
+- "attach" (défaut) : le script démarre Edge comme un Edge normal (sans le drapeau
+  --enable-automation, donc sans bandeau « contrôlé par un logiciel de test automatisé »)
+  avec un port de débogage local, puis s'y connecte (CDP). La connexion Microsoft / SSO
+  d'entreprise fonctionne comme dans un Edge ordinaire, et reste mémorisée dans le profil
+  dédié. Edge reste ouvert à la fin : la campagne suivante s'y rattache, déjà connectée ;
+- "launch" : Playwright lance Edge lui-même (ancien fonctionnement), bandeau masqué
+  autant que possible. À n'utiliser que si la stratégie de l'entreprise bloque le port
+  de débogage (stratégie Edge RemoteDebuggingAllowed).
+
 Différences avec les scripts v21–v28 :
 - le chat neuf est ouvert par le script (URL de l'agent mémorisée au `setup`,
   repli sur le bouton « Nouvelle conversation ») : plus de touche Entrée à presser ;
@@ -14,8 +24,13 @@ Différences avec les scripts v21–v28 :
 from __future__ import annotations
 
 import json
+import os
 import re
+import shutil
+import subprocess
+import sys
 import time
+import urllib.request
 from pathlib import Path
 
 from ..scoring import norm, technical_kind
@@ -83,7 +98,9 @@ class EdgeUITransport(Transport):
         self.stop_re = re.compile(self.c["stop_button"], re.I)
         self.send_re = re.compile(self.c["send_button"], re.I)
         self.waiting_patterns = [norm(p).strip() for p in self.c["waiting_patterns"]]
-        self.pw = self.ctx = self.page = self.frame = None
+        self.pw = self.ctx = self.page = self.frame = self.browser = None
+        self.mode = self.c.get("mode", "attach")
+        self.cdp_url = f"http://127.0.0.1:{int(self.c.get('cdp_port', 9222))}"
 
     # --- cycle de vie -----------------------------------------------------
     @property
@@ -105,17 +122,83 @@ class EdgeUITransport(Transport):
         self._open_agent()
 
     def _launch(self) -> None:
-        kwargs = {"headless": bool(self.c["headless"]), "viewport": None}
+        if self.mode == "attach":
+            self._attach()
+        elif self.mode == "launch":
+            self._launch_playwright()
+        else:
+            raise TransportError(f"edge.mode inconnu : {self.mode!r} (attach | launch)")
+        self.ctx.set_default_timeout(15_000)
+        pages = [p for p in self.ctx.pages if not p.is_closed()]
+        self.page = pages[0] if pages else self.ctx.new_page()
+        self.page.on("dialog", lambda d: d.accept())
+
+    def _launch_playwright(self) -> None:
+        kwargs = {"headless": bool(self.c["headless"]), "viewport": None,
+                  "ignore_default_args": ["--enable-automation"],
+                  "args": ["--disable-blink-features=AutomationControlled"]}
         if not self.c["headless"]:
-            kwargs["args"] = ["--start-maximized"]
+            kwargs["args"].append("--start-maximized")
         if self.c.get("executable_path"):
             kwargs["executable_path"] = self.c["executable_path"]
         elif self.c.get("channel"):
             kwargs["channel"] = self.c["channel"]
         self.ctx = self.pw.chromium.launch_persistent_context(str(self.profile), **kwargs)
-        self.ctx.set_default_timeout(15_000)
-        self.page = self.ctx.pages[0] if self.ctx.pages else self.ctx.new_page()
-        self.page.on("dialog", lambda d: d.accept())
+
+    # --- mode attach : Edge normal + connexion CDP ----------------------------
+    def _cdp_alive(self) -> bool:
+        try:
+            with urllib.request.urlopen(self.cdp_url + "/json/version", timeout=2) as r:
+                return r.status == 200
+        except Exception:
+            return False
+
+    def edge_executable(self) -> str:
+        if self.c.get("executable_path"):
+            return self.c["executable_path"]
+        candidates = [shutil.which("msedge"), shutil.which("microsoft-edge"), shutil.which("microsoft-edge-stable")]
+        for env in ("ProgramFiles(x86)", "ProgramFiles", "LOCALAPPDATA"):
+            if os.environ.get(env):
+                candidates.append(os.path.join(os.environ[env], "Microsoft", "Edge", "Application", "msedge.exe"))
+        candidates.append("/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge")
+        for c in candidates:
+            if c and os.path.isfile(c):
+                return c
+        raise TransportError("msedge.exe introuvable : renseignez edge.executable_path dans pia_bench.toml")
+
+    def _start_edge(self) -> None:
+        self.profile.mkdir(parents=True, exist_ok=True)
+        args = [self.edge_executable(), f"--remote-debugging-port={self.cdp_url.rsplit(':', 1)[1]}",
+                "--remote-debugging-address=127.0.0.1", f"--user-data-dir={self.profile}",
+                "--no-first-run", "--no-default-browser-check", "--start-maximized"]
+        if self.c["headless"]:
+            args.append("--headless=new")
+        args += list(self.c.get("extra_args", []))
+        args.append(self.agent_url or "about:blank")
+        flags = {}
+        if sys.platform == "win32":
+            flags["creationflags"] = subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP
+        else:
+            flags["start_new_session"] = True
+        subprocess.Popen(args, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                         close_fds=True, **flags)
+        end = time.monotonic() + 30
+        while time.monotonic() < end:
+            if self._cdp_alive():
+                return
+            time.sleep(0.5)
+        raise TransportError(
+            f"Edge n'a pas ouvert le port de débogage ({self.cdp_url}). Causes possibles : une fenêtre Edge "
+            f"utilise déjà le profil {self.profile.name} (fermez-la et relancez), ou la stratégie de "
+            "l'entreprise interdit le débogage (edge://policy, RemoteDebuggingAllowed) : dans ce cas mettez "
+            'edge.mode = "launch" dans pia_bench.toml.')
+
+    def _attach(self) -> None:
+        if not self._cdp_alive():
+            print("Ouverture d'Edge (fenêtre normale, profil dédié au benchmark)…")
+            self._start_edge()
+        self.browser = self.pw.chromium.connect_over_cdp(self.cdp_url)
+        self.ctx = self.browser.contexts[0] if self.browser.contexts else self.browser.new_context()
 
     def _open_agent(self) -> None:
         url = self.agent_url
@@ -136,8 +219,10 @@ class EdgeUITransport(Transport):
 
     def setup(self) -> str:
         """Premier lancement : l'opérateur ouvre l'agent une fois, le script retient l'URL."""
-        print("\nDans la fenêtre Edge : connectez-vous, ouvrez Product Info Assistant dans un chat VIERGE.")
-        print("N'envoyez aucun message.")
+        print("\nDans la fenêtre Edge qui vient de s'ouvrir (Edge normal, profil dédié au benchmark) :")
+        print("  1. connectez-vous avec votre compte Microsoft professionnel, comme d'habitude ;")
+        print("  2. ouvrez Product Info Assistant dans un chat VIERGE, sans envoyer de message.")
+        print("La connexion est mémorisée dans ce profil : elle ne sera plus demandée aux lancements suivants.")
         input("Quand la zone « Message Product Info Assistant » est visible, appuyez sur Entrée : ")
         end = time.monotonic() + 60
         while time.monotonic() < end:
@@ -157,6 +242,20 @@ class EdgeUITransport(Transport):
 
     def recover(self, hard: bool = False) -> None:
         dead = self.page is None or self.page.is_closed()
+        if self.mode == "attach" and (hard or dead):
+            # On ne ferme pas Edge (la session Microsoft y reste ouverte) : nouvel onglet,
+            # ou reconnexion / redémarrage d'Edge s'il a été fermé ou a planté.
+            try:
+                if self.browser is None or not self.browser.is_connected() or not self._cdp_alive():
+                    raise RuntimeError("Edge déconnecté")
+                old, self.page = self.page, self.ctx.new_page()
+                self.page.on("dialog", lambda d: d.accept())
+                if old is not None and not old.is_closed():
+                    old.close()
+            except Exception:
+                self._launch()
+            self._open_agent()
+            return
         if hard or dead:
             try:
                 if self.ctx:
@@ -180,7 +279,9 @@ class EdgeUITransport(Transport):
             return False
 
     def close(self) -> None:
-        for closer in (lambda: self.ctx and self.ctx.close(), lambda: self.pw and self.pw.stop()):
+        # En mode attach, Edge reste ouvert et connecté au compte : on se détache seulement.
+        closers = [] if self.mode == "attach" else [lambda: self.ctx and self.ctx.close()]
+        for closer in closers + [lambda: self.pw and self.pw.stop()]:
             try:
                 closer()
             except Exception:

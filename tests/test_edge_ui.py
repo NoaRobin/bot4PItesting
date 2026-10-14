@@ -7,6 +7,7 @@ from __future__ import annotations
 import functools
 import json
 import shutil
+import socket
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -46,26 +47,53 @@ def fake_site(tmp_path, cfg):
     server.shutdown()
 
 
-def edge_cfg(cfg, url, tmp_path, strategies):
+def chromium_path() -> str:
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        return p.chromium.executable_path
+
+
+def free_port() -> int:
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        return s.getsockname()[1]
+
+
+def edge_cfg(cfg, url, tmp_path, strategies, mode="launch"):
     e = cfg["edge"]
     e.update(channel="", headless=True, agent_url=url, profile_dir=str(tmp_path / "profile"),
-             new_chat=strategies, page_load_timeout=15)
+             new_chat=strategies, page_load_timeout=15, mode=mode, cdp_port=free_port())
+    if mode == "attach":
+        e["executable_path"] = chromium_path()  # sur le poste : msedge.exe détecté automatiquement
+        e["extra_args"] = ["--no-sandbox"]       # conteneur de test exécuté en root
     return cfg
 
 
-@pytest.mark.parametrize("strategies", [["url"], ["button"]])
-def test_edge_campaign_on_fake_copilot(fake_site, cfg, tmp_path, strategies):
+def close_browser(port: int) -> None:
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp(f"http://127.0.0.1:{port}")
+        browser.new_browser_cdp_session().send("Browser.close")
+
+
+@pytest.mark.parametrize("strategies,mode", [(["url"], "attach"), (["button"], "launch")])
+def test_edge_campaign_on_fake_copilot(fake_site, cfg, tmp_path, strategies, mode):
     url, cat = fake_site
-    edge_cfg(cfg, url, tmp_path, strategies)
+    edge_cfg(cfg, url, tmp_path, strategies, mode)
     folder, store = open_campaign(cfg, "edge")
     bind_catalogue(store, cat)
     t = EdgeUITransport(cfg, folder, interactive=False)
     t.start()
     try:
+        # aucune trace d'automatisation visible par la page (ce qui bloque la connexion Microsoft)
+        assert t.page.evaluate("navigator.webdriver") is False
         units = plan_units(cat, store, "C001-C003")
         stats = Runner(cfg, store, t, folder).run(units)
     finally:
         t.close()
+    if mode == "attach":
+        assert t._cdp_alive()        # Edge reste ouvert (et connecté) après la campagne
+        close_browser(cfg["edge"]["cdp_port"])
     assert stats["complete"] == 3 and stats["failed"] == 0
 
     final = store.final_turns()

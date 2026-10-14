@@ -45,8 +45,14 @@ DEFAULTS: dict[str, Any] = {
         "degraded_ratio": 0.8,
     },
     "edge": {
-        "channel": "msedge",          # "" = Chromium de Playwright
-        "executable_path": "",
+        # attach : Edge démarré normalement (connexion Microsoft possible, pas de bandeau
+        #          « contrôlé par un logiciel de test automatisé »), le script s'y connecte ;
+        # launch : Playwright lance Edge (si la stratégie de l'entreprise bloque le débogage).
+        "mode": "attach",
+        "cdp_port": 9222,
+        "channel": "msedge",          # mode launch : "" = Chromium de Playwright
+        "executable_path": "",        # chemin de msedge.exe si non détecté
+        "extra_args": [],             # arguments supplémentaires passés à Edge (mode attach)
         "profile_dir": ".edge_profile_pia_bench",
         "headless": False,
         "agent_url": "",              # rempli automatiquement par `setup`

@@ -25,7 +25,10 @@ degraded_window = 15               # 0 = désactive la détection de session dé
 degraded_ratio = 0.8
 
 [edge]
-channel = "msedge"
+mode = "attach"                    # Edge normal (connexion Microsoft possible) ; "launch" si débogage interdit
+cdp_port = 9222
+executable_path = ""               # chemin de msedge.exe si non détecté
+channel = "msedge"                 # mode launch uniquement
 profile_dir = ".edge_profile_pia_bench"
 headless = false
 agent_url = ""                     # laissé vide : rempli par `python -m pia_bench setup`
