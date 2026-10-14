@@ -124,6 +124,22 @@ avant de l'utiliser sur des données internes.
 - `fake` : agent simulé, pour essayer toute la chaîne sans solliciter l'agent :
   `py -m pia_bench run --transport fake --campaign essai`.
 
+## Vérifier son installation
+
+Le package compte 15 fichiers Python (`pia_bench/` et `pia_bench/transports/`). Si l'un manque
+(copie faite fichier par fichier depuis le site GitHub, par exemple), `python -m pia_bench` s'arrête
+en nommant les fichiers absents. Le plus sûr est de récupérer la branche complète :
+
+```bat
+git fetch origin claude/eager-davinci-lgjr5y
+git checkout claude/eager-davinci-lgjr5y
+git pull
+py -m pia_bench --help
+py -m pytest -q
+```
+
+Sans git : sur GitHub, choisir la branche `claude/eager-davinci-lgjr5y`, puis Code > Download ZIP.
+
 ## Tests
 
 ```bat
@@ -149,26 +165,3 @@ que chaque conversation a son chat, et qu'une erreur plateforme fait rejouer la 
   l'autre (onglet STABILITE du 29/09) ; pass^k mesure la fiabilité « juste à chaque fois ».
 - **Jamais de tour rejoué hors contexte** : un tour en échec fait rejouer toute la conversation dans un
   chat neuf, pour que le tour 4 soit toujours posé après les tours 1 à 3 du même chat.
-
-
-
-
-  Le diagnostic local confirme :
-- Python charge bien le package pia_bench du dossier courant.
-- catalogue.py est absent.
-- cli.py importe load_catalogue.
-- report.py importe Catalogue.
-- runner.py importe Catalogue et Conversation.
-- pytest --collect-only -q échoue avec deux erreurs d'import.
-
-Corrige le dépôt en restaurant ou implémentant le module catalogue.py avec toutes les interfaces réellement attendues par les fichiers existants. Ne crée pas de module vide et ne supprime pas les imports pour masquer le problème.
-
-Vérifie également tous les autres imports internes et les fichiers nécessaires aux transports.
-
-Exécute les tests, corrige les erreurs et indique les résultats réels :
-python -m pia_bench --help
-python -m pytest -q
-
-Vérifie aussi python -m pia_bench check avec un classeur de test configuré.
-
-Commit et push la correction sur claude/eager-davinci-lgjr5y et donne le hash du commit.
