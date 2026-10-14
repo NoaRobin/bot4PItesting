@@ -149,3 +149,26 @@ que chaque conversation a son chat, et qu'une erreur plateforme fait rejouer la 
   l'autre (onglet STABILITE du 29/09) ; pass^k mesure la fiabilité « juste à chaque fois ».
 - **Jamais de tour rejoué hors contexte** : un tour en échec fait rejouer toute la conversation dans un
   chat neuf, pour que le tour 4 soit toujours posé après les tours 1 à 3 du même chat.
+
+
+
+
+  Le diagnostic local confirme :
+- Python charge bien le package pia_bench du dossier courant.
+- catalogue.py est absent.
+- cli.py importe load_catalogue.
+- report.py importe Catalogue.
+- runner.py importe Catalogue et Conversation.
+- pytest --collect-only -q échoue avec deux erreurs d'import.
+
+Corrige le dépôt en restaurant ou implémentant le module catalogue.py avec toutes les interfaces réellement attendues par les fichiers existants. Ne crée pas de module vide et ne supprime pas les imports pour masquer le problème.
+
+Vérifie également tous les autres imports internes et les fichiers nécessaires aux transports.
+
+Exécute les tests, corrige les erreurs et indique les résultats réels :
+python -m pia_bench --help
+python -m pytest -q
+
+Vérifie aussi python -m pia_bench check avec un classeur de test configuré.
+
+Commit et push la correction sur claude/eager-davinci-lgjr5y et donne le hash du commit.
