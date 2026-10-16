@@ -1,0 +1,2084 @@
+2026-10-14 18:44:48,531 INFO Campagne octobre · transport edge · 300 conversation(s) à traiter (1500 questions)
+2026-10-14 18:46:05,920 WARNING Interrompu (Ctrl+C) : tout ce qui est capturé est conservé ; reprise : run --resume
+2026-10-14 18:46:12,277 INFO Campagne octobre · transport edge · 300 conversation(s) à traiter (1500 questions)
+2026-10-14 18:47:23,871 INFO ── C001 (répétition 1) · 1/300
+2026-10-14 18:48:36,042 INFO    Q0001 T1 CAPTURED  60.5 s · 276 car.
+2026-10-14 18:48:57,427 INFO    Q0002 T2 CAPTURED  12.7 s · 271 car.
+2026-10-14 18:49:15,032 INFO    Q0003 T3 CAPTURED   8.9 s · 247 car.
+2026-10-14 18:49:34,960 INFO    Q0004 T4 CAPTURED  11.0 s · 256 car.
+2026-10-14 18:49:55,857 INFO    Q0005 T5 CAPTURED  12.0 s · 82 car.
+2026-10-14 18:49:58,861 INFO ── C002 (répétition 1) · 2/300 · reste ~772 min
+2026-10-14 18:56:02,083 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 18:56:02,084 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 19:02:36,572 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:02:36,572 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 19:04:36,298 INFO    Q0006 T1 CAPTURED  49.3 s · 275 car.
+2026-10-14 19:04:52,449 INFO    Q0007 T2 CAPTURED   7.6 s · 156 car.
+2026-10-14 19:05:09,037 INFO    Q0008 T3 CAPTURED   7.7 s · 223 car.
+2026-10-14 19:05:28,088 INFO    Q0009 T4 CAPTURED  10.1 s · 299 car. · aucune info
+2026-10-14 19:05:47,909 INFO    Q0010 T5 CAPTURED  11.1 s · 294 car. · aucune info
+2026-10-14 19:05:50,911 INFO ── C003 (répétition 1) · 3/300 · reste ~2749 min
+2026-10-14 19:06:27,955 INFO    Q0011 T1 CAPTURED  27.5 s · 270 car.
+2026-10-14 19:06:54,387 INFO    Q0012 T2 CAPTURED  17.8 s · 327 car. · aucune info
+2026-10-14 19:07:11,541 INFO    Q0013 T3 CAPTURED   8.4 s · 314 car. · aucune info
+2026-10-14 19:07:31,799 INFO    Q0014 T4 CAPTURED  11.5 s · 332 car. · aucune info
+2026-10-14 19:07:49,400 INFO    Q0015 T5 CAPTURED   9.0 s · 328 car.
+2026-10-14 19:07:52,402 INFO ── C004 (répétition 1) · 4/300 · reste ~2027 min
+2026-10-14 19:08:49,165 INFO    Q0016 T1 CAPTURED  46.9 s · 331 car.
+2026-10-14 19:09:09,162 INFO    Q0017 T2 CAPTURED  11.2 s · 257 car.
+2026-10-14 19:09:28,834 INFO    Q0018 T3 CAPTURED  10.9 s · 377 car. · aucune info
+2026-10-14 19:09:50,151 INFO    Q0019 T4 CAPTURED  12.6 s · 323 car.
+2026-10-14 19:10:09,442 INFO    Q0020 T5 CAPTURED  10.7 s · 325 car.
+2026-10-14 19:10:12,444 INFO ── C005 (répétition 1) · 5/300 · reste ~1688 min
+2026-10-14 19:10:46,183 INFO    Q0021 T1 CAPTURED  24.0 s · 271 car.
+2026-10-14 19:11:03,330 INFO    Q0022 T2 CAPTURED   8.5 s · 266 car. · aucune info
+2026-10-14 19:11:32,752 INFO    Q0023 T3 CAPTURED  20.9 s · 272 car.
+2026-10-14 19:11:48,693 INFO    Q0024 T4 CAPTURED   7.5 s · 255 car. · aucune info
+2026-10-14 19:12:06,088 INFO    Q0025 T5 CAPTURED   8.8 s · 258 car.
+2026-10-14 19:12:09,090 INFO ── C006 (répétition 1) · 6/300 · reste ~1460 min
+2026-10-14 19:18:12,320 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:18:12,320 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 19:19:39,651 INFO    Q0026 T1 CAPTURED  47.2 s · 403 car.
+2026-10-14 19:19:57,232 INFO    Q0027 T2 CAPTURED   9.0 s · 255 car.
+2026-10-14 19:20:18,648 INFO    Q0028 T3 CAPTURED  12.5 s · 277 car.
+2026-10-14 19:20:36,182 INFO    Q0029 T4 CAPTURED   8.9 s · 370 car.
+2026-10-14 19:20:54,041 INFO    Q0030 T5 CAPTURED   8.9 s · 248 car.
+2026-10-14 19:20:57,043 INFO ── C007 (répétition 1) · 7/300 · reste ~1644 min
+2026-10-14 19:27:00,613 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:27:00,613 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 19:33:35,121 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:33:35,121 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 19:40:38,745 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:40:38,745 ERROR    C007 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 19:40:41,746 INFO ── C008 (répétition 1) · 8/300 · reste ~2231 min
+2026-10-14 19:42:09,440 INFO    Q0036 T1 CAPTURED  79.0 s · 393 car.
+2026-10-14 19:42:28,174 INFO    Q0037 T2 CAPTURED  10.2 s · 273 car.
+2026-10-14 19:42:48,461 INFO    Q0038 T3 CAPTURED  11.6 s · 339 car.
+2026-10-14 19:43:10,794 INFO    Q0039 T4 CAPTURED  14.0 s · 388 car. · aucune info
+2026-10-14 19:43:28,253 INFO    Q0040 T5 CAPTURED   9.0 s · 88 car.
+2026-10-14 19:43:31,255 INFO ── C009 (répétition 1) · 9/300 · reste ~2049 min
+2026-10-14 19:49:33,811 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:49:33,812 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 19:56:09,547 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 19:56:09,547 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 19:57:55,630 INFO    Q0041 T1 CAPTURED  28.7 s · 252 car.
+2026-10-14 19:58:12,676 INFO    Q0042 T2 CAPTURED   8.5 s · 230 car.
+2026-10-14 19:58:38,319 INFO    Q0043 T3 CAPTURED  16.8 s · 283 car.
+2026-10-14 19:58:56,962 INFO    Q0044 T4 CAPTURED   9.7 s · 265 car.
+2026-10-14 19:59:14,907 INFO    Q0045 T5 CAPTURED   9.5 s · 315 car. · aucune info
+2026-10-14 19:59:17,909 INFO ── C010 (répétition 1) · 10/300 · reste ~2325 min
+2026-10-14 20:05:20,850 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:05:20,851 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 20:11:55,192 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:11:55,192 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 20:19:00,492 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:19:00,492 ERROR    C010 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 20:19:03,493 INFO ── C011 (répétition 1) · 11/300 · reste ~2658 min
+2026-10-14 20:19:44,364 INFO    Q0051 T1 CAPTURED  31.6 s · 465 car.
+2026-10-14 20:20:02,361 INFO    Q0052 T2 CAPTURED   9.4 s · 295 car.
+2026-10-14 20:20:19,440 INFO    Q0053 T3 CAPTURED   8.2 s · 291 car.
+2026-10-14 20:20:44,044 INFO    Q0054 T4 CAPTURED  16.1 s · 477 car. · aucune info
+2026-10-14 20:21:02,624 INFO    Q0055 T5 CAPTURED   9.9 s · 291 car.
+2026-10-14 20:21:05,626 INFO ── C012 (répétition 1) · 12/300 · reste ~2462 min
+2026-10-14 20:27:08,214 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:27:08,214 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 20:33:42,837 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:33:42,838 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 20:40:47,715 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:40:47,715 ERROR    C012 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 20:40:50,716 INFO ── C013 (répétition 1) · 13/300 · reste ~2723 min
+2026-10-14 20:41:44,517 INFO    Q0061 T1 CAPTURED  45.1 s · 160 car.
+2026-10-14 20:42:04,185 INFO    Q0062 T2 CAPTURED  11.1 s · 169 car.
+2026-10-14 20:42:24,685 INFO    Q0063 T3 CAPTURED  11.8 s · 188 car.
+2026-10-14 20:42:42,070 INFO    Q0064 T4 CAPTURED   8.9 s · 407 car. · aucune info
+2026-10-14 20:42:59,714 INFO    Q0065 T5 CAPTURED   9.1 s · 298 car.
+2026-10-14 20:43:02,716 INFO ── C014 (répétition 1) · 14/300 · reste ~2553 min
+2026-10-14 20:49:05,678 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:49:05,679 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 20:50:14,669 INFO    Q0066 T1 CAPTURED  28.6 s · 257 car.
+2026-10-14 20:50:30,531 INFO    Q0067 T2 CAPTURED   7.3 s · 285 car.
+2026-10-14 20:50:47,461 INFO    Q0068 T3 CAPTURED   8.2 s · 242 car.
+2026-10-14 20:51:03,275 INFO    Q0069 T4 CAPTURED   7.4 s · 281 car.
+2026-10-14 20:51:20,591 INFO    Q0070 T5 CAPTURED   8.8 s · 259 car.
+2026-10-14 20:51:23,593 INFO ── C015 (répétition 1) · 15/300 · reste ~2533 min
+2026-10-14 20:57:26,100 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 20:57:26,100 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 21:04:00,579 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:04:00,580 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 21:11:04,837 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:11:04,837 ERROR    C015 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 21:11:07,837 INFO ── C016 (répétition 1) · 16/300 · reste ~2731 min
+2026-10-14 21:17:11,020 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:17:11,020 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 21:23:45,720 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:23:45,721 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 21:25:39,296 INFO    Q0076 T1 CAPTURED  41.5 s · 341 car.
+2026-10-14 21:26:00,764 INFO    Q0077 T2 CAPTURED  12.9 s · 252 car.
+2026-10-14 21:26:18,603 INFO    Q0078 T3 CAPTURED   9.1 s · 242 car.
+2026-10-14 21:26:39,360 INFO    Q0079 T4 CAPTURED  12.3 s · 257 car.
+2026-10-14 21:27:00,753 INFO    Q0080 T5 CAPTURED  12.9 s · 286 car.
+2026-10-14 21:27:03,755 INFO ── C017 (répétition 1) · 17/300 · reste ~2834 min
+2026-10-14 21:27:09,470 WARNING    ✗ tentative 1/3 : SendError: Saisie non confirmée dans la zone de message ; rien n'a été envoyé
+2026-10-14 21:27:09,471 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 21:33:44,679 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:33:44,679 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 21:35:41,488 INFO    Q0081 T1 CAPTURED  44.0 s · 275 car.
+2026-10-14 21:35:59,202 INFO    Q0082 T2 CAPTURED   9.2 s · 207 car.
+2026-10-14 21:36:18,767 INFO    Q0083 T3 CAPTURED  10.8 s · 265 car.
+2026-10-14 21:36:36,322 INFO    Q0084 T4 CAPTURED   8.9 s · 275 car. · aucune info
+2026-10-14 21:36:54,635 INFO    Q0085 T5 CAPTURED   9.9 s · 446 car.
+2026-10-14 21:36:57,637 INFO ── C018 (répétition 1) · 18/300 · reste ~2823 min
+2026-10-14 21:43:01,042 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:43:01,043 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 21:49:35,420 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:49:35,421 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 21:56:40,553 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 21:56:40,553 ERROR    C018 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 21:56:43,554 INFO ── C019 (répétition 1) · 19/300 · reste ~2966 min
+2026-10-14 22:02:47,506 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:02:47,507 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 22:09:21,969 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:09:21,969 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 22:16:27,055 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:16:27,055 ERROR    C019 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 22:16:30,056 INFO ── C020 (répétition 1) · 20/300 · reste ~3093 min
+2026-10-14 22:22:32,825 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:22:32,825 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 22:29:06,970 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:29:06,970 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 22:36:11,686 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:36:11,687 ERROR    C020 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 22:36:11,687 WARNING Disjoncteur : 3 échecs d'affilée → pause 900 s puis relance du navigateur
+2026-10-14 22:51:15,914 INFO ── C021 (répétition 1) · 21/300 · reste ~3414 min
+2026-10-14 22:57:19,723 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 22:57:19,723 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 23:03:54,581 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:03:54,581 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 23:05:42,408 INFO    Q0101 T1 CAPTURED  37.0 s · 400 car.
+2026-10-14 23:06:00,825 INFO    Q0102 T2 CAPTURED   9.8 s · 249 car.
+2026-10-14 23:06:32,357 INFO    Q0103 T3 CAPTURED  22.8 s · 285 car.
+2026-10-14 23:06:50,165 INFO    Q0104 T4 CAPTURED   9.4 s · 242 car.
+2026-10-14 23:07:06,215 INFO    Q0105 T5 CAPTURED   7.6 s · 254 car.
+2026-10-14 23:07:09,217 INFO ── C022 (répétition 1) · 22/300 · reste ~3451 min
+2026-10-14 23:13:11,867 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:13:11,868 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 23:19:46,077 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:19:46,078 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 23:26:50,756 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:26:50,756 ERROR    C022 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 23:26:53,757 INFO ── C023 (répétition 1) · 23/300 · reste ~3532 min
+2026-10-14 23:32:57,201 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:32:57,201 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 23:34:18,203 INFO    Q0111 T1 CAPTURED  40.5 s · 479 car.
+2026-10-14 23:34:32,087 INFO    Q0112 T2 CAPTURED   5.2 s · 123 car.
+2026-10-14 23:35:02,545 INFO    Q0113 T3 CAPTURED  21.7 s · 292 car.
+2026-10-14 23:35:20,074 INFO    Q0114 T4 CAPTURED   8.5 s · 426 car. · aucune info
+2026-10-14 23:35:39,035 INFO    Q0115 T5 CAPTURED  10.5 s · 283 car.
+2026-10-14 23:35:42,037 INFO ── C024 (répétition 1) · 24/300 · reste ~3472 min
+2026-10-14 23:41:44,294 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:41:44,294 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-14 23:48:18,138 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:48:18,138 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-14 23:55:23,815 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-14 23:55:23,815 ERROR    C024 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-14 23:55:26,816 INFO ── C025 (répétition 1) · 25/300 · reste ~3543 min
+2026-10-15 00:01:30,149 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:01:30,149 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 00:08:04,603 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:08:04,603 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 00:15:08,324 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:15:08,324 ERROR    C025 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 00:15:11,325 INFO ── C026 (répétition 1) · 26/300 · reste ~3606 min
+2026-10-15 00:21:15,107 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:21:15,107 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 00:27:50,591 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:27:50,591 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 00:34:55,525 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:34:55,525 ERROR    C026 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 00:34:55,526 WARNING Disjoncteur : 3 échecs d'affilée → pause 900 s puis relance du navigateur
+2026-10-15 00:49:59,932 INFO ── C027 (répétition 1) · 27/300 · reste ~3821 min
+2026-10-15 00:56:03,365 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 00:56:03,365 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 00:57:23,257 INFO    Q0131 T1 CAPTURED  39.4 s · 481 car.
+2026-10-15 00:57:48,644 INFO    Q0132 T2 CAPTURED  16.9 s · 291 car.
+2026-10-15 00:58:10,526 INFO    Q0133 T3 CAPTURED  13.1 s · 288 car.
+2026-10-15 00:58:32,042 INFO    Q0134 T4 CAPTURED  12.6 s · 387 car. · aucune info
+2026-10-15 00:58:49,775 INFO    Q0135 T5 CAPTURED   9.2 s · 310 car.
+2026-10-15 00:58:52,777 INFO ── C028 (répétition 1) · 28/300 · reste ~3756 min
+2026-10-15 01:04:55,824 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:04:55,825 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 01:11:30,415 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:11:30,415 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 01:18:35,609 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:18:35,610 ERROR    C028 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 01:18:38,610 INFO ── C029 (répétition 1) · 29/300 · reste ~3801 min
+2026-10-15 01:24:42,265 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:24:42,265 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 01:31:16,541 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:31:16,541 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 01:38:21,053 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:38:21,053 ERROR    C029 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 01:38:24,054 INFO ── C030 (répétition 1) · 30/300 · reste ~3841 min
+2026-10-15 01:44:27,555 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:44:27,555 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 01:51:02,337 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:51:02,337 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 01:58:07,349 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 01:58:07,350 ERROR    C030 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 01:58:07,350 ERROR ARRÊT : 3 conversations échouées d'affilée, plusieurs fois : arrêt propre. Vérifiez l'agent / la connexion puis relancez avec --resume.
+2026-10-15 09:42:23,310 INFO Campagne octobre · transport edge · 284 conversation(s) à traiter (1420 questions)
+2026-10-15 09:42:41,218 INFO ── C007 (répétition 1) · 1/284
+2026-10-15 09:44:13,324 WARNING Interrompu (Ctrl+C) : tout ce qui est capturé est conservé ; reprise : run --resume
+2026-10-15 09:44:20,981 INFO Campagne octobre · transport edge · 284 conversation(s) à traiter (1420 questions)
+2026-10-15 09:44:25,731 INFO ── C007 (répétition 1) · 1/284
+2026-10-15 09:45:16,443 WARNING Interrompu (Ctrl+C) : tout ce qui est capturé est conservé ; reprise : run --resume
+2026-10-15 09:45:54,121 INFO Campagne octobre · transport edge · 284 conversation(s) à traiter (1420 questions)
+2026-10-15 09:46:05,698 INFO ── C007 (répétition 1) · 1/284
+2026-10-15 09:47:19,969 INFO    Q0031 T1 CAPTURED  63.0 s · 502 car.
+2026-10-15 09:47:45,827 INFO    Q0032 T2 CAPTURED  17.3 s · 187 car.
+2026-10-15 09:48:04,810 INFO    Q0033 T3 CAPTURED  10.5 s · 222 car.
+2026-10-15 09:48:25,489 INFO    Q0034 T4 CAPTURED  11.5 s · 397 car. · aucune info
+2026-10-15 09:48:44,999 INFO    Q0035 T5 CAPTURED  10.9 s · 239 car.
+2026-10-15 09:48:48,003 INFO ── C010 (répétition 1) · 2/284 · reste ~766 min
+2026-10-15 09:49:57,861 INFO    Q0046 T1 CAPTURED  55.4 s · 266 car.
+2026-10-15 09:50:22,760 INFO    Q0047 T2 CAPTURED  14.8 s · 271 car.
+2026-10-15 09:50:50,017 INFO    Q0048 T3 CAPTURED  16.9 s · 287 car.
+2026-10-15 09:51:13,103 INFO    Q0049 T4 CAPTURED  14.2 s · 215 car.
+2026-10-15 09:51:32,602 INFO    Q0050 T5 CAPTURED  10.9 s · 245 car.
+2026-10-15 09:51:35,604 INFO ── C012 (répétition 1) · 3/284 · reste ~775 min
+2026-10-15 09:52:38,838 INFO    Q0056 T1 CAPTURED  46.1 s · 254 car.
+2026-10-15 09:53:00,495 INFO    Q0057 T2 CAPTURED  12.0 s · 135 car.
+2026-10-15 09:53:28,755 INFO    Q0058 T3 CAPTURED  17.7 s · 248 car. · aucune info
+2026-10-15 09:53:50,765 INFO    Q0059 T4 CAPTURED  11.5 s · 262 car. · aucune info
+2026-10-15 09:54:18,347 INFO    Q0060 T5 CAPTURED  17.2 s · 254 car.
+2026-10-15 09:54:21,348 INFO ── C015 (répétition 1) · 4/284 · reste ~774 min
+2026-10-15 09:55:28,535 INFO    Q0071 T1 CAPTURED  53.2 s · 281 car.
+2026-10-15 09:55:49,492 INFO    Q0072 T2 CAPTURED  12.4 s · 267 car. · aucune info
+2026-10-15 09:56:07,129 INFO    Q0073 T3 CAPTURED   9.2 s · 272 car. · aucune info
+2026-10-15 09:56:26,508 INFO    Q0074 T4 CAPTURED  10.7 s · 237 car.
+2026-10-15 09:56:45,102 INFO    Q0075 T5 CAPTURED   9.7 s · 78 car.
+2026-10-15 09:56:48,104 INFO ── C018 (répétition 1) · 5/284 · reste ~749 min
+2026-10-15 09:57:33,152 INFO    Q0086 T1 CAPTURED  35.0 s · 214 car.
+2026-10-15 09:57:53,851 INFO    Q0087 T2 CAPTURED  12.1 s · 232 car.
+2026-10-15 09:58:17,454 INFO    Q0088 T3 CAPTURED  15.3 s · 208 car.
+2026-10-15 09:58:39,623 INFO    Q0089 T4 CAPTURED  13.8 s · 290 car. · aucune info
+2026-10-15 09:58:59,617 INFO    Q0090 T5 CAPTURED  11.2 s · 204 car.
+2026-10-15 09:59:02,620 INFO ── C019 (répétition 1) · 6/284 · reste ~723 min
+2026-10-15 10:00:02,330 INFO    Q0091 T1 CAPTURED  48.0 s · 239 car.
+2026-10-15 10:00:27,069 INFO    Q0092 T2 CAPTURED  15.9 s · 249 car.
+2026-10-15 10:00:48,042 INFO    Q0093 T3 CAPTURED  12.3 s · 399 car.
+2026-10-15 10:01:07,554 INFO    Q0094 T4 CAPTURED  10.9 s · 314 car.
+2026-10-15 10:01:28,593 INFO    Q0095 T5 CAPTURED  11.4 s · 364 car.
+2026-10-15 10:01:31,595 INFO ── C020 (répétition 1) · 7/284 · reste ~715 min
+2026-10-15 10:07:35,963 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 10:07:35,965 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 10:08:56,751 WARNING    ✗ tentative 2/3 : TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("[contenteditable=\"true\"][aria-label=\"Message Product Info Assistant\"]").first
+    - locator resolved to <span tabindex="0" role="textbox" spellcheck="false" contenteditable="true" data-copilot-initial-focus="" id="m365-chat-editor-target-element" aria-describedby="chat-input-placeholder" aria-label="Message Product Info Assistant" data-placeholder="Message Product Info Assistant" class="fai-EditorInput__input r18fti29 r18aquq2 ___dilz7s0 f1pe8h68 f1239lcr fv5qcn6 f1a3p1vp fdm3o16 fkmyikg f1tudvs5 fajf0s3 foj4gy fm35wft f1nuhv3l"></span>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
+
+2026-10-15 10:08:56,754 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 10:11:10,810 INFO    Q0096 T1 CAPTURED  56.5 s · 248 car.
+2026-10-15 10:11:32,646 INFO    Q0097 T2 CAPTURED  13.1 s · 329 car.
+2026-10-15 10:11:58,677 INFO    Q0098 T3 CAPTURED  16.9 s · 482 car. · aucune info
+2026-10-15 10:12:25,763 INFO    Q0099 T4 CAPTURED  18.1 s · 437 car.
+2026-10-15 10:12:47,014 INFO    Q0100 T5 CAPTURED  12.1 s · 360 car.
+2026-10-15 10:12:50,019 INFO ── C022 (répétition 1) · 8/284 · reste ~1058 min
+2026-10-15 10:13:50,284 INFO    Q0106 T1 CAPTURED  43.9 s · 274 car.
+2026-10-15 10:14:15,876 INFO    Q0107 T2 CAPTURED  16.0 s · 307 car.
+2026-10-15 10:14:36,790 INFO    Q0108 T3 CAPTURED  12.2 s · 331 car.
+2026-10-15 10:15:00,124 INFO    Q0109 T4 CAPTURED  14.1 s · 365 car. · aucune info
+2026-10-15 10:15:17,973 INFO    Q0110 T5 CAPTURED   9.1 s · 84 car.
+2026-10-15 10:15:20,976 INFO ── C024 (répétition 1) · 9/284 · reste ~1009 min
+2026-10-15 10:16:04,892 INFO    Q0116 T1 CAPTURED  33.7 s · 312 car.
+2026-10-15 10:16:26,513 INFO    Q0117 T2 CAPTURED  12.8 s · 262 car.
+2026-10-15 10:16:52,679 INFO    Q0118 T3 CAPTURED  17.3 s · 266 car. · aucune info
+2026-10-15 10:17:23,445 INFO    Q0119 T4 CAPTURED  22.1 s · 327 car.
+2026-10-15 10:17:50,189 INFO    Q0120 T5 CAPTURED  18.0 s · 286 car.
+2026-10-15 10:17:53,192 INFO ── C025 (répétition 1) · 10/284 · reste ~971 min
+2026-10-15 10:18:47,046 INFO    Q0121 T1 CAPTURED  40.9 s · 275 car.
+2026-10-15 10:19:12,703 INFO    Q0122 T2 CAPTURED  16.7 s · 267 car.
+2026-10-15 10:19:33,134 INFO    Q0123 T3 CAPTURED  11.9 s · 255 car.
+2026-10-15 10:19:57,727 INFO    Q0124 T4 CAPTURED  15.4 s · 301 car.
+2026-10-15 10:20:16,951 INFO    Q0125 T5 CAPTURED  10.3 s · 271 car.
+2026-10-15 10:20:19,954 INFO ── C026 (répétition 1) · 11/284 · reste ~938 min
+2026-10-15 10:21:01,831 INFO    Q0126 T1 CAPTURED  30.6 s · 239 car.
+2026-10-15 10:21:20,883 INFO    Q0127 T2 CAPTURED  10.2 s · 270 car.
+2026-10-15 10:21:39,576 INFO    Q0128 T3 CAPTURED   9.7 s · 194 car.
+2026-10-15 10:21:58,633 INFO    Q0129 T4 CAPTURED  10.5 s · 254 car.
+2026-10-15 10:22:18,281 INFO    Q0130 T5 CAPTURED  10.5 s · 272 car.
+2026-10-15 10:22:21,283 INFO ── C028 (répétition 1) · 12/284 · reste ~900 min
+2026-10-15 10:28:28,108 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 10:28:28,110 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 10:30:06,697 INFO    Q0136 T1 CAPTURED  54.0 s · 289 car.
+2026-10-15 10:30:34,064 INFO    Q0137 T2 CAPTURED  17.6 s · 293 car.
+2026-10-15 10:30:56,060 INFO    Q0138 T3 CAPTURED  11.9 s · 251 car.
+2026-10-15 10:31:20,434 INFO    Q0139 T4 CAPTURED  14.0 s · 366 car. · aucune info
+2026-10-15 10:31:47,348 INFO    Q0140 T5 CAPTURED  16.9 s · 264 car.
+2026-10-15 10:31:50,350 INFO ── C029 (répétition 1) · 13/284 · reste ~1037 min
+2026-10-15 10:32:52,058 INFO    Q0141 T1 CAPTURED  49.7 s · 350 car.
+2026-10-15 10:33:13,364 INFO    Q0142 T2 CAPTURED  11.1 s · 245 car.
+2026-10-15 10:33:47,365 INFO    Q0143 T3 CAPTURED  23.9 s · 324 car.
+2026-10-15 10:34:08,313 INFO    Q0144 T4 CAPTURED  10.6 s · 294 car. · aucune info
+2026-10-15 10:34:45,203 INFO    Q0145 T5 CAPTURED  26.0 s · 58 car.
+2026-10-15 10:34:48,207 INFO ── C030 (répétition 1) · 14/284 · reste ~1015 min
+2026-10-15 10:35:24,159 INFO    Q0146 T1 CAPTURED  18.1 s · 51 car.
+2026-10-15 10:35:53,011 INFO    Q0147 T2 CAPTURED  17.9 s · 464 car. · aucune info
+2026-10-15 10:36:28,844 INFO    Q0148 T3 CAPTURED  23.7 s · 477 car. · aucune info
+2026-10-15 10:36:57,083 INFO    Q0149 T4 CAPTURED  17.4 s · 244 car.
+2026-10-15 10:37:18,642 INFO    Q0150 T5 CAPTURED  10.4 s · 219 car.
+2026-10-15 10:37:21,645 INFO ── C031 (répétition 1) · 15/284 · reste ~989 min
+2026-10-15 10:38:14,686 INFO    Q0151 T1 CAPTURED  38.8 s · 264 car.
+2026-10-15 10:38:41,928 INFO    Q0152 T2 CAPTURED  16.5 s · 232 car.
+2026-10-15 10:39:07,079 INFO    Q0153 T3 CAPTURED  14.6 s · 309 car.
+2026-10-15 10:39:30,298 INFO    Q0154 T4 CAPTURED  12.5 s · 276 car.
+2026-10-15 10:39:53,075 INFO    Q0155 T5 CAPTURED  12.1 s · 276 car.
+2026-10-15 10:39:56,078 INFO ── C032 (répétition 1) · 16/284 · reste ~966 min
+2026-10-15 10:40:46,630 INFO    Q0156 T1 CAPTURED  38.7 s · 215 car.
+2026-10-15 10:41:13,562 INFO    Q0157 T2 CAPTURED  16.2 s · 290 car.
+2026-10-15 10:41:35,077 INFO    Q0158 T3 CAPTURED  11.5 s · 271 car.
+2026-10-15 10:41:55,670 INFO    Q0159 T4 CAPTURED  10.8 s · 313 car. · aucune info
+2026-10-15 10:42:47,721 INFO    Q0160 T5 CAPTURED  41.4 s · 442 car. · aucune info
+2026-10-15 10:42:50,724 INFO ── C033 (répétition 1) · 17/284 · reste ~951 min
+2026-10-15 10:43:31,050 INFO    Q0161 T1 CAPTURED  26.6 s · 306 car.
+2026-10-15 10:43:56,952 INFO    Q0162 T2 CAPTURED  15.6 s · 269 car.
+2026-10-15 10:44:33,630 INFO    Q0163 T3 CAPTURED  25.9 s · 286 car.
+2026-10-15 10:44:55,797 INFO    Q0164 T4 CAPTURED  12.0 s · 318 car. · aucune info
+2026-10-15 10:45:16,652 INFO    Q0165 T5 CAPTURED  10.5 s · 306 car. · aucune info
+2026-10-15 10:45:19,655 INFO ── C034 (répétition 1) · 18/284 · reste ~930 min
+2026-10-15 10:46:15,961 INFO    Q0166 T1 CAPTURED  41.5 s · 302 car.
+2026-10-15 10:46:43,763 INFO    Q0167 T2 CAPTURED  17.2 s · 267 car.
+2026-10-15 10:47:09,770 INFO    Q0168 T3 CAPTURED  16.3 s · 362 car.
+2026-10-15 10:47:35,867 INFO    Q0169 T4 CAPTURED  16.0 s · 214 car.
+2026-10-15 10:47:57,379 INFO    Q0170 T5 CAPTURED  11.0 s · 263 car.
+2026-10-15 10:48:00,382 INFO ── C035 (répétition 1) · 19/284 · reste ~915 min
+2026-10-15 10:48:48,550 INFO    Q0171 T1 CAPTURED  33.8 s · 345 car.
+2026-10-15 10:49:30,071 INFO    Q0172 T2 CAPTURED  31.7 s · 359 car. · aucune info
+2026-10-15 10:49:48,944 INFO    Q0173 T3 CAPTURED  10.0 s · 263 car.
+2026-10-15 10:50:07,705 INFO    Q0174 T4 CAPTURED  10.1 s · 266 car.
+2026-10-15 10:50:30,040 INFO    Q0175 T5 CAPTURED  13.5 s · 287 car.
+2026-10-15 10:50:33,042 INFO ── C036 (répétition 1) · 20/284 · reste ~899 min
+2026-10-15 10:56:38,042 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 10:56:38,043 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 10:58:25,542 INFO    Q0176 T1 CAPTURED  62.9 s · 468 car. · aucune info
+2026-10-15 10:58:46,074 INFO    Q0177 T2 CAPTURED  12.0 s · 227 car.
+2026-10-15 10:59:17,204 INFO    Q0178 T3 CAPTURED  22.6 s · 303 car. · aucune info
+2026-10-15 10:59:41,431 INFO    Q0179 T4 CAPTURED  15.1 s · 273 car.
+2026-10-15 11:00:08,939 INFO    Q0180 T5 CAPTURED  17.9 s · 79 car.
+2026-10-15 11:00:11,942 INFO ── C037 (répétition 1) · 21/284 · reste ~978 min
+2026-10-15 11:06:19,159 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 11:06:19,163 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 11:07:53,213 INFO    Q0181 T1 CAPTURED  51.3 s · 217 car.
+2026-10-15 11:08:17,376 INFO    Q0182 T2 CAPTURED  15.4 s · 226 car.
+2026-10-15 11:08:41,333 INFO    Q0183 T3 CAPTURED  15.2 s · 253 car.
+2026-10-15 11:09:00,949 INFO    Q0184 T4 CAPTURED  11.1 s · 322 car. · aucune info
+2026-10-15 11:09:25,456 INFO    Q0185 T5 CAPTURED  15.9 s · 240 car.
+2026-10-15 11:09:28,459 INFO ── C038 (répétition 1) · 22/284 · reste ~1044 min
+2026-10-15 11:15:31,747 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 11:15:31,748 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 11:16:58,078 INFO    Q0186 T1 CAPTURED  40.6 s · 153 car.
+2026-10-15 11:17:23,989 INFO    Q0187 T2 CAPTURED  17.0 s · 208 car.
+2026-10-15 11:17:43,860 INFO    Q0188 T3 CAPTURED  11.1 s · 184 car.
+2026-10-15 11:18:04,408 INFO    Q0189 T4 CAPTURED  11.3 s · 297 car. · aucune info
+2026-10-15 11:21:30,904 INFO    Q0190 T5 CAPTURED 197.5 s · 332 car.
+2026-10-15 11:21:33,906 INFO ── C039 (répétition 1) · 23/284 · reste ~1137 min
+2026-10-15 11:22:33,428 INFO    Q0191 T1 CAPTURED  49.5 s · 413 car.
+2026-10-15 11:23:05,988 INFO    Q0192 T2 CAPTURED  23.9 s · 406 car. · aucune info
+2026-10-15 11:23:29,614 INFO    Q0193 T3 CAPTURED  15.2 s · 396 car. · aucune info
+2026-10-15 11:23:53,421 INFO    Q0194 T4 CAPTURED  15.2 s · 315 car.
+2026-10-15 11:24:12,624 INFO    Q0195 T5 CAPTURED  10.0 s · 311 car.
+2026-10-15 11:24:15,627 INFO ── C040 (répétition 1) · 24/284 · reste ~1114 min
+2026-10-15 11:30:20,270 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 11:30:20,271 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 11:31:43,760 INFO    Q0196 T1 CAPTURED  40.2 s · 396 car.
+2026-10-15 11:32:06,406 INFO    Q0197 T2 CAPTURED  14.0 s · 349 car.
+2026-10-15 11:32:29,133 INFO    Q0198 T3 CAPTURED  14.2 s · 340 car.
+2026-10-15 11:32:51,037 INFO    Q0199 T4 CAPTURED  13.4 s · 344 car.
+2026-10-15 11:33:15,214 INFO    Q0200 T5 CAPTURED  15.2 s · 354 car.
+2026-10-15 11:33:18,219 INFO ── C041 (répétition 1) · 25/284 · reste ~1161 min
+2026-10-15 11:39:21,932 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 11:39:21,933 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 11:46:00,202 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 11:46:00,203 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 11:47:59,174 INFO    Q0201 T1 CAPTURED  43.9 s · 331 car.
+2026-10-15 11:48:23,561 INFO    Q0202 T2 CAPTURED  15.8 s · 278 car.
+2026-10-15 11:48:50,821 INFO    Q0203 T3 CAPTURED  18.8 s · 321 car.
+2026-10-15 11:49:16,257 INFO    Q0204 T4 CAPTURED  16.5 s · 300 car.
+2026-10-15 11:49:42,661 INFO    Q0205 T5 CAPTURED  15.7 s · 273 car.
+2026-10-15 11:49:45,666 INFO ── C042 (répétition 1) · 26/284 · reste ~1281 min
+2026-10-15 11:50:32,315 INFO    Q0206 T1 CAPTURED  33.7 s · 250 car.
+2026-10-15 11:50:53,648 INFO    Q0207 T2 CAPTURED  11.8 s · 259 car.
+2026-10-15 11:51:15,528 INFO    Q0208 T3 CAPTURED  11.4 s · 209 car.
+2026-10-15 11:51:43,584 INFO    Q0209 T4 CAPTURED  17.0 s · 281 car. · aucune info
+2026-10-15 11:52:05,910 INFO    Q0210 T5 CAPTURED  11.0 s · 244 car.
+2026-10-15 11:52:08,913 INFO ── C043 (répétition 1) · 27/284 · reste ~1251 min
+2026-10-15 11:52:43,883 INFO    Q0211 T1 CAPTURED  21.6 s · 281 car.
+2026-10-15 11:53:04,898 INFO    Q0212 T2 CAPTURED  10.8 s · 257 car.
+2026-10-15 11:53:26,350 INFO    Q0213 T3 CAPTURED  11.0 s · 292 car.
+2026-10-15 11:53:47,542 INFO    Q0214 T4 CAPTURED  11.0 s · 420 car. · aucune info
+2026-10-15 11:54:07,428 INFO    Q0215 T5 CAPTURED   9.4 s · 159 car.
+2026-10-15 11:54:10,431 INFO ── C044 (répétition 1) · 28/284 · reste ~1219 min
+2026-10-15 11:55:02,647 INFO    Q0216 T1 CAPTURED  40.3 s · 290 car.
+2026-10-15 11:55:24,620 INFO    Q0217 T2 CAPTURED  11.7 s · 313 car.
+2026-10-15 11:56:12,935 INFO    Q0218 T3 CAPTURED  38.8 s · 441 car.
+2026-10-15 11:56:38,322 INFO    Q0219 T4 CAPTURED  15.6 s · 422 car.
+2026-10-15 11:56:59,886 INFO    Q0220 T5 CAPTURED  10.7 s · 262 car.
+2026-10-15 11:57:02,888 INFO ── C045 (répétition 1) · 29/284 · reste ~1197 min
+2026-10-15 11:57:54,829 INFO    Q0221 T1 CAPTURED  38.3 s · 254 car.
+2026-10-15 11:58:23,533 INFO    Q0222 T2 CAPTURED  19.3 s · 257 car.
+2026-10-15 11:58:51,418 INFO    Q0223 T3 CAPTURED  17.4 s · 247 car.
+2026-10-15 11:59:14,140 INFO    Q0224 T4 CAPTURED  12.8 s · 225 car.
+2026-10-15 11:59:33,534 INFO    Q0225 T5 CAPTURED  10.6 s · 284 car. · aucune info
+2026-10-15 11:59:36,537 INFO ── C046 (répétition 1) · 30/284 · reste ~1174 min
+2026-10-15 12:05:40,710 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:05:40,711 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 12:07:15,865 INFO    Q0226 T1 CAPTURED  53.5 s · 268 car.
+2026-10-15 12:07:40,566 INFO    Q0227 T2 CAPTURED  16.1 s · 255 car.
+2026-10-15 12:08:01,822 INFO    Q0228 T3 CAPTURED  12.4 s · 188 car.
+2026-10-15 12:08:26,113 INFO    Q0229 T4 CAPTURED  15.9 s · 210 car.
+2026-10-15 12:08:48,349 INFO    Q0230 T5 CAPTURED  13.6 s · 272 car.
+2026-10-15 12:08:51,351 INFO ── C047 (répétition 1) · 31/284 · reste ~1209 min
+2026-10-15 12:16:50,408 INFO 1 tentative(s) interrompue(s) lors du dernier arrêt : conversations rejouées
+2026-10-15 12:16:50,410 INFO Campagne octobre · transport edge · 254 conversation(s) à traiter (1270 questions)
+2026-10-15 12:17:15,274 INFO ── C047 (répétition 1) · 1/254
+2026-10-15 12:18:04,399 INFO    Q0231 T1 CAPTURED  30.2 s · 336 car.
+2026-10-15 12:18:21,886 INFO    Q0232 T2 CAPTURED   9.2 s · 257 car.
+2026-10-15 12:18:38,618 INFO    Q0233 T3 CAPTURED   7.9 s · 321 car.
+2026-10-15 12:18:56,150 INFO    Q0234 T4 CAPTURED   8.9 s · 379 car. · aucune info
+2026-10-15 12:19:28,240 INFO    Q0235 T5 CAPTURED  23.3 s · 427 car. · aucune info
+2026-10-15 12:19:31,242 INFO ── C048 (répétition 1) · 2/254 · reste ~573 min
+2026-10-15 12:25:34,281 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:25:34,282 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 12:32:08,781 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:32:08,782 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 12:39:13,162 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:39:13,163 ERROR    C048 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 12:39:16,163 INFO ── C049 (répétition 1) · 3/254 · reste ~2774 min
+2026-10-15 12:40:17,184 INFO    Q0241 T1 CAPTURED  51.6 s · 223 car.
+2026-10-15 12:40:43,158 INFO    Q0242 T2 CAPTURED  17.3 s · 240 car.
+2026-10-15 12:41:26,888 INFO    Q0243 T3 CAPTURED  35.0 s · 537 car. · aucune info
+2026-10-15 12:41:54,072 INFO    Q0244 T4 CAPTURED  18.6 s · 276 car.
+2026-10-15 12:42:16,414 INFO    Q0245 T5 CAPTURED  13.7 s · 255 car.
+2026-10-15 12:42:19,417 INFO ── C050 (répétition 1) · 4/254 · reste ~2097 min
+2026-10-15 12:48:22,311 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:48:22,311 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 12:54:56,854 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 12:54:56,855 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 13:02:01,446 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:02:01,447 ERROR    C050 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 13:02:04,448 INFO ── C051 (répétition 1) · 5/254 · reste ~2801 min
+2026-10-15 13:08:07,855 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:08:07,856 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 13:14:43,749 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:14:43,750 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 13:16:37,665 INFO    Q0251 T1 CAPTURED  42.3 s · 225 car.
+2026-10-15 13:17:01,525 INFO    Q0252 T2 CAPTURED  15.3 s · 272 car.
+2026-10-15 13:17:23,935 INFO    Q0253 T3 CAPTURED  13.6 s · 269 car.
+2026-10-15 13:17:47,885 INFO    Q0254 T4 CAPTURED  15.6 s · 239 car.
+2026-10-15 13:18:05,997 INFO    Q0255 T5 CAPTURED   9.6 s · 276 car.
+2026-10-15 13:18:08,999 INFO ── C052 (répétition 1) · 6/254 · reste ~3033 min
+2026-10-15 13:24:11,518 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:24:11,519 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 13:30:46,657 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:30:46,657 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 13:37:51,875 WARNING    ✗ tentative 3/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:37:51,876 ERROR    C052 abandonnée pour cette passe (sera retentée au prochain --resume)
+2026-10-15 13:37:54,878 INFO ── C053 (répétition 1) · 7/254 · reste ~3334 min
+2026-10-15 13:38:45,023 INFO    Q0261 T1 CAPTURED  40.8 s · 308 car.
+2026-10-15 13:39:03,392 INFO    Q0262 T2 CAPTURED   9.8 s · 277 car.
+2026-10-15 13:39:37,539 INFO    Q0263 T3 CAPTURED  25.8 s · 348 car.
+2026-10-15 13:39:54,824 INFO    Q0264 T4 CAPTURED   8.3 s · 221 car. · aucune info
+2026-10-15 13:40:16,558 INFO    Q0265 T5 CAPTURED  12.3 s · 246 car.
+2026-10-15 13:40:19,560 INFO ── C054 (répétition 1) · 8/254 · reste ~2931 min
+2026-10-15 13:41:16,270 INFO    Q0266 T1 CAPTURED  45.4 s · 399 car.
+2026-10-15 13:41:45,025 INFO    Q0267 T2 CAPTURED  19.9 s · 257 car.
+2026-10-15 13:42:12,304 INFO    Q0268 T3 CAPTURED  18.4 s · 256 car.
+2026-10-15 13:42:30,095 INFO    Q0269 T4 CAPTURED   9.0 s · 244 car.
+2026-10-15 13:42:49,683 INFO    Q0270 T5 CAPTURED  10.7 s · 230 car.
+2026-10-15 13:42:52,685 INFO ── C055 (répétition 1) · 9/254 · reste ~2633 min
+2026-10-15 13:43:46,392 INFO    Q0271 T1 CAPTURED  42.2 s · 277 car.
+2026-10-15 13:44:09,603 INFO    Q0272 T2 CAPTURED  14.6 s · 213 car.
+2026-10-15 13:44:28,957 INFO    Q0273 T3 CAPTURED  10.8 s · 294 car.
+2026-10-15 13:44:48,297 INFO    Q0274 T4 CAPTURED  10.2 s · 297 car.
+2026-10-15 13:45:08,698 INFO    Q0275 T5 CAPTURED  11.5 s · 336 car.
+2026-10-15 13:45:11,701 INFO ── C056 (répétition 1) · 10/254 · reste ~2394 min
+2026-10-15 13:51:15,351 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 13:51:15,352 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 13:52:19,233 INFO    Q0276 T1 CAPTURED  21.1 s · 269 car. · aucune info
+2026-10-15 13:52:50,475 INFO    Q0277 T2 CAPTURED  22.5 s · 293 car.
+2026-10-15 13:53:30,884 INFO    Q0278 T3 CAPTURED  31.5 s · 468 car.
+2026-10-15 13:53:50,115 INFO    Q0279 T4 CAPTURED  10.2 s · 313 car.
+2026-10-15 13:54:15,295 INFO    Q0280 T5 CAPTURED  15.7 s · 230 car.
+2026-10-15 13:54:18,299 INFO ── C057 (répétition 1) · 11/254 · reste ~2368 min
+2026-10-15 13:55:05,668 INFO    Q0281 T1 CAPTURED  38.3 s · 248 car.
+2026-10-15 13:55:29,441 INFO    Q0282 T2 CAPTURED  14.8 s · 229 car.
+2026-10-15 13:56:07,701 INFO    Q0283 T3 CAPTURED  29.6 s · 219 car.
+2026-10-15 13:56:32,834 INFO    Q0284 T4 CAPTURED  16.0 s · 366 car. · aucune info
+2026-10-15 13:56:52,343 INFO    Q0285 T5 CAPTURED  10.3 s · 101 car. · aucune info
+2026-10-15 13:56:55,346 INFO ── C058 (répétition 1) · 12/254 · reste ~2202 min
+2026-10-15 14:03:04,306 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 14:03:04,307 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 14:04:12,090 INFO    Q0286 T1 CAPTURED  23.1 s · 110 car. · aucune info
+2026-10-15 14:04:34,904 INFO    Q0287 T2 CAPTURED  12.7 s · 320 car. · aucune info
+2026-10-15 14:04:55,566 INFO    Q0288 T3 CAPTURED  10.5 s · 240 car. · aucune info
+2026-10-15 14:05:19,040 INFO    Q0289 T4 CAPTURED  13.3 s · 298 car. · aucune info
+2026-10-15 14:05:40,002 INFO    Q0290 T5 CAPTURED  10.2 s · 277 car. · aucune info
+2026-10-15 14:05:43,005 INFO ── C059 (répétition 1) · 13/254 · reste ~2187 min
+2026-10-15 14:06:46,833 INFO    Q0291 T1 CAPTURED  50.7 s · 436 car.
+2026-10-15 14:07:14,799 INFO    Q0292 T2 CAPTURED  17.3 s · 235 car.
+2026-10-15 14:07:35,325 INFO    Q0293 T3 CAPTURED  10.9 s · 318 car.
+2026-10-15 14:07:58,566 INFO    Q0294 T4 CAPTURED  12.6 s · 371 car. · aucune info
+2026-10-15 14:08:19,071 INFO    Q0295 T5 CAPTURED  10.1 s · 279 car.
+2026-10-15 14:08:22,074 INFO ── C060 (répétition 1) · 14/254 · reste ~2060 min
+2026-10-15 14:09:06,640 INFO    Q0296 T1 CAPTURED  33.6 s · 240 car.
+2026-10-15 14:09:28,589 INFO    Q0297 T2 CAPTURED  12.2 s · 310 car.
+2026-10-15 14:09:49,860 INFO    Q0298 T3 CAPTURED  11.5 s · 278 car. · aucune info
+2026-10-15 14:10:10,622 INFO    Q0299 T4 CAPTURED  10.7 s · 279 car.
+2026-10-15 14:10:39,766 INFO    Q0300 T5 CAPTURED  18.6 s · 279 car.
+2026-10-15 14:10:42,769 INFO ── C061 (répétition 1) · 15/254 · reste ~1945 min
+2026-10-15 14:11:35,227 INFO    Q0301 T1 CAPTURED  41.1 s · 232 car.
+2026-10-15 14:11:59,553 INFO    Q0302 T2 CAPTURED  14.0 s · 310 car.
+2026-10-15 14:12:25,476 INFO    Q0303 T3 CAPTURED  15.9 s · 302 car.
+2026-10-15 14:12:51,554 INFO    Q0304 T4 CAPTURED  15.6 s · 285 car.
+2026-10-15 14:13:11,062 INFO    Q0305 T5 CAPTURED   9.6 s · 275 car.
+2026-10-15 14:13:14,065 INFO ── C062 (répétition 1) · 16/254 · reste ~1848 min
+2026-10-15 14:13:58,901 INFO    Q0306 T1 CAPTURED  31.6 s · 263 car.
+2026-10-15 14:14:22,475 INFO    Q0307 T2 CAPTURED  13.7 s · 264 car.
+2026-10-15 14:14:45,429 INFO    Q0308 T3 CAPTURED  12.3 s · 215 car.
+2026-10-15 14:15:08,087 INFO    Q0309 T4 CAPTURED  12.2 s · 243 car. · aucune info
+2026-10-15 14:15:29,980 INFO    Q0310 T5 CAPTURED  11.8 s · 229 car.
+2026-10-15 14:15:32,983 INFO ── C063 (répétition 1) · 17/254 · reste ~1760 min
+2026-10-15 14:16:20,673 INFO    Q0311 T1 CAPTURED  34.8 s · 318 car.
+2026-10-15 14:16:47,772 INFO    Q0312 T2 CAPTURED  16.6 s · 343 car.
+2026-10-15 14:17:07,578 INFO    Q0313 T3 CAPTURED  10.0 s · 275 car. · aucune info
+2026-10-15 14:17:27,604 INFO    Q0314 T4 CAPTURED  10.2 s · 282 car. · aucune info
+2026-10-15 14:17:48,485 INFO    Q0315 T5 CAPTURED  10.8 s · 326 car.
+2026-10-15 14:17:51,487 INFO ── C064 (répétition 1) · 18/254 · reste ~1681 min
+2026-10-15 14:18:41,444 INFO    Q0316 T1 CAPTURED  40.0 s · 394 car.
+2026-10-15 14:19:04,493 INFO    Q0317 T2 CAPTURED  13.1 s · 303 car.
+2026-10-15 14:19:24,106 INFO    Q0318 T3 CAPTURED   9.7 s · 269 car.
+2026-10-15 14:19:47,474 INFO    Q0319 T4 CAPTURED  12.9 s · 357 car.
+2026-10-15 14:20:11,459 INFO    Q0320 T5 CAPTURED  13.5 s · 96 car.
+2026-10-15 14:20:14,461 INFO ── C065 (répétition 1) · 19/254 · reste ~1613 min
+2026-10-15 14:21:04,113 INFO    Q0321 T1 CAPTURED  35.8 s · 253 car.
+2026-10-15 14:21:26,207 INFO    Q0322 T2 CAPTURED  11.8 s · 240 car.
+2026-10-15 14:21:51,036 INFO    Q0323 T3 CAPTURED  14.2 s · 292 car.
+2026-10-15 14:22:13,853 INFO    Q0324 T4 CAPTURED  13.2 s · 251 car.
+2026-10-15 14:22:38,078 INFO    Q0325 T5 CAPTURED  14.1 s · 252 car.
+2026-10-15 14:22:41,081 INFO ── C066 (répétition 1) · 20/254 · reste ~1551 min
+2026-10-15 14:23:25,333 INFO    Q0326 T1 CAPTURED  31.3 s · 325 car.
+2026-10-15 14:23:45,809 INFO    Q0327 T2 CAPTURED  10.4 s · 236 car.
+2026-10-15 14:24:12,637 INFO    Q0328 T3 CAPTURED  16.8 s · 131 car.
+2026-10-15 14:24:34,173 INFO    Q0329 T4 CAPTURED  11.2 s · 250 car.
+2026-10-15 14:24:54,470 INFO    Q0330 T5 CAPTURED  10.3 s · 165 car.
+2026-10-15 14:24:57,472 INFO ── C067 (répétition 1) · 21/254 · reste ~1494 min
+2026-10-15 14:25:44,211 INFO    Q0331 T1 CAPTURED  33.7 s · 279 car.
+2026-10-15 14:26:11,416 INFO    Q0332 T2 CAPTURED  16.6 s · 222 car.
+2026-10-15 14:26:45,041 INFO    Q0333 T3 CAPTURED  23.0 s · 275 car.
+2026-10-15 14:27:07,547 INFO    Q0334 T4 CAPTURED  12.3 s · 381 car. · aucune info
+2026-10-15 14:27:34,522 INFO    Q0335 T5 CAPTURED  16.9 s · 307 car.
+2026-10-15 14:27:37,524 INFO ── C068 (répétition 1) · 22/254 · reste ~1447 min
+2026-10-15 14:28:23,545 INFO    Q0336 T1 CAPTURED  33.0 s · 214 car.
+2026-10-15 14:28:50,327 INFO    Q0337 T2 CAPTURED  16.3 s · 214 car.
+2026-10-15 14:29:22,206 INFO    Q0338 T3 CAPTURED  21.0 s · 460 car.
+2026-10-15 14:29:46,756 INFO    Q0339 T4 CAPTURED  14.0 s · 361 car. · aucune info
+2026-10-15 14:30:12,223 INFO    Q0340 T5 CAPTURED  14.4 s · 309 car.
+2026-10-15 14:30:15,228 INFO ── C069 (répétition 1) · 23/254 · reste ~1403 min
+2026-10-15 14:31:18,555 INFO    Q0341 T1 CAPTURED  49.8 s · 275 car.
+2026-10-15 14:31:44,943 INFO    Q0342 T2 CAPTURED  16.2 s · 215 car.
+2026-10-15 14:32:15,223 INFO    Q0343 T3 CAPTURED  20.1 s · 331 car.
+2026-10-15 14:32:42,845 INFO    Q0344 T4 CAPTURED  16.6 s · 252 car.
+2026-10-15 14:33:05,352 INFO    Q0345 T5 CAPTURED  11.6 s · 279 car. · aucune info
+2026-10-15 14:33:08,356 INFO ── C070 (répétition 1) · 24/254 · reste ~1365 min
+2026-10-15 14:34:03,098 INFO    Q0346 T1 CAPTURED  39.3 s · 247 car.
+2026-10-15 14:34:27,066 INFO    Q0347 T2 CAPTURED  13.7 s · 233 car.
+2026-10-15 14:34:51,303 INFO    Q0348 T3 CAPTURED  14.1 s · 299 car.
+2026-10-15 14:35:20,210 INFO    Q0349 T4 CAPTURED  18.4 s · 195 car.
+2026-10-15 14:35:42,352 INFO    Q0350 T5 CAPTURED  11.4 s · 227 car.
+2026-10-15 14:35:45,357 INFO ── C071 (répétition 1) · 25/254 · reste ~1327 min
+2026-10-15 14:36:34,203 INFO    Q0351 T1 CAPTURED  36.0 s · 408 car.
+2026-10-15 14:36:57,508 INFO    Q0352 T2 CAPTURED  12.8 s · 289 car.
+2026-10-15 14:37:19,444 INFO    Q0353 T3 CAPTURED  11.7 s · 240 car.
+2026-10-15 14:37:49,154 INFO    Q0354 T4 CAPTURED  19.2 s · 410 car. · aucune info
+2026-10-15 14:38:11,716 INFO    Q0355 T5 CAPTURED  12.2 s · 109 car.
+2026-10-15 14:38:14,719 INFO ── C072 (répétition 1) · 26/254 · reste ~1291 min
+2026-10-15 14:38:45,888 INFO    Q0356 T1 CAPTURED  17.6 s · 101 car. · aucune info
+2026-10-15 14:39:06,759 INFO    Q0357 T2 CAPTURED  10.7 s · 101 car. · aucune info
+2026-10-15 14:40:09,591 INFO    Q0358 T3 CAPTURED  52.7 s · 241 car.
+2026-10-15 14:40:30,943 INFO    Q0359 T4 CAPTURED  11.1 s · 329 car. · aucune info
+2026-10-15 14:40:54,938 INFO    Q0360 T5 CAPTURED  13.0 s · 276 car.
+2026-10-15 14:40:57,940 INFO ── C073 (répétition 1) · 27/254 · reste ~1260 min
+2026-10-15 14:41:43,701 INFO    Q0361 T1 CAPTURED  34.8 s · 247 car.
+2026-10-15 14:42:09,162 INFO    Q0362 T2 CAPTURED  15.7 s · 241 car.
+2026-10-15 14:42:32,729 INFO    Q0363 T3 CAPTURED  12.8 s · 293 car.
+2026-10-15 14:42:54,904 INFO    Q0364 T4 CAPTURED  12.1 s · 301 car. · aucune info
+2026-10-15 14:43:15,362 INFO    Q0365 T5 CAPTURED  10.3 s · 316 car.
+2026-10-15 14:43:18,365 INFO ── C074 (répétition 1) · 28/254 · reste ~1228 min
+2026-10-15 14:43:57,702 INFO    Q0366 T1 CAPTURED  28.2 s · 236 car.
+2026-10-15 14:44:19,671 INFO    Q0367 T2 CAPTURED  11.8 s · 286 car.
+2026-10-15 14:44:40,777 INFO    Q0368 T3 CAPTURED  10.6 s · 236 car.
+2026-10-15 14:45:02,719 INFO    Q0369 T4 CAPTURED  11.4 s · 249 car.
+2026-10-15 14:45:24,976 INFO    Q0370 T5 CAPTURED  11.8 s · 247 car.
+2026-10-15 14:45:27,980 INFO ── C075 (répétition 1) · 29/254 · reste ~1196 min
+2026-10-15 14:46:26,203 INFO    Q0371 T1 CAPTURED  47.9 s · 326 car.
+2026-10-15 14:47:03,402 INFO    Q0372 T2 CAPTURED  26.9 s · 379 car. · aucune info
+2026-10-15 14:47:27,153 INFO    Q0373 T3 CAPTURED  13.5 s · 282 car. · aucune info
+2026-10-15 14:47:50,361 INFO    Q0374 T4 CAPTURED  13.4 s · 246 car.
+2026-10-15 14:48:11,685 INFO    Q0375 T5 CAPTURED  11.4 s · 288 car.
+2026-10-15 14:48:14,689 INFO ── C076 (répétition 1) · 30/254 · reste ~1171 min
+2026-10-15 14:49:16,673 INFO    Q0376 T1 CAPTURED  51.1 s · 272 car.
+2026-10-15 14:49:44,054 INFO    Q0377 T2 CAPTURED  17.1 s · 297 car.
+2026-10-15 14:50:26,223 INFO    Q0378 T3 CAPTURED  32.0 s · 269 car.
+2026-10-15 14:50:50,285 INFO    Q0379 T4 CAPTURED  13.1 s · 293 car.
+2026-10-15 14:51:12,555 INFO    Q0380 T5 CAPTURED  11.4 s · 403 car.
+2026-10-15 14:51:15,558 INFO ── C077 (répétition 1) · 31/254 · reste ~1150 min
+2026-10-15 14:52:05,982 INFO    Q0381 T1 CAPTURED  36.6 s · 232 car.
+2026-10-15 14:52:29,449 INFO    Q0382 T2 CAPTURED  12.9 s · 194 car.
+2026-10-15 14:52:52,708 INFO    Q0383 T3 CAPTURED  13.3 s · 274 car.
+2026-10-15 14:53:14,196 INFO    Q0384 T4 CAPTURED  11.6 s · 257 car. · aucune info
+2026-10-15 14:53:36,158 INFO    Q0385 T5 CAPTURED  10.8 s · 313 car.
+2026-10-15 14:53:39,164 INFO ── C078 (répétition 1) · 32/254 · reste ~1125 min
+2026-10-15 14:54:47,309 INFO    Q0386 T1 CAPTURED  54.7 s · 318 car.
+2026-10-15 14:55:09,377 INFO    Q0387 T2 CAPTURED  12.0 s · 234 car.
+2026-10-15 14:55:34,592 INFO    Q0388 T3 CAPTURED  15.3 s · 231 car.
+2026-10-15 14:55:56,137 INFO    Q0389 T4 CAPTURED  11.3 s · 296 car. · aucune info
+2026-10-15 14:56:15,963 INFO    Q0390 T5 CAPTURED   9.0 s · 71 car.
+2026-10-15 14:56:18,966 INFO ── C079 (répétition 1) · 33/254 · reste ~1104 min
+2026-10-15 14:57:12,073 INFO    Q0391 T1 CAPTURED  38.9 s · 275 car.
+2026-10-15 14:57:37,781 INFO    Q0392 T2 CAPTURED  15.3 s · 242 car.
+2026-10-15 14:57:59,268 INFO    Q0393 T3 CAPTURED  11.0 s · 358 car.
+2026-10-15 14:58:21,306 INFO    Q0394 T4 CAPTURED  11.6 s · 315 car.
+2026-10-15 14:58:43,026 INFO    Q0395 T5 CAPTURED  11.0 s · 366 car.
+2026-10-15 14:58:46,028 INFO ── C080 (répétition 1) · 34/254 · reste ~1082 min
+2026-10-15 14:59:23,336 INFO    Q0396 T1 CAPTURED  24.2 s · 549 car. · aucune info
+2026-10-15 14:59:47,059 INFO    Q0397 T2 CAPTURED  13.7 s · 391 car. · aucune info
+2026-10-15 15:00:07,054 INFO    Q0398 T3 CAPTURED   9.7 s · 420 car. · aucune info
+2026-10-15 15:00:30,913 INFO    Q0399 T4 CAPTURED  12.9 s · 581 car. · aucune info
+2026-10-15 15:00:54,778 INFO    Q0400 T5 CAPTURED  13.6 s · 479 car. · aucune info
+2026-10-15 15:00:57,781 INFO ── C081 (répétition 1) · 35/254 · reste ~1059 min
+2026-10-15 15:02:06,899 INFO    Q0401 T1 CAPTURED  51.4 s · 455 car.
+2026-10-15 15:02:23,209 INFO    Q0402 T2 CAPTURED   6.5 s · 360 car.
+2026-10-15 15:03:04,169 INFO    Q0403 T3 CAPTURED  31.3 s · 337 car.
+2026-10-15 15:03:24,394 INFO    Q0404 T4 CAPTURED   8.1 s · 325 car.
+2026-10-15 15:03:42,927 INFO    Q0405 T5 CAPTURED   8.3 s · 235 car.
+2026-10-15 15:03:45,930 INFO ── C082 (répétition 1) · 36/254 · reste ~1042 min
+2026-10-15 15:04:13,534 INFO    Q0406 T1 CAPTURED  16.9 s · 121 car.
+2026-10-15 15:04:29,063 INFO    Q0407 T2 CAPTURED   5.8 s · 207 car.
+2026-10-15 15:04:45,894 INFO    Q0408 T3 CAPTURED   6.3 s · 215 car.
+2026-10-15 15:05:02,284 INFO    Q0409 T4 CAPTURED   6.0 s · 285 car.
+2026-10-15 15:05:24,083 INFO    Q0410 T5 CAPTURED  11.4 s · 277 car. · aucune info
+2026-10-15 15:05:27,085 INFO ── C083 (répétition 1) · 37/254 · reste ~1019 min
+2026-10-15 15:06:13,692 INFO    Q0411 T1 CAPTURED  35.7 s · 501 car.
+2026-10-15 15:06:40,463 INFO    Q0412 T2 CAPTURED  16.7 s · 263 car.
+2026-10-15 15:07:02,391 INFO    Q0413 T3 CAPTURED  11.3 s · 319 car.
+2026-10-15 15:07:43,272 INFO    Q0414 T4 CAPTURED  31.0 s · 382 car.
+2026-10-15 15:08:06,529 INFO    Q0415 T5 CAPTURED  12.5 s · 269 car.
+2026-10-15 15:08:09,539 INFO ── C084 (répétition 1) · 38/254 · reste ~1002 min
+2026-10-15 15:09:26,672 INFO    Q0416 T1 CAPTURED  64.2 s · 253 car.
+2026-10-15 15:09:48,598 INFO    Q0417 T2 CAPTURED  11.4 s · 318 car.
+2026-10-15 15:10:12,769 INFO    Q0418 T3 CAPTURED  14.7 s · 289 car.
+2026-10-15 15:10:33,733 INFO    Q0419 T4 CAPTURED  11.0 s · 239 car.
+2026-10-15 15:11:00,592 INFO    Q0420 T5 CAPTURED  16.8 s · 277 car.
+2026-10-15 15:11:03,595 INFO ── C085 (répétition 1) · 39/254 · reste ~988 min
+2026-10-15 15:11:51,285 INFO    Q0421 T1 CAPTURED  32.6 s · 204 car.
+2026-10-15 15:12:18,261 INFO    Q0422 T2 CAPTURED  16.5 s · 217 car.
+2026-10-15 15:12:37,672 INFO    Q0423 T3 CAPTURED   8.9 s · 200 car.
+2026-10-15 15:13:09,894 INFO    Q0424 T4 CAPTURED  21.8 s · 250 car.
+2026-10-15 15:13:32,173 INFO    Q0425 T5 CAPTURED  11.6 s · 62 car.
+2026-10-15 15:13:35,176 INFO ── C086 (répétition 1) · 40/254 · reste ~972 min
+2026-10-15 15:14:30,202 INFO    Q0426 T1 CAPTURED  41.4 s · 187 car.
+2026-10-15 15:14:51,785 INFO    Q0427 T2 CAPTURED  11.2 s · 239 car.
+2026-10-15 15:15:14,916 INFO    Q0428 T3 CAPTURED  13.0 s · 186 car.
+2026-10-15 15:15:38,758 INFO    Q0429 T4 CAPTURED  13.5 s · 250 car.
+2026-10-15 15:15:59,708 INFO    Q0430 T5 CAPTURED  10.4 s · 287 car.
+2026-10-15 15:16:02,711 INFO ── C087 (répétition 1) · 41/254 · reste ~957 min
+2026-10-15 15:16:43,042 INFO    Q0431 T1 CAPTURED  27.4 s · 255 car.
+2026-10-15 15:17:04,119 INFO    Q0432 T2 CAPTURED  11.1 s · 300 car.
+2026-10-15 15:17:24,772 INFO    Q0433 T3 CAPTURED  10.7 s · 297 car. · aucune info
+2026-10-15 15:17:48,978 INFO    Q0434 T4 CAPTURED  12.8 s · 291 car. · aucune info
+2026-10-15 15:18:10,372 INFO    Q0435 T5 CAPTURED  10.9 s · 268 car.
+2026-10-15 15:18:13,375 INFO ── C088 (répétition 1) · 42/254 · reste ~940 min
+2026-10-15 15:19:05,482 INFO    Q0436 T1 CAPTURED  41.0 s · 400 car.
+2026-10-15 15:19:32,112 INFO    Q0437 T2 CAPTURED  16.8 s · 269 car.
+2026-10-15 15:19:52,937 INFO    Q0438 T3 CAPTURED  10.0 s · 292 car.
+2026-10-15 15:20:14,864 INFO    Q0439 T4 CAPTURED  10.9 s · 375 car. · aucune info
+2026-10-15 15:20:40,269 INFO    Q0440 T5 CAPTURED  15.2 s · 291 car.
+2026-10-15 15:20:43,273 INFO ── C089 (répétition 1) · 43/254 · reste ~926 min
+2026-10-15 15:21:37,401 INFO    Q0441 T1 CAPTURED  43.8 s · 258 car.
+2026-10-15 15:21:56,384 INFO    Q0442 T2 CAPTURED   8.7 s · 251 car.
+2026-10-15 15:22:22,201 INFO    Q0443 T3 CAPTURED  15.4 s · 261 car.
+2026-10-15 15:22:46,806 INFO    Q0444 T4 CAPTURED  15.1 s · 325 car.
+2026-10-15 15:23:06,809 INFO    Q0445 T5 CAPTURED   9.7 s · 273 car. · aucune info
+2026-10-15 15:23:09,811 INFO ── C090 (répétition 1) · 44/254 · reste ~912 min
+2026-10-15 15:23:46,553 INFO    Q0446 T1 CAPTURED  26.7 s · 218 car. · aucune info
+2026-10-15 15:24:19,728 INFO    Q0447 T2 CAPTURED  23.0 s · 300 car.
+2026-10-15 15:24:45,646 INFO    Q0448 T3 CAPTURED  15.5 s · 244 car.
+2026-10-15 15:25:07,788 INFO    Q0449 T4 CAPTURED  11.9 s · 298 car. · aucune info
+2026-10-15 15:25:32,450 INFO    Q0450 T5 CAPTURED  13.9 s · 233 car.
+2026-10-15 15:25:35,453 INFO ── C091 (répétition 1) · 45/254 · reste ~899 min
+2026-10-15 15:26:22,082 INFO    Q0451 T1 CAPTURED  36.3 s · 259 car.
+2026-10-15 15:26:44,878 INFO    Q0452 T2 CAPTURED  12.4 s · 228 car.
+2026-10-15 15:27:05,031 INFO    Q0453 T3 CAPTURED  10.1 s · 367 car. · aucune info
+2026-10-15 15:27:26,534 INFO    Q0454 T4 CAPTURED  11.9 s · 263 car.
+2026-10-15 15:27:48,915 INFO    Q0455 T5 CAPTURED  11.9 s · 280 car.
+2026-10-15 15:27:51,917 INFO ── C092 (répétition 1) · 46/254 · reste ~885 min
+2026-10-15 15:28:39,976 INFO    Q0456 T1 CAPTURED  35.1 s · 273 car.
+2026-10-15 15:28:59,998 INFO    Q0457 T2 CAPTURED   9.7 s · 318 car. · aucune info
+2026-10-15 15:29:22,956 INFO    Q0458 T3 CAPTURED  12.4 s · 370 car. · aucune info
+2026-10-15 15:29:43,683 INFO    Q0459 T4 CAPTURED  11.3 s · 313 car. · aucune info
+2026-10-15 15:30:07,145 INFO    Q0460 T5 CAPTURED  13.4 s · 97 car.
+2026-10-15 15:30:10,147 INFO ── C093 (répétition 1) · 47/254 · reste ~872 min
+2026-10-15 15:31:36,280 INFO    Q0461 T1 CAPTURED  73.5 s · 629 car. · aucune info
+2026-10-15 15:32:03,756 INFO    Q0462 T2 CAPTURED  17.1 s · 254 car.
+2026-10-15 15:32:37,373 INFO    Q0463 T3 CAPTURED  23.8 s · 337 car.
+2026-10-15 15:33:03,085 INFO    Q0464 T4 CAPTURED  16.3 s · 301 car.
+2026-10-15 15:33:26,156 INFO    Q0465 T5 CAPTURED  13.0 s · 422 car.
+2026-10-15 15:33:29,159 INFO ── C094 (répétition 1) · 48/254 · reste ~864 min
+2026-10-15 15:34:18,143 INFO    Q0466 T1 CAPTURED  38.2 s · 308 car.
+2026-10-15 15:34:43,022 INFO    Q0467 T2 CAPTURED  15.3 s · 242 car.
+2026-10-15 15:35:03,505 INFO    Q0468 T3 CAPTURED  10.3 s · 236 car.
+2026-10-15 15:35:28,119 INFO    Q0469 T4 CAPTURED  15.0 s · 198 car.
+2026-10-15 15:35:48,948 INFO    Q0470 T5 CAPTURED  10.7 s · 261 car.
+2026-10-15 15:35:51,950 INFO ── C095 (répétition 1) · 49/254 · reste ~852 min
+2026-10-15 15:36:40,674 INFO    Q0471 T1 CAPTURED  37.9 s · 377 car.
+2026-10-15 15:37:02,007 INFO    Q0472 T2 CAPTURED  11.3 s · 276 car.
+2026-10-15 15:37:22,995 INFO    Q0473 T3 CAPTURED  11.3 s · 301 car.
+2026-10-15 15:37:48,453 INFO    Q0474 T4 CAPTURED  15.6 s · 484 car.
+2026-10-15 15:38:08,676 INFO    Q0475 T5 CAPTURED  10.4 s · 277 car.
+2026-10-15 15:38:11,678 INFO ── C096 (répétition 1) · 50/254 · reste ~841 min
+2026-10-15 15:39:03,615 INFO    Q0476 T1 CAPTURED  41.1 s · 163 car.
+2026-10-15 15:39:23,820 INFO    Q0477 T2 CAPTURED  10.6 s · 252 car.
+2026-10-15 15:40:05,341 INFO    Q0478 T3 CAPTURED  30.7 s · 294 car. · aucune info
+2026-10-15 15:40:31,573 INFO    Q0479 T4 CAPTURED  15.9 s · 282 car.
+2026-10-15 15:41:01,372 INFO    Q0480 T5 CAPTURED  19.3 s · 304 car.
+2026-10-15 15:41:04,375 INFO ── C097 (répétition 1) · 51/254 · reste ~832 min
+2026-10-15 15:41:58,599 INFO    Q0481 T1 CAPTURED  41.0 s · 219 car.
+2026-10-15 15:42:23,960 INFO    Q0482 T2 CAPTURED  15.3 s · 294 car.
+2026-10-15 15:42:48,002 INFO    Q0483 T3 CAPTURED  13.2 s · 253 car.
+2026-10-15 15:43:10,818 INFO    Q0484 T4 CAPTURED  11.9 s · 403 car. · aucune info
+2026-10-15 15:43:32,802 INFO    Q0485 T5 CAPTURED  11.5 s · 274 car.
+2026-10-15 15:43:35,805 INFO ── C098 (répétition 1) · 52/254 · reste ~821 min
+2026-10-15 15:48:21,621 INFO    Q0486 T1 CAPTURED 272.1 s · 257 car.
+2026-10-15 15:49:00,857 INFO    Q0487 T2 CAPTURED  28.8 s · 234 car.
+2026-10-15 15:49:23,318 INFO    Q0488 T3 CAPTURED  12.2 s · 203 car.
+2026-10-15 15:49:43,238 INFO    Q0489 T4 CAPTURED   9.8 s · 237 car. · aucune info
+2026-10-15 15:50:11,895 INFO    Q0490 T5 CAPTURED  18.1 s · 247 car.
+2026-10-15 15:50:14,899 INFO ── C099 (répétition 1) · 53/254 · reste ~827 min
+2026-10-15 15:51:37,131 INFO    Q0491 T1 CAPTURED  68.4 s · 230 car.
+2026-10-15 15:52:09,645 INFO    Q0492 T2 CAPTURED  22.8 s · 279 car.
+2026-10-15 15:52:40,577 INFO    Q0493 T3 CAPTURED  20.3 s · 444 car. · aucune info
+2026-10-15 15:53:06,351 INFO    Q0494 T4 CAPTURED  15.5 s · 261 car.
+2026-10-15 15:53:27,317 INFO    Q0495 T5 CAPTURED  10.1 s · 58 car.
+2026-10-15 15:53:30,320 INFO ── C100 (répétition 1) · 54/254 · reste ~820 min
+2026-10-15 15:54:21,090 INFO    Q0496 T1 CAPTURED  40.4 s · 331 car.
+2026-10-15 15:54:46,457 INFO    Q0497 T2 CAPTURED  15.5 s · 287 car.
+2026-10-15 15:55:08,626 INFO    Q0498 T3 CAPTURED  12.7 s · 304 car.
+2026-10-15 15:55:35,590 INFO    Q0499 T4 CAPTURED  16.0 s · 316 car.
+2026-10-15 15:56:00,237 INFO    Q0500 T5 CAPTURED  13.4 s · 820 car.
+2026-10-15 15:56:03,244 INFO ── C101 (répétition 1) · 55/254 · reste ~810 min
+2026-10-15 15:56:43,391 INFO    Q0501 T1 CAPTURED  24.9 s · 533 car. · aucune info
+2026-10-15 15:57:05,781 INFO    Q0502 T2 CAPTURED  12.1 s · 393 car. · aucune info
+2026-10-15 15:57:27,811 INFO    Q0503 T3 CAPTURED  12.4 s · 413 car. · aucune info
+2026-10-15 15:57:47,719 INFO    Q0504 T4 CAPTURED   9.9 s · 364 car. · aucune info
+2026-10-15 15:58:10,705 INFO    Q0505 T5 CAPTURED  12.4 s · 323 car. · aucune info
+2026-10-15 15:58:13,710 INFO ── C102 (répétition 1) · 56/254 · reste ~800 min
+2026-10-15 15:59:25,153 INFO    Q0506 T1 CAPTURED  57.9 s · 342 car.
+2026-10-15 15:59:43,443 INFO    Q0507 T2 CAPTURED   7.7 s · 304 car.
+2026-10-15 16:00:31,936 INFO    Q0508 T3 CAPTURED  38.4 s · 1044 car. · aucune info
+2026-10-15 16:00:50,305 INFO    Q0509 T4 CAPTURED   7.8 s · 322 car.
+2026-10-15 16:01:10,805 INFO    Q0510 T5 CAPTURED  10.0 s · 257 car.
+2026-10-15 16:01:13,809 INFO ── C103 (répétition 1) · 57/254 · reste ~792 min
+2026-10-15 16:02:04,049 INFO    Q0511 T1 CAPTURED  33.3 s · 428 car.
+2026-10-15 16:02:30,982 INFO    Q0512 T2 CAPTURED  16.9 s · 281 car.
+2026-10-15 16:02:53,996 INFO    Q0513 T3 CAPTURED  12.5 s · 468 car.
+2026-10-15 16:03:35,760 INFO    Q0514 T4 CAPTURED  31.1 s · 444 car.
+2026-10-15 16:03:59,574 INFO    Q0515 T5 CAPTURED  12.9 s · 329 car.
+2026-10-15 16:04:02,578 INFO ── C104 (répétition 1) · 58/254 · reste ~784 min
+2026-10-15 16:04:52,440 INFO    Q0516 T1 CAPTURED  36.6 s · 393 car.
+2026-10-15 16:05:11,872 INFO    Q0517 T2 CAPTURED   9.9 s · 265 car.
+2026-10-15 16:05:33,620 INFO    Q0518 T3 CAPTURED  11.5 s · 342 car.
+2026-10-15 16:05:53,027 INFO    Q0519 T4 CAPTURED   9.5 s · 401 car. · aucune info
+2026-10-15 16:06:16,058 INFO    Q0520 T5 CAPTURED  12.2 s · 267 car.
+2026-10-15 16:06:19,060 INFO ── C105 (répétition 1) · 59/254 · reste ~774 min
+2026-10-15 16:07:13,348 INFO    Q0521 T1 CAPTURED  38.6 s · 600 car.
+2026-10-15 16:07:39,674 INFO    Q0522 T2 CAPTURED  15.8 s · 835 car. · aucune info
+2026-10-15 16:08:05,578 INFO    Q0523 T3 CAPTURED  15.9 s · 598 car.
+2026-10-15 16:08:27,166 INFO    Q0524 T4 CAPTURED  11.0 s · 328 car.
+2026-10-15 16:08:51,177 INFO    Q0525 T5 CAPTURED  13.6 s · 611 car.
+2026-10-15 16:08:54,180 INFO ── C106 (répétition 1) · 60/254 · reste ~766 min
+2026-10-15 16:10:12,639 INFO    Q0526 T1 CAPTURED  65.1 s · 401 car.
+2026-10-15 16:10:34,102 INFO    Q0527 T2 CAPTURED  11.4 s · 349 car.
+2026-10-15 16:11:12,963 INFO    Q0528 T3 CAPTURED  29.0 s · 323 car.
+2026-10-15 16:11:36,767 INFO    Q0529 T4 CAPTURED  13.4 s · 288 car.
+2026-10-15 16:11:58,239 INFO    Q0530 T5 CAPTURED  10.3 s · 296 car.
+2026-10-15 16:12:01,242 INFO ── C107 (répétition 1) · 61/254 · reste ~759 min
+2026-10-15 16:13:02,045 INFO    Q0531 T1 CAPTURED  47.6 s · 529 car.
+2026-10-15 16:13:25,209 INFO    Q0532 T2 CAPTURED  12.6 s · 171 car.
+2026-10-15 16:14:02,366 INFO    Q0533 T3 CAPTURED  26.5 s · 368 car. · aucune info
+2026-10-15 16:14:21,046 INFO    Q0534 T4 CAPTURED   7.5 s · 141 car.
+2026-10-15 16:14:39,959 INFO    Q0535 T5 CAPTURED   7.3 s · 277 car.
+2026-10-15 16:14:42,962 INFO ── C108 (répétition 1) · 62/254 · reste ~751 min
+2026-10-15 16:15:36,498 INFO    Q0536 T1 CAPTURED  36.2 s · 338 car.
+2026-10-15 16:16:00,041 INFO    Q0537 T2 CAPTURED  13.2 s · 395 car.
+2026-10-15 16:16:26,586 INFO    Q0538 T3 CAPTURED  16.6 s · 456 car. · aucune info
+2026-10-15 16:16:48,987 INFO    Q0539 T4 CAPTURED  11.6 s · 324 car.
+2026-10-15 16:17:13,599 INFO    Q0540 T5 CAPTURED  13.9 s · 268 car.
+2026-10-15 16:17:16,603 INFO ── C109 (répétition 1) · 63/254 · reste ~743 min
+2026-10-15 16:18:01,939 INFO    Q0541 T1 CAPTURED  32.5 s · 323 car.
+2026-10-15 16:18:23,713 INFO    Q0542 T2 CAPTURED  11.8 s · 297 car.
+2026-10-15 16:18:46,328 INFO    Q0543 T3 CAPTURED  12.6 s · 381 car.
+2026-10-15 16:19:07,431 INFO    Q0544 T4 CAPTURED  11.3 s · 307 car. · aucune info
+2026-10-15 16:19:29,222 INFO    Q0545 T5 CAPTURED  11.6 s · 399 car.
+2026-10-15 16:19:32,225 INFO ── C110 (répétition 1) · 64/254 · reste ~735 min
+2026-10-15 16:20:12,164 INFO    Q0546 T1 CAPTURED  27.4 s · 355 car.
+2026-10-15 16:20:31,955 INFO    Q0547 T2 CAPTURED   9.8 s · 270 car.
+2026-10-15 16:20:52,745 INFO    Q0548 T3 CAPTURED  10.8 s · 348 car.
+2026-10-15 16:21:15,265 INFO    Q0549 T4 CAPTURED  11.9 s · 274 car.
+2026-10-15 16:21:40,223 INFO    Q0550 T5 CAPTURED  14.2 s · 337 car.
+2026-10-15 16:21:43,230 INFO ── C111 (répétition 1) · 65/254 · reste ~726 min
+2026-10-15 16:22:19,750 INFO    Q0551 T1 CAPTURED  23.4 s · 355 car. · aucune info
+2026-10-15 16:22:39,444 INFO    Q0552 T2 CAPTURED   9.9 s · 101 car. · aucune info
+2026-10-15 16:22:59,518 INFO    Q0553 T3 CAPTURED   9.6 s · 101 car. · aucune info
+2026-10-15 16:23:20,238 INFO    Q0554 T4 CAPTURED  10.5 s · 101 car. · aucune info
+2026-10-15 16:23:41,172 INFO    Q0555 T5 CAPTURED  10.0 s · 101 car. · aucune info
+2026-10-15 16:23:44,176 INFO ── C112 (répétition 1) · 66/254 · reste ~717 min
+2026-10-15 16:24:49,876 INFO    Q0556 T1 CAPTURED  52.6 s · 671 car.
+2026-10-15 16:25:24,327 INFO    Q0557 T2 CAPTURED  24.4 s · 561 car. · aucune info
+2026-10-15 16:25:49,520 INFO    Q0558 T3 CAPTURED  15.2 s · 629 car. · aucune info
+2026-10-15 16:26:11,987 INFO    Q0559 T4 CAPTURED  12.5 s · 437 car.
+2026-10-15 16:26:33,935 INFO    Q0560 T5 CAPTURED  11.2 s · 545 car.
+2026-10-15 16:26:36,938 INFO ── C113 (répétition 1) · 67/254 · reste ~710 min
+2026-10-15 16:27:45,892 INFO    Q0561 T1 CAPTURED  54.1 s · 465 car.
+2026-10-15 16:28:06,574 INFO    Q0562 T2 CAPTURED  10.4 s · 327 car.
+2026-10-15 16:28:25,923 INFO    Q0563 T3 CAPTURED  10.0 s · 389 car.
+2026-10-15 16:28:51,142 INFO    Q0564 T4 CAPTURED  14.7 s · 1797 car.
+2026-10-15 16:29:15,007 INFO    Q0565 T5 CAPTURED  13.5 s · 962 car.
+2026-10-15 16:29:18,011 INFO ── C114 (répétition 1) · 68/254 · reste ~703 min
+2026-10-15 16:30:34,885 INFO    Q0566 T1 CAPTURED  64.6 s · 325 car. · aucune info
+2026-10-15 16:30:57,590 INFO    Q0567 T2 CAPTURED  12.6 s · 247 car.
+2026-10-15 16:31:20,878 INFO    Q0568 T3 CAPTURED  13.0 s · 326 car.
+2026-10-15 16:31:45,223 INFO    Q0569 T4 CAPTURED  13.9 s · 345 car. · aucune info
+2026-10-15 16:32:08,100 INFO    Q0570 T5 CAPTURED  12.3 s · 734 car.
+2026-10-15 16:32:11,103 INFO ── C115 (répétition 1) · 69/254 · reste ~697 min
+2026-10-15 16:33:00,128 INFO    Q0571 T1 CAPTURED  35.7 s · 322 car.
+2026-10-15 16:33:23,483 INFO    Q0572 T2 CAPTURED  12.9 s · 343 car.
+2026-10-15 16:33:44,178 INFO    Q0573 T3 CAPTURED  10.7 s · 269 car.
+2026-10-15 16:34:06,764 INFO    Q0574 T4 CAPTURED  12.0 s · 287 car.
+2026-10-15 16:34:28,421 INFO    Q0575 T5 CAPTURED  11.5 s · 333 car.
+2026-10-15 16:34:31,435 INFO ── C116 (répétition 1) · 70/254 · reste ~690 min
+2026-10-15 16:35:13,917 INFO    Q0576 T1 CAPTURED  29.8 s · 361 car.
+2026-10-15 16:35:36,696 INFO    Q0577 T2 CAPTURED  12.6 s · 425 car.
+2026-10-15 16:35:59,007 INFO    Q0578 T3 CAPTURED  12.3 s · 392 car.
+2026-10-15 16:36:24,657 INFO    Q0579 T4 CAPTURED  14.7 s · 1018 car.
+2026-10-15 16:36:48,300 INFO    Q0580 T5 CAPTURED  13.3 s · 304 car.
+2026-10-15 16:36:51,305 INFO ── C117 (répétition 1) · 71/254 · reste ~682 min
+2026-10-15 16:37:37,631 INFO    Q0581 T1 CAPTURED  32.1 s · 325 car.
+2026-10-15 16:38:11,582 INFO    Q0582 T2 CAPTURED  25.2 s · 294 car. · aucune info
+2026-10-15 16:38:31,870 INFO    Q0583 T3 CAPTURED  11.6 s · 364 car. · aucune info
+2026-10-15 16:38:52,556 INFO    Q0584 T4 CAPTURED  11.6 s · 242 car.
+2026-10-15 16:39:15,978 INFO    Q0585 T5 CAPTURED  14.0 s · 392 car.
+2026-10-15 16:39:18,981 INFO ── C118 (répétition 1) · 72/254 · reste ~675 min
+2026-10-15 16:40:11,310 INFO    Q0586 T1 CAPTURED  38.5 s · 399 car.
+2026-10-15 16:40:30,884 INFO    Q0587 T2 CAPTURED  10.8 s · 594 car.
+2026-10-15 16:41:05,634 INFO    Q0588 T3 CAPTURED  25.8 s · 519 car. · aucune info
+2026-10-15 16:41:23,733 INFO    Q0589 T4 CAPTURED   9.4 s · 240 car.
+2026-10-15 16:41:43,064 INFO    Q0590 T5 CAPTURED  10.2 s · 241 car.
+2026-10-15 16:41:46,068 INFO ── C119 (répétition 1) · 73/254 · reste ~669 min
+2026-10-15 16:42:32,717 INFO    Q0591 T1 CAPTURED  36.8 s · 371 car.
+2026-10-15 16:42:54,183 INFO    Q0592 T2 CAPTURED  12.7 s · 331 car.
+2026-10-15 16:43:15,050 INFO    Q0593 T3 CAPTURED  12.2 s · 318 car.
+2026-10-15 16:43:35,046 INFO    Q0594 T4 CAPTURED  10.8 s · 396 car. · aucune info
+2026-10-15 16:44:01,903 INFO    Q0595 T5 CAPTURED  18.0 s · 304 car.
+2026-10-15 16:44:04,906 INFO ── C120 (répétition 1) · 74/254 · reste ~662 min
+2026-10-15 16:44:58,294 INFO    Q0596 T1 CAPTURED  43.7 s · 411 car.
+2026-10-15 16:45:18,960 INFO    Q0597 T2 CAPTURED  11.8 s · 794 car.
+2026-10-15 16:45:49,513 INFO    Q0598 T3 CAPTURED  21.6 s · 323 car.
+2026-10-15 16:46:08,458 INFO    Q0599 T4 CAPTURED  10.2 s · 299 car.
+2026-10-15 16:46:27,930 INFO    Q0600 T5 CAPTURED  10.5 s · 328 car.
+2026-10-15 16:46:30,933 INFO ── C121 (répétition 1) · 75/254 · reste ~655 min
+2026-10-15 16:52:33,788 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 16:52:33,790 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 16:53:42,535 INFO    Q0601 T1 CAPTURED  25.3 s · 366 car. · aucune info
+2026-10-15 16:54:04,974 INFO    Q0602 T2 CAPTURED  11.8 s · 298 car. · aucune info
+2026-10-15 16:54:25,353 INFO    Q0603 T3 CAPTURED  10.5 s · 273 car. · aucune info
+2026-10-15 16:54:47,549 INFO    Q0604 T4 CAPTURED  11.8 s · 283 car. · aucune info
+2026-10-15 16:55:19,480 INFO    Q0605 T5 CAPTURED  20.7 s · 280 car.
+2026-10-15 16:55:22,486 INFO ── C122 (répétition 1) · 76/254 · reste ~664 min
+2026-10-15 16:56:12,782 INFO    Q0606 T1 CAPTURED  38.9 s · 208 car.
+2026-10-15 16:56:34,252 INFO    Q0607 T2 CAPTURED  11.0 s · 173 car.
+2026-10-15 16:56:54,023 INFO    Q0608 T3 CAPTURED   9.8 s · 313 car. · aucune info
+2026-10-15 16:57:15,434 INFO    Q0609 T4 CAPTURED  11.0 s · 153 car.
+2026-10-15 16:57:40,272 INFO    Q0610 T5 CAPTURED  13.7 s · 174 car.
+2026-10-15 16:57:43,274 INFO ── C123 (répétition 1) · 77/254 · reste ~657 min
+2026-10-15 16:58:25,403 INFO    Q0611 T1 CAPTURED  29.0 s · 291 car. · aucune info
+2026-10-15 16:58:45,829 INFO    Q0612 T2 CAPTURED  10.3 s · 361 car. · aucune info
+2026-10-15 16:59:08,395 INFO    Q0613 T3 CAPTURED  12.6 s · 367 car. · aucune info
+2026-10-15 16:59:29,710 INFO    Q0614 T4 CAPTURED  10.8 s · 320 car. · aucune info
+2026-10-15 16:59:49,683 INFO    Q0615 T5 CAPTURED   9.8 s · 322 car. · aucune info
+2026-10-15 16:59:52,686 INFO ── C124 (répétition 1) · 78/254 · reste ~650 min
+2026-10-15 17:00:46,637 INFO    Q0616 T1 CAPTURED  43.8 s · 230 car.
+2026-10-15 17:01:16,449 INFO    Q0617 T2 CAPTURED  19.1 s · 269 car.
+2026-10-15 17:01:37,177 INFO    Q0618 T3 CAPTURED  10.8 s · 295 car.
+2026-10-15 17:01:59,929 INFO    Q0619 T4 CAPTURED  12.1 s · 385 car. · aucune info
+2026-10-15 17:02:24,029 INFO    Q0620 T5 CAPTURED  12.8 s · 439 car.
+2026-10-15 17:02:27,032 INFO ── C125 (répétition 1) · 79/254 · reste ~644 min
+2026-10-15 17:03:11,670 INFO    Q0621 T1 CAPTURED  29.3 s · 292 car.
+2026-10-15 17:03:36,141 INFO    Q0622 T2 CAPTURED  14.1 s · 274 car.
+2026-10-15 17:03:58,630 INFO    Q0623 T3 CAPTURED  12.2 s · 292 car.
+2026-10-15 17:04:20,943 INFO    Q0624 T4 CAPTURED  11.2 s · 351 car.
+2026-10-15 17:04:44,902 INFO    Q0625 T5 CAPTURED  13.4 s · 488 car.
+2026-10-15 17:04:47,908 INFO ── C126 (répétition 1) · 80/254 · reste ~637 min
+2026-10-15 17:05:57,706 INFO    Q0626 T1 CAPTURED  55.3 s · 312 car. · aucune info
+2026-10-15 17:06:28,908 INFO    Q0627 T2 CAPTURED  19.2 s · 294 car. · aucune info
+2026-10-15 17:06:48,781 INFO    Q0628 T3 CAPTURED   9.9 s · 311 car. · aucune info
+2026-10-15 17:07:13,320 INFO    Q0629 T4 CAPTURED  14.0 s · 446 car. · aucune info
+2026-10-15 17:07:35,672 INFO    Q0630 T5 CAPTURED  11.0 s · 454 car. · aucune info
+2026-10-15 17:07:38,675 INFO ── C127 (répétition 1) · 81/254 · reste ~632 min
+2026-10-15 17:08:18,708 INFO    Q0631 T1 CAPTURED  26.7 s · 483 car.
+2026-10-15 17:08:49,156 INFO    Q0632 T2 CAPTURED  20.0 s · 326 car.
+2026-10-15 17:09:09,457 INFO    Q0633 T3 CAPTURED   9.9 s · 221 car. · aucune info
+2026-10-15 17:09:32,774 INFO    Q0634 T4 CAPTURED  12.8 s · 284 car.
+2026-10-15 17:10:00,688 INFO    Q0635 T5 CAPTURED  17.6 s · 447 car.
+2026-10-15 17:10:03,692 INFO ── C128 (répétition 1) · 82/254 · reste ~625 min
+2026-10-15 17:11:06,847 INFO    Q0636 T1 CAPTURED  51.8 s · 451 car.
+2026-10-15 17:11:28,003 INFO    Q0637 T2 CAPTURED  10.6 s · 272 car.
+2026-10-15 17:11:48,042 INFO    Q0638 T3 CAPTURED   9.8 s · 282 car.
+2026-10-15 17:12:16,683 INFO    Q0639 T4 CAPTURED  17.8 s · 429 car.
+2026-10-15 17:12:41,833 INFO    Q0640 T5 CAPTURED  14.8 s · 429 car.
+2026-10-15 17:12:44,837 INFO ── C129 (répétition 1) · 83/254 · reste ~620 min
+2026-10-15 17:13:41,166 INFO    Q0641 T1 CAPTURED  42.8 s · 521 car. · aucune info
+2026-10-15 17:14:04,386 INFO    Q0642 T2 CAPTURED  12.6 s · 319 car.
+2026-10-15 17:14:40,558 INFO    Q0643 T3 CAPTURED  25.8 s · 573 car. · aucune info
+2026-10-15 17:15:09,369 INFO    Q0644 T4 CAPTURED  18.1 s · 426 car. · aucune info
+2026-10-15 17:15:31,879 INFO    Q0645 T5 CAPTURED  11.5 s · 267 car.
+2026-10-15 17:15:34,884 INFO ── C130 (répétition 1) · 84/254 · reste ~615 min
+2026-10-15 17:16:27,853 INFO    Q0646 T1 CAPTURED  35.3 s · 349 car.
+2026-10-15 17:16:57,807 INFO    Q0647 T2 CAPTURED  19.3 s · 267 car.
+2026-10-15 17:17:26,835 INFO    Q0648 T3 CAPTURED  17.4 s · 286 car.
+2026-10-15 17:17:50,996 INFO    Q0649 T4 CAPTURED  12.4 s · 291 car.
+2026-10-15 17:18:21,872 INFO    Q0650 T5 CAPTURED  20.0 s · 319 car.
+2026-10-15 17:18:24,875 INFO ── C131 (répétition 1) · 85/254 · reste ~609 min
+2026-10-15 17:19:23,784 INFO    Q0651 T1 CAPTURED  47.2 s · 317 car.
+2026-10-15 17:19:53,938 INFO    Q0652 T2 CAPTURED  16.6 s · 217 car.
+2026-10-15 17:20:27,151 WARNING    ✗ tentative 1/3 : TimeoutError: Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("[contenteditable=\"true\"][aria-label=\"Message Product Info Assistant\"]").first
+    - locator resolved to <span dir="ltr" tabindex="0" role="textbox" spellcheck="false" contenteditable="true" data-lexical-editor="true" data-copilot-initial-focus="" id="m365-chat-editor-target-element" aria-describedby="chat-input-placeholder" aria-label="Message Product Info Assistant" data-placeholder="Message Product Info Assistant" class="fai-EditorInput__input r18fti29 r18aquq2 ___dilz7s0 f1pe8h68 f1239lcr fv5qcn6 f1a3p1vp fdm3o16 fkmyikg f1tudvs5 fajf0s3 foj4gy fm35wft f1nuhv3l">…</span>
+
+2026-10-15 17:20:27,173 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 17:27:08,466 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 17:27:08,468 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 17:28:55,996 INFO    Q0651 T1 CAPTURED  33.5 s · 289 car.
+2026-10-15 17:29:15,279 INFO    Q0652 T2 CAPTURED   9.2 s · 268 car.
+2026-10-15 17:29:37,857 INFO    Q0653 T3 CAPTURED  11.8 s · 283 car.
+2026-10-15 17:30:06,684 INFO    Q0654 T4 CAPTURED  18.4 s · 282 car.
+2026-10-15 17:30:36,797 INFO    Q0655 T5 CAPTURED  19.3 s · 305 car.
+2026-10-15 17:30:39,802 INFO ── C132 (répétition 1) · 86/254 · reste ~623 min
+2026-10-15 17:31:34,521 INFO    Q0656 T1 CAPTURED  42.1 s · 443 car.
+2026-10-15 17:32:03,355 INFO    Q0657 T2 CAPTURED  18.9 s · 276 car.
+2026-10-15 17:32:25,480 INFO    Q0658 T3 CAPTURED  11.7 s · 392 car. · aucune info
+2026-10-15 17:32:46,767 INFO    Q0659 T4 CAPTURED  10.4 s · 280 car.
+2026-10-15 17:33:07,467 INFO    Q0660 T5 CAPTURED  10.2 s · 252 car.
+2026-10-15 17:33:10,470 INFO ── C133 (répétition 1) · 87/254 · reste ~617 min
+2026-10-15 17:33:50,342 INFO    Q0661 T1 CAPTURED  24.3 s · 288 car.
+2026-10-15 17:34:12,550 INFO    Q0662 T2 CAPTURED  11.5 s · 306 car.
+2026-10-15 17:34:46,084 INFO    Q0663 T3 CAPTURED  22.7 s · 346 car.
+2026-10-15 17:35:08,815 INFO    Q0664 T4 CAPTURED  12.1 s · 263 car.
+2026-10-15 17:35:29,738 INFO    Q0665 T5 CAPTURED   9.8 s · 309 car.
+2026-10-15 17:35:32,744 INFO ── C134 (répétition 1) · 88/254 · reste ~611 min
+2026-10-15 17:36:20,380 INFO    Q0666 T1 CAPTURED  33.7 s · 385 car.
+2026-10-15 17:36:42,288 INFO    Q0667 T2 CAPTURED  11.3 s · 256 car.
+2026-10-15 17:37:04,446 INFO    Q0668 T3 CAPTURED  12.4 s · 309 car.
+2026-10-15 17:37:24,635 INFO    Q0669 T4 CAPTURED   9.2 s · 302 car. · aucune info
+2026-10-15 17:37:48,717 INFO    Q0670 T5 CAPTURED  13.2 s · 332 car.
+2026-10-15 17:37:51,721 INFO ── C135 (répétition 1) · 89/254 · reste ~605 min
+2026-10-15 17:38:41,545 INFO    Q0671 T1 CAPTURED  36.4 s · 315 car.
+2026-10-15 17:39:02,752 INFO    Q0672 T2 CAPTURED  11.5 s · 353 car.
+2026-10-15 17:39:29,174 INFO    Q0673 T3 CAPTURED  16.6 s · 315 car.
+2026-10-15 17:39:50,586 INFO    Q0674 T4 CAPTURED  10.7 s · 311 car.
+2026-10-15 17:40:21,192 INFO    Q0675 T5 CAPTURED  19.9 s · 291 car.
+2026-10-15 17:40:24,196 INFO ── C136 (répétition 1) · 90/254 · reste ~599 min
+2026-10-15 17:41:08,301 INFO    Q0676 T1 CAPTURED  29.1 s · 303 car.
+2026-10-15 17:41:28,504 INFO    Q0677 T2 CAPTURED  10.3 s · 284 car.
+2026-10-15 17:41:48,158 INFO    Q0678 T3 CAPTURED   9.7 s · 269 car.
+2026-10-15 17:42:16,923 INFO    Q0679 T4 CAPTURED  17.7 s · 361 car.
+2026-10-15 17:42:37,542 INFO    Q0680 T5 CAPTURED  10.6 s · 392 car.
+2026-10-15 17:42:40,546 INFO ── C137 (répétition 1) · 91/254 · reste ~593 min
+2026-10-15 17:43:22,640 INFO    Q0681 T1 CAPTURED  29.0 s · 366 car.
+2026-10-15 17:43:43,950 INFO    Q0682 T2 CAPTURED  10.9 s · 328 car.
+2026-10-15 17:44:06,082 INFO    Q0683 T3 CAPTURED  11.7 s · 368 car. · aucune info
+2026-10-15 17:44:27,557 INFO    Q0684 T4 CAPTURED  11.1 s · 323 car.
+2026-10-15 17:44:47,591 INFO    Q0685 T5 CAPTURED   9.7 s · 266 car.
+2026-10-15 17:44:50,594 INFO ── C138 (répétition 1) · 92/254 · reste ~587 min
+2026-10-15 17:45:40,381 INFO    Q0686 T1 CAPTURED  38.4 s · 252 car.
+2026-10-15 17:46:00,549 INFO    Q0687 T2 CAPTURED  10.0 s · 304 car.
+2026-10-15 17:46:24,065 INFO    Q0688 T3 CAPTURED  13.0 s · 303 car.
+2026-10-15 17:46:47,778 INFO    Q0689 T4 CAPTURED  13.4 s · 304 car.
+2026-10-15 17:47:17,184 INFO    Q0690 T5 CAPTURED  19.1 s · 296 car.
+2026-10-15 17:47:20,188 INFO ── C139 (répétition 1) · 93/254 · reste ~581 min
+2026-10-15 17:48:01,743 INFO    Q0691 T1 CAPTURED  28.0 s · 350 car.
+2026-10-15 17:48:21,799 INFO    Q0692 T2 CAPTURED   9.4 s · 335 car.
+2026-10-15 17:48:41,609 INFO    Q0693 T3 CAPTURED   9.4 s · 261 car.
+2026-10-15 17:49:03,088 INFO    Q0694 T4 CAPTURED  11.6 s · 288 car. · aucune info
+2026-10-15 17:49:25,550 INFO    Q0695 T5 CAPTURED  11.5 s · 911 car.
+2026-10-15 17:49:28,553 INFO ── C140 (répétition 1) · 94/254 · reste ~575 min
+2026-10-15 17:50:08,525 INFO    Q0696 T1 CAPTURED  27.1 s · 295 car.
+2026-10-15 17:50:29,713 INFO    Q0697 T2 CAPTURED  10.7 s · 338 car.
+2026-10-15 17:50:49,613 INFO    Q0698 T3 CAPTURED   9.9 s · 482 car.
+2026-10-15 17:51:10,969 INFO    Q0699 T4 CAPTURED  10.9 s · 294 car.
+2026-10-15 17:51:32,933 INFO    Q0700 T5 CAPTURED  11.4 s · 752 car.
+2026-10-15 17:51:35,942 INFO ── C141 (répétition 1) · 95/254 · reste ~569 min
+2026-10-15 17:52:26,811 INFO    Q0701 T1 CAPTURED  36.0 s · 268 car.
+2026-10-15 17:52:52,621 INFO    Q0702 T2 CAPTURED  14.0 s · 1231 car.
+2026-10-15 17:53:12,466 INFO    Q0703 T3 CAPTURED  10.2 s · 448 car.
+2026-10-15 17:53:36,280 INFO    Q0704 T4 CAPTURED  13.8 s · 196 car.
+2026-10-15 17:53:56,961 INFO    Q0705 T5 CAPTURED  10.2 s · 197 car.
+2026-10-15 17:53:59,966 INFO ── C142 (répétition 1) · 96/254 · reste ~564 min
+2026-10-15 17:54:31,460 INFO    Q0706 T1 CAPTURED  20.5 s · 101 car. · aucune info
+2026-10-15 17:54:52,800 INFO    Q0707 T2 CAPTURED  10.9 s · 101 car. · aucune info
+2026-10-15 17:55:30,330 INFO    Q0708 T3 CAPTURED  27.3 s · 337 car. · aucune info
+2026-10-15 17:55:53,160 INFO    Q0709 T4 CAPTURED  12.2 s · 234 car.
+2026-10-15 17:56:21,213 INFO    Q0710 T5 CAPTURED  15.0 s · 265 car.
+2026-10-15 17:56:24,215 INFO ── C143 (répétition 1) · 97/254 · reste ~558 min
+2026-10-15 17:57:22,282 INFO    Q0711 T1 CAPTURED  31.9 s · 448 car.
+2026-10-15 17:57:45,423 INFO    Q0712 T2 CAPTURED  12.7 s · 313 car.
+2026-10-15 17:58:09,511 INFO    Q0713 T3 CAPTURED  13.2 s · 858 car.
+2026-10-15 17:58:47,537 INFO    Q0714 T4 CAPTURED  24.5 s · 279 car.
+2026-10-15 18:00:17,139 INFO    Q0715 T5 CAPTURED  50.2 s · 367 car.
+2026-10-15 18:00:20,144 INFO ── C144 (répétition 1) · 98/254 · reste ~555 min
+2026-10-15 18:01:37,928 INFO    Q0716 T1 CAPTURED  65.5 s · 185 car.
+2026-10-15 18:01:58,561 INFO    Q0717 T2 CAPTURED  10.2 s · 313 car.
+2026-10-15 18:02:20,027 INFO    Q0718 T3 CAPTURED  11.5 s · 316 car.
+2026-10-15 18:02:43,010 INFO    Q0719 T4 CAPTURED  12.3 s · 330 car. · aucune info
+2026-10-15 18:03:03,439 INFO    Q0720 T5 CAPTURED   9.3 s · 371 car.
+2026-10-15 18:03:06,441 INFO ── C145 (répétition 1) · 99/254 · reste ~551 min
+2026-10-15 18:03:52,592 INFO    Q0721 T1 CAPTURED  32.1 s · 517 car.
+2026-10-15 18:04:22,772 INFO    Q0722 T2 CAPTURED  20.0 s · 553 car.
+2026-10-15 18:04:47,661 INFO    Q0723 T3 CAPTURED  14.6 s · 596 car. · aucune info
+2026-10-15 18:05:07,310 INFO    Q0724 T4 CAPTURED   9.8 s · 385 car.
+2026-10-15 18:05:33,232 INFO    Q0725 T5 CAPTURED  15.3 s · 444 car.
+2026-10-15 18:05:36,236 INFO ── C146 (répétition 1) · 100/254 · reste ~545 min
+2026-10-15 18:06:40,327 INFO    Q0726 T1 CAPTURED  51.6 s · 311 car.
+2026-10-15 18:07:02,286 INFO    Q0727 T2 CAPTURED  11.8 s · 332 car.
+2026-10-15 18:07:24,410 INFO    Q0728 T3 CAPTURED  11.1 s · 304 car.
+2026-10-15 18:07:47,705 INFO    Q0729 T4 CAPTURED  12.5 s · 305 car.
+2026-10-15 18:08:11,468 INFO    Q0730 T5 CAPTURED  13.1 s · 280 car.
+2026-10-15 18:08:14,472 INFO ── C147 (répétition 1) · 101/254 · reste ~541 min
+2026-10-15 18:09:11,286 INFO    Q0731 T1 CAPTURED  43.7 s · 852 car.
+2026-10-15 18:09:36,275 INFO    Q0732 T2 CAPTURED  14.5 s · 390 car.
+2026-10-15 18:09:58,333 INFO    Q0733 T3 CAPTURED  11.5 s · 437 car. · aucune info
+2026-10-15 18:10:26,271 INFO    Q0734 T4 CAPTURED  17.3 s · 307 car.
+2026-10-15 18:10:54,101 INFO    Q0735 T5 CAPTURED  16.6 s · 567 car.
+2026-10-15 18:10:57,105 INFO ── C148 (répétition 1) · 102/254 · reste ~536 min
+2026-10-15 18:11:38,016 INFO    Q0736 T1 CAPTURED  28.0 s · 330 car.
+2026-10-15 18:12:00,321 INFO    Q0737 T2 CAPTURED  12.5 s · 440 car.
+2026-10-15 18:12:21,598 INFO    Q0738 T3 CAPTURED  11.5 s · 554 car.
+2026-10-15 18:12:40,428 INFO    Q0739 T4 CAPTURED   9.0 s · 308 car.
+2026-10-15 18:13:00,105 INFO    Q0740 T5 CAPTURED   9.3 s · 320 car.
+2026-10-15 18:13:03,113 INFO ── C149 (répétition 1) · 103/254 · reste ~530 min
+2026-10-15 18:16:32,400 INFO    Q0741 T1 CAPTURED 196.2 s · 434 car.
+2026-10-15 18:16:55,476 INFO    Q0742 T2 CAPTURED  12.5 s · 280 car.
+2026-10-15 18:18:41,517 INFO    Q0743 T3 CAPTURED  95.3 s · 265 car.
+2026-10-15 18:19:03,886 INFO    Q0744 T4 CAPTURED  11.2 s · 326 car. · aucune info
+2026-10-15 18:19:26,965 INFO    Q0745 T5 CAPTURED  12.1 s · 302 car.
+2026-10-15 18:19:29,971 INFO ── C150 (répétition 1) · 104/254 · reste ~531 min
+2026-10-15 18:20:18,024 INFO    Q0746 T1 CAPTURED  35.7 s · 298 car.
+2026-10-15 18:20:40,439 INFO    Q0747 T2 CAPTURED  12.0 s · 307 car.
+2026-10-15 18:21:00,171 INFO    Q0748 T3 CAPTURED   9.6 s · 360 car.
+2026-10-15 18:21:25,013 INFO    Q0749 T4 CAPTURED  13.8 s · 377 car.
+2026-10-15 18:21:46,149 INFO    Q0750 T5 CAPTURED  10.7 s · 318 car.
+2026-10-15 18:21:49,153 INFO ── C151 (répétition 1) · 105/254 · reste ~526 min
+2026-10-15 18:22:32,537 INFO    Q0751 T1 CAPTURED  28.3 s · 437 car. · aucune info
+2026-10-15 18:22:52,669 INFO    Q0752 T2 CAPTURED  10.6 s · 330 car.
+2026-10-15 18:26:38,689 INFO    Q0753 T3 CAPTURED 216.3 s · 257 car.
+2026-10-15 18:26:59,282 INFO    Q0754 T4 CAPTURED  10.3 s · 315 car.
+2026-10-15 18:27:19,470 INFO    Q0755 T5 CAPTURED   9.7 s · 271 car.
+2026-10-15 18:27:22,474 INFO ── C152 (répétition 1) · 106/254 · reste ~525 min
+2026-10-15 18:27:59,425 INFO    Q0756 T1 CAPTURED  23.9 s · 274 car. · aucune info
+2026-10-15 18:28:22,502 INFO    Q0757 T2 CAPTURED  11.9 s · 329 car. · aucune info
+2026-10-15 18:28:48,464 INFO    Q0758 T3 CAPTURED  14.0 s · 301 car. · aucune info
+2026-10-15 18:29:10,263 INFO    Q0759 T4 CAPTURED  10.7 s · 352 car. · aucune info
+2026-10-15 18:29:31,211 INFO    Q0760 T5 CAPTURED  10.4 s · 329 car. · aucune info
+2026-10-15 18:29:34,214 INFO ── C153 (répétition 1) · 107/254 · reste ~520 min
+2026-10-15 18:30:29,126 INFO    Q0761 T1 CAPTURED  39.8 s · 554 car.
+2026-10-15 18:30:49,144 INFO    Q0762 T2 CAPTURED   9.1 s · 232 car.
+2026-10-15 18:31:10,649 INFO    Q0763 T3 CAPTURED  10.6 s · 339 car.
+2026-10-15 18:31:31,682 INFO    Q0764 T4 CAPTURED  10.6 s · 499 car.
+2026-10-15 18:31:50,053 INFO    Q0765 T5 CAPTURED   8.1 s · 321 car.
+2026-10-15 18:31:53,058 INFO ── C154 (répétition 1) · 108/254 · reste ~515 min
+2026-10-15 18:32:45,924 INFO    Q0766 T1 CAPTURED  41.1 s · 241 car.
+2026-10-15 18:33:08,413 INFO    Q0767 T2 CAPTURED  11.9 s · 247 car.
+2026-10-15 18:33:28,035 INFO    Q0768 T3 CAPTURED   9.5 s · 345 car.
+2026-10-15 18:33:47,018 INFO    Q0769 T4 CAPTURED   9.1 s · 293 car. · aucune info
+2026-10-15 18:34:09,442 INFO    Q0770 T5 CAPTURED  12.5 s · 402 car. · aucune info
+2026-10-15 18:34:12,446 INFO ── C155 (répétition 1) · 109/254 · reste ~510 min
+2026-10-15 18:40:23,194 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 18:40:23,198 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 18:41:50,773 INFO    Q0771 T1 CAPTURED  43.4 s · 559 car.
+2026-10-15 18:42:12,871 INFO    Q0772 T2 CAPTURED  12.2 s · 293 car.
+2026-10-15 18:42:38,616 INFO    Q0773 T3 CAPTURED  15.8 s · 263 car.
+2026-10-15 18:43:06,423 INFO    Q0774 T4 CAPTURED  17.0 s · 294 car.
+2026-10-15 18:43:27,605 INFO    Q0775 T5 CAPTURED  11.1 s · 302 car.
+2026-10-15 18:43:30,611 INFO ── C156 (répétition 1) · 110/254 · reste ~514 min
+2026-10-15 18:44:44,924 INFO    Q0776 T1 CAPTURED  62.1 s · 460 car.
+2026-10-15 18:45:10,951 INFO    Q0777 T2 CAPTURED  15.6 s · 462 car.
+2026-10-15 18:45:35,630 INFO    Q0778 T3 CAPTURED  13.9 s · 443 car. · aucune info
+2026-10-15 18:47:01,763 INFO    Q0779 T4 CAPTURED  75.3 s · 311 car.
+2026-10-15 18:47:42,822 INFO    Q0780 T5 CAPTURED  20.5 s · 382 car.
+2026-10-15 18:47:45,828 INFO ── C157 (répétition 1) · 111/254 · reste ~511 min
+2026-10-15 18:53:57,762 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 18:53:57,763 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 18:55:29,458 INFO    Q0781 T1 CAPTURED  47.5 s · 403 car.
+2026-10-15 18:55:47,756 INFO    Q0782 T2 CAPTURED   7.9 s · 418 car. · aucune info
+2026-10-15 18:56:28,466 INFO    Q0783 T3 CAPTURED  30.2 s · 618 car.
+2026-10-15 18:56:46,863 INFO    Q0784 T4 CAPTURED   8.4 s · 475 car.
+2026-10-15 18:57:05,365 INFO    Q0785 T5 CAPTURED   7.5 s · 413 car.
+2026-10-15 18:57:08,369 INFO ── C158 (répétition 1) · 112/254 · reste ~515 min
+2026-10-15 18:57:54,365 INFO    Q0786 T1 CAPTURED  32.5 s · 425 car.
+2026-10-15 18:58:16,542 INFO    Q0787 T2 CAPTURED  11.9 s · 1181 car.
+2026-10-15 18:58:36,721 INFO    Q0788 T3 CAPTURED   9.8 s · 339 car.
+2026-10-15 18:58:58,525 INFO    Q0789 T4 CAPTURED  11.6 s · 419 car.
+2026-10-15 18:59:19,271 INFO    Q0790 T5 CAPTURED   9.6 s · 282 car.
+2026-10-15 18:59:22,276 INFO ── C159 (répétition 1) · 113/254 · reste ~510 min
+2026-10-15 19:00:08,972 INFO    Q0791 T1 CAPTURED  29.4 s · 706 car.
+2026-10-15 19:00:31,984 INFO    Q0792 T2 CAPTURED  12.6 s · 305 car.
+2026-10-15 19:00:51,561 INFO    Q0793 T3 CAPTURED   9.9 s · 299 car.
+2026-10-15 19:01:11,136 INFO    Q0794 T4 CAPTURED   9.2 s · 335 car. · aucune info
+2026-10-15 19:01:31,949 INFO    Q0795 T5 CAPTURED  11.0 s · 510 car. · aucune info
+2026-10-15 19:01:34,953 INFO ── C160 (répétition 1) · 114/254 · reste ~505 min
+2026-10-15 19:02:13,171 INFO    Q0796 T1 CAPTURED  21.3 s · 534 car. · aucune info
+2026-10-15 19:02:35,495 INFO    Q0797 T2 CAPTURED  12.1 s · 466 car. · aucune info
+2026-10-15 19:03:06,325 INFO    Q0798 T3 CAPTURED  20.7 s · 290 car.
+2026-10-15 19:03:29,013 INFO    Q0799 T4 CAPTURED  10.8 s · 363 car.
+2026-10-15 19:03:58,677 INFO    Q0800 T5 CAPTURED  18.6 s · 509 car.
+2026-10-15 19:04:01,683 INFO ── C161 (répétition 1) · 115/254 · reste ~500 min
+2026-10-15 19:10:13,232 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 19:10:13,233 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 19:16:53,559 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 19:16:53,564 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 19:18:46,872 INFO    Q0801 T1 CAPTURED  34.5 s · 429 car.
+2026-10-15 19:19:12,525 INFO    Q0802 T2 CAPTURED  15.2 s · 634 car.
+2026-10-15 19:19:33,659 INFO    Q0803 T3 CAPTURED  10.4 s · 328 car.
+2026-10-15 19:19:56,795 INFO    Q0804 T4 CAPTURED  12.1 s · 359 car.
+2026-10-15 19:20:24,706 INFO    Q0805 T5 CAPTURED  17.0 s · 441 car.
+2026-10-15 19:20:27,711 INFO ── C162 (répétition 1) · 116/254 · reste ~512 min
+2026-10-15 19:21:14,475 INFO    Q0806 T1 CAPTURED  30.2 s · 353 car.
+2026-10-15 19:21:39,133 INFO    Q0807 T2 CAPTURED  12.7 s · 296 car.
+2026-10-15 19:22:00,529 INFO    Q0808 T3 CAPTURED  11.2 s · 381 car. · aucune info
+2026-10-15 19:22:22,183 INFO    Q0809 T4 CAPTURED  11.3 s · 1247 car.
+2026-10-15 19:22:42,834 INFO    Q0810 T5 CAPTURED  10.2 s · 356 car. · aucune info
+2026-10-15 19:22:45,839 INFO ── C163 (répétition 1) · 117/254 · reste ~506 min
+2026-10-15 19:23:31,896 INFO    Q0811 T1 CAPTURED  33.5 s · 249 car.
+2026-10-15 19:23:52,708 INFO    Q0812 T2 CAPTURED  10.4 s · 252 car.
+2026-10-15 19:24:14,206 INFO    Q0813 T3 CAPTURED  10.6 s · 285 car.
+2026-10-15 19:24:37,362 INFO    Q0814 T4 CAPTURED  11.5 s · 276 car. · aucune info
+2026-10-15 19:24:57,524 INFO    Q0815 T5 CAPTURED   9.6 s · 256 car.
+2026-10-15 19:25:00,527 INFO ── C164 (répétition 1) · 118/254 · reste ~501 min
+2026-10-15 19:25:58,589 INFO    Q0816 T1 CAPTURED  43.9 s · 861 car.
+2026-10-15 19:26:21,781 INFO    Q0817 T2 CAPTURED  12.4 s · 325 car.
+2026-10-15 19:26:46,701 INFO    Q0818 T3 CAPTURED  13.6 s · 292 car.
+2026-10-15 19:27:07,661 INFO    Q0819 T4 CAPTURED  10.2 s · 362 car. · aucune info
+2026-10-15 19:27:27,690 INFO    Q0820 T5 CAPTURED   9.7 s · 528 car. · aucune info
+2026-10-15 19:27:30,693 INFO ── C165 (répétition 1) · 119/254 · reste ~496 min
+2026-10-15 19:28:09,493 INFO    Q0821 T1 CAPTURED  25.7 s · 110 car. · aucune info
+2026-10-15 19:28:30,779 INFO    Q0822 T2 CAPTURED  11.3 s · 110 car. · aucune info
+2026-10-15 19:29:04,245 INFO    Q0823 T3 CAPTURED  23.5 s · 335 car.
+2026-10-15 19:29:26,504 INFO    Q0824 T4 CAPTURED  12.4 s · 314 car.
+2026-10-15 19:29:59,245 INFO    Q0825 T5 CAPTURED  21.5 s · 315 car.
+2026-10-15 19:30:02,249 INFO ── C166 (répétition 1) · 120/254 · reste ~491 min
+2026-10-15 19:31:10,325 INFO    Q0826 T1 CAPTURED  58.0 s · 595 car. · aucune info
+2026-10-15 19:31:36,298 INFO    Q0827 T2 CAPTURED  15.0 s · 504 car.
+2026-10-15 19:32:03,844 INFO    Q0828 T3 CAPTURED  15.6 s · 191 car.
+2026-10-15 19:32:27,682 INFO    Q0829 T4 CAPTURED  12.8 s · 229 car.
+2026-10-15 19:33:00,762 INFO    Q0830 T5 CAPTURED  20.7 s · 355 car.
+2026-10-15 19:33:03,766 INFO ── C167 (répétition 1) · 121/254 · reste ~487 min
+2026-10-15 19:33:49,520 INFO    Q0831 T1 CAPTURED  32.3 s · 349 car.
+2026-10-15 19:34:08,857 INFO    Q0832 T2 CAPTURED   9.4 s · 747 car.
+2026-10-15 19:34:35,523 INFO    Q0833 T3 CAPTURED  15.8 s · 428 car. · aucune info
+2026-10-15 19:35:01,542 INFO    Q0834 T4 CAPTURED  15.6 s · 342 car.
+2026-10-15 19:35:25,805 INFO    Q0835 T5 CAPTURED  13.4 s · 333 car.
+2026-10-15 19:35:28,807 INFO ── C168 (répétition 1) · 122/254 · reste ~482 min
+2026-10-15 19:36:13,915 INFO    Q0836 T1 CAPTURED  29.6 s · 366 car.
+2026-10-15 19:36:34,862 INFO    Q0837 T2 CAPTURED  11.1 s · 248 car.
+2026-10-15 19:36:57,875 INFO    Q0838 T3 CAPTURED  12.6 s · 300 car.
+2026-10-15 19:37:18,988 INFO    Q0839 T4 CAPTURED  10.3 s · 304 car. · aucune info
+2026-10-15 19:37:39,224 INFO    Q0840 T5 CAPTURED   9.5 s · 216 car.
+2026-10-15 19:37:42,227 INFO ── C169 (répétition 1) · 123/254 · reste ~477 min
+2026-10-15 19:38:20,580 INFO    Q0841 T1 CAPTURED  18.9 s · 400 car. · aucune info
+2026-10-15 19:38:52,525 INFO    Q0842 T2 CAPTURED  22.3 s · 535 car.
+2026-10-15 19:39:18,608 INFO    Q0843 T3 CAPTURED  15.5 s · 698 car.
+2026-10-15 19:39:42,600 INFO    Q0844 T4 CAPTURED  13.3 s · 418 car. · aucune info
+2026-10-15 19:40:08,627 INFO    Q0845 T5 CAPTURED  15.2 s · 327 car.
+2026-10-15 19:40:11,633 INFO ── C170 (répétition 1) · 124/254 · reste ~472 min
+2026-10-15 19:41:04,767 INFO    Q0846 T1 CAPTURED  42.0 s · 358 car.
+2026-10-15 19:41:24,251 INFO    Q0847 T2 CAPTURED   9.4 s · 253 car.
+2026-10-15 19:41:47,900 INFO    Q0848 T3 CAPTURED  11.6 s · 449 car.
+2026-10-15 19:42:21,284 INFO    Q0849 T4 CAPTURED  15.2 s · 318 car.
+2026-10-15 19:42:41,525 INFO    Q0850 T5 CAPTURED  10.0 s · 277 car.
+2026-10-15 19:42:44,528 INFO ── C171 (répétition 1) · 125/254 · reste ~467 min
+2026-10-15 19:43:20,670 INFO    Q0851 T1 CAPTURED  24.4 s · 314 car. · aucune info
+2026-10-15 19:44:00,003 INFO    Q0852 T2 CAPTURED  29.4 s · 335 car.
+2026-10-15 19:44:25,155 INFO    Q0853 T3 CAPTURED  14.7 s · 330 car.
+2026-10-15 19:44:52,889 INFO    Q0854 T4 CAPTURED  17.0 s · 571 car. · aucune info
+2026-10-15 19:45:12,199 INFO    Q0855 T5 CAPTURED   9.1 s · 295 car.
+2026-10-15 19:45:15,203 INFO ── C172 (répétition 1) · 126/254 · reste ~462 min
+2026-10-15 19:45:43,985 INFO    Q0856 T1 CAPTURED  17.8 s · 402 car. · aucune info
+2026-10-15 19:46:04,735 INFO    Q0857 T2 CAPTURED  10.1 s · 171 car.
+2026-10-15 19:46:20,603 INFO    Q0858 T3 CAPTURED   6.0 s · 284 car.
+2026-10-15 19:46:37,224 INFO    Q0859 T4 CAPTURED   6.4 s · 225 car.
+2026-10-15 19:46:54,957 INFO    Q0860 T5 CAPTURED   6.7 s · 285 car.
+2026-10-15 19:46:57,960 INFO ── C173 (répétition 1) · 127/254 · reste ~457 min
+2026-10-15 19:47:50,824 INFO    Q0861 T1 CAPTURED  41.1 s · 265 car.
+2026-10-15 19:48:11,481 INFO    Q0862 T2 CAPTURED  10.4 s · 280 car.
+2026-10-15 19:48:31,350 INFO    Q0863 T3 CAPTURED   9.4 s · 280 car.
+2026-10-15 19:48:53,179 INFO    Q0864 T4 CAPTURED  10.0 s · 283 car.
+2026-10-15 19:49:12,762 INFO    Q0865 T5 CAPTURED   9.5 s · 287 car.
+2026-10-15 19:49:15,769 INFO ── C174 (répétition 1) · 128/254 · reste ~452 min
+2026-10-15 19:49:49,874 INFO    Q0866 T1 CAPTURED  18.8 s · 208 car. · aucune info
+2026-10-15 19:50:12,949 INFO    Q0867 T2 CAPTURED  13.2 s · 309 car. · aucune info
+2026-10-15 19:50:48,049 INFO    Q0868 T3 CAPTURED  24.6 s · 433 car.
+2026-10-15 19:51:09,020 INFO    Q0869 T4 CAPTURED  10.1 s · 310 car. · aucune info
+2026-10-15 19:51:40,189 INFO    Q0870 T5 CAPTURED  20.1 s · 283 car.
+2026-10-15 19:51:43,195 INFO ── C175 (répétition 1) · 129/254 · reste ~447 min
+2026-10-15 19:52:21,581 INFO    Q0871 T1 CAPTURED  23.9 s · 535 car.
+2026-10-15 19:52:42,545 INFO    Q0872 T2 CAPTURED  10.7 s · 316 car.
+2026-10-15 19:53:04,526 INFO    Q0873 T3 CAPTURED  12.3 s · 508 car.
+2026-10-15 19:53:26,884 INFO    Q0874 T4 CAPTURED  12.2 s · 537 car.
+2026-10-15 19:53:46,573 INFO    Q0875 T5 CAPTURED   9.2 s · 536 car.
+2026-10-15 19:53:49,577 INFO ── C176 (répétition 1) · 130/254 · reste ~442 min
+2026-10-15 19:54:33,247 INFO    Q0876 T1 CAPTURED  30.2 s · 279 car.
+2026-10-15 19:54:57,035 INFO    Q0877 T2 CAPTURED  13.2 s · 286 car.
+2026-10-15 19:55:17,341 INFO    Q0878 T3 CAPTURED  10.3 s · 261 car.
+2026-10-15 19:55:41,089 INFO    Q0879 T4 CAPTURED  13.1 s · 271 car.
+2026-10-15 19:56:01,311 INFO    Q0880 T5 CAPTURED   9.1 s · 272 car.
+2026-10-15 19:56:04,316 INFO ── C177 (répétition 1) · 131/254 · reste ~438 min
+2026-10-15 19:56:56,321 INFO    Q0881 T1 CAPTURED  37.2 s · 525 car.
+2026-10-15 19:57:17,185 INFO    Q0882 T2 CAPTURED  11.2 s · 390 car.
+2026-10-15 19:57:35,994 INFO    Q0883 T3 CAPTURED   9.0 s · 402 car. · aucune info
+2026-10-15 19:57:55,900 INFO    Q0884 T4 CAPTURED   9.7 s · 302 car.
+2026-10-15 19:58:16,706 INFO    Q0885 T5 CAPTURED   9.9 s · 259 car.
+2026-10-15 19:58:19,710 INFO ── C178 (répétition 1) · 132/254 · reste ~433 min
+2026-10-15 19:59:09,568 INFO    Q0886 T1 CAPTURED  34.5 s · 321 car.
+2026-10-15 19:59:32,634 INFO    Q0887 T2 CAPTURED  12.9 s · 256 car.
+2026-10-15 19:59:52,671 INFO    Q0888 T3 CAPTURED  10.3 s · 262 car.
+2026-10-15 20:00:14,538 INFO    Q0889 T4 CAPTURED  10.8 s · 495 car.
+2026-10-15 20:00:35,392 INFO    Q0890 T5 CAPTURED  10.3 s · 308 car.
+2026-10-15 20:00:38,395 INFO ── C179 (répétition 1) · 133/254 · reste ~428 min
+2026-10-15 20:01:10,582 INFO    Q0891 T1 CAPTURED  20.7 s · 639 car. · aucune info
+2026-10-15 20:01:30,661 INFO    Q0892 T2 CAPTURED  10.0 s · 487 car. · aucune info
+2026-10-15 20:01:55,321 INFO    Q0893 T3 CAPTURED  14.6 s · 516 car. · aucune info
+2026-10-15 20:02:25,525 INFO    Q0894 T4 CAPTURED  18.9 s · 502 car. · aucune info
+2026-10-15 20:02:51,458 INFO    Q0895 T5 CAPTURED  15.7 s · 298 car.
+2026-10-15 20:02:54,463 INFO ── C180 (répétition 1) · 134/254 · reste ~424 min
+2026-10-15 20:03:28,387 INFO    Q0896 T1 CAPTURED  21.0 s · 245 car. · aucune info
+2026-10-15 20:04:01,212 INFO    Q0897 T2 CAPTURED  22.9 s · 315 car.
+2026-10-15 20:04:22,663 INFO    Q0898 T3 CAPTURED  11.7 s · 260 car.
+2026-10-15 20:04:43,405 INFO    Q0899 T4 CAPTURED  10.0 s · 260 car.
+2026-10-15 20:05:05,432 INFO    Q0900 T5 CAPTURED  10.8 s · 279 car.
+2026-10-15 20:05:08,436 INFO ── C181 (répétition 1) · 135/254 · reste ~419 min
+2026-10-15 20:06:04,437 INFO    Q0901 T1 CAPTURED  41.0 s · 386 car.
+2026-10-15 20:06:28,502 INFO    Q0902 T2 CAPTURED  14.4 s · 294 car.
+2026-10-15 20:06:49,432 INFO    Q0903 T3 CAPTURED  10.8 s · 285 car.
+2026-10-15 20:07:09,563 INFO    Q0904 T4 CAPTURED  10.1 s · 277 car.
+2026-10-15 20:07:29,380 INFO    Q0905 T5 CAPTURED  10.0 s · 287 car.
+2026-10-15 20:07:32,385 INFO ── C182 (répétition 1) · 136/254 · reste ~415 min
+2026-10-15 20:08:13,355 INFO    Q0906 T1 CAPTURED  29.5 s · 500 car.
+2026-10-15 20:08:35,295 INFO    Q0907 T2 CAPTURED  11.5 s · 267 car.
+2026-10-15 20:08:58,966 INFO    Q0908 T3 CAPTURED  14.1 s · 463 car. · aucune info
+2026-10-15 20:09:19,241 INFO    Q0909 T4 CAPTURED   9.9 s · 283 car.
+2026-10-15 20:09:40,761 INFO    Q0910 T5 CAPTURED  11.3 s · 359 car.
+2026-10-15 20:09:43,765 INFO ── C183 (répétition 1) · 137/254 · reste ~410 min
+2026-10-15 20:10:33,371 INFO    Q0911 T1 CAPTURED  36.3 s · 527 car.
+2026-10-15 20:11:09,144 INFO    Q0912 T2 CAPTURED  25.6 s · 615 car.
+2026-10-15 20:11:30,502 INFO    Q0913 T3 CAPTURED  10.9 s · 369 car.
+2026-10-15 20:11:53,281 INFO    Q0914 T4 CAPTURED  12.6 s · 379 car.
+2026-10-15 20:12:16,782 INFO    Q0915 T5 CAPTURED  10.9 s · 284 car.
+2026-10-15 20:12:19,788 INFO ── C184 (répétition 1) · 138/254 · reste ~406 min
+2026-10-15 20:13:15,888 INFO    Q0916 T1 CAPTURED  39.9 s · 240 car.
+2026-10-15 20:13:38,727 INFO    Q0917 T2 CAPTURED  12.4 s · 412 car.
+2026-10-15 20:13:58,901 INFO    Q0918 T3 CAPTURED   9.8 s · 299 car.
+2026-10-15 20:14:20,073 INFO    Q0919 T4 CAPTURED  10.8 s · 435 car. · aucune info
+2026-10-15 20:14:45,580 INFO    Q0920 T5 CAPTURED  15.4 s · 457 car.
+2026-10-15 20:14:48,583 INFO ── C185 (répétition 1) · 139/254 · reste ~401 min
+2026-10-15 20:15:40,655 INFO    Q0921 T1 CAPTURED  40.6 s · 1823 car.
+2026-10-15 20:16:01,015 INFO    Q0922 T2 CAPTURED  10.6 s · 236 car.
+2026-10-15 20:16:22,585 INFO    Q0923 T3 CAPTURED  11.3 s · 222 car.
+2026-10-15 20:16:43,487 INFO    Q0924 T4 CAPTURED  10.7 s · 619 car.
+2026-10-15 20:17:13,908 INFO    Q0925 T5 CAPTURED  19.2 s · 237 car.
+2026-10-15 20:17:16,914 INFO ── C186 (répétition 1) · 140/254 · reste ~397 min
+2026-10-15 20:23:28,312 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 20:23:28,313 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 20:30:11,133 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 20:30:11,134 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 20:32:00,780 INFO    Q0926 T1 CAPTURED  32.8 s · 51 car.
+2026-10-15 20:32:22,104 INFO    Q0927 T2 CAPTURED  12.7 s · 244 car.
+2026-10-15 20:32:40,329 INFO    Q0928 T3 CAPTURED   9.6 s · 268 car.
+2026-10-15 20:33:02,540 INFO    Q0929 T4 CAPTURED  13.3 s · 266 car.
+2026-10-15 20:33:26,199 INFO    Q0930 T5 CAPTURED  14.5 s · 280 car.
+2026-10-15 20:33:29,202 INFO ── C187 (répétition 1) · 141/254 · reste ~404 min
+2026-10-15 20:39:33,734 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 20:39:33,736 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 20:40:57,209 INFO    Q0931 T1 CAPTURED  39.2 s · 308 car.
+2026-10-15 20:41:17,070 INFO    Q0932 T2 CAPTURED  11.2 s · 230 car.
+2026-10-15 20:41:39,691 INFO    Q0933 T3 CAPTURED  13.7 s · 454 car. · aucune info
+2026-10-15 20:41:59,187 INFO    Q0934 T4 CAPTURED  10.6 s · 253 car.
+2026-10-15 20:42:26,974 INFO    Q0935 T5 CAPTURED  18.7 s · 347 car.
+2026-10-15 20:42:29,979 INFO ── C188 (répétition 1) · 142/254 · reste ~405 min
+2026-10-15 20:43:18,802 INFO    Q0936 T1 CAPTURED  37.3 s · 275 car.
+2026-10-15 20:43:38,636 INFO    Q0937 T2 CAPTURED  10.9 s · 320 car.
+2026-10-15 20:43:59,936 INFO    Q0938 T3 CAPTURED  12.4 s · 939 car.
+2026-10-15 20:44:19,398 INFO    Q0939 T4 CAPTURED  10.8 s · 317 car.
+2026-10-15 20:44:44,570 INFO    Q0940 T5 CAPTURED  16.3 s · 262 car.
+2026-10-15 20:44:47,573 INFO ── C189 (répétition 1) · 143/254 · reste ~400 min
+2026-10-15 20:50:53,296 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 20:50:53,297 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 20:57:31,305 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 20:57:31,307 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 20:59:44,493 INFO    Q0941 T1 CAPTURED  58.8 s · 384 car.
+2026-10-15 21:00:03,243 INFO    Q0942 T2 CAPTURED  10.1 s · 285 car.
+2026-10-15 21:00:25,486 INFO    Q0943 T3 CAPTURED  13.4 s · 333 car.
+2026-10-15 21:00:43,614 INFO    Q0944 T4 CAPTURED   9.0 s · 309 car. · aucune info
+2026-10-15 21:01:03,194 INFO    Q0945 T5 CAPTURED  10.4 s · 295 car.
+2026-10-15 21:01:06,198 INFO ── C190 (répétition 1) · 144/254 · reste ~407 min
+2026-10-15 21:01:51,049 INFO    Q0946 T1 CAPTURED  33.3 s · 407 car.
+2026-10-15 21:02:11,625 INFO    Q0947 T2 CAPTURED  12.0 s · 281 car.
+2026-10-15 21:02:40,456 INFO    Q0948 T3 CAPTURED  20.0 s · 373 car.
+2026-10-15 21:02:59,434 INFO    Q0949 T4 CAPTURED   9.9 s · 264 car.
+2026-10-15 21:05:27,456 INFO    Q0950 T5 CAPTURED 138.5 s · 294 car.
+2026-10-15 21:05:30,461 INFO ── C191 (répétition 1) · 145/254 · reste ~404 min
+2026-10-15 21:06:07,828 INFO    Q0951 T1 CAPTURED  24.7 s · 101 car. · aucune info
+2026-10-15 21:06:27,395 INFO    Q0952 T2 CAPTURED  11.2 s · 277 car. · aucune info
+2026-10-15 21:06:47,670 INFO    Q0953 T3 CAPTURED  11.5 s · 286 car. · aucune info
+2026-10-15 21:07:15,249 INFO    Q0954 T4 CAPTURED  18.3 s · 286 car.
+2026-10-15 21:07:34,840 INFO    Q0955 T5 CAPTURED  10.6 s · 270 car.
+2026-10-15 21:07:37,845 INFO ── C192 (répétition 1) · 146/254 · reste ~399 min
+2026-10-15 21:08:41,354 INFO    Q0956 T1 CAPTURED  52.2 s · 477 car.
+2026-10-15 21:09:00,509 INFO    Q0957 T2 CAPTURED  10.8 s · 282 car.
+2026-10-15 21:09:27,988 INFO    Q0958 T3 CAPTURED  18.4 s · 583 car. · aucune info
+2026-10-15 21:09:46,817 INFO    Q0959 T4 CAPTURED   9.6 s · 336 car.
+2026-10-15 21:10:06,131 INFO    Q0960 T5 CAPTURED  10.4 s · 283 car.
+2026-10-15 21:10:09,154 INFO ── C193 (répétition 1) · 147/254 · reste ~394 min
+2026-10-15 21:10:49,845 INFO    Q0961 T1 CAPTURED  28.5 s · 344 car.
+2026-10-15 21:11:11,597 INFO    Q0962 T2 CAPTURED  13.1 s · 574 car.
+2026-10-15 21:11:36,443 INFO    Q0963 T3 CAPTURED  16.0 s · 298 car.
+2026-10-15 21:11:56,342 INFO    Q0964 T4 CAPTURED  10.9 s · 311 car.
+2026-10-15 21:12:15,787 INFO    Q0965 T5 CAPTURED  10.2 s · 315 car.
+2026-10-15 21:12:18,792 INFO ── C194 (répétition 1) · 148/254 · reste ~389 min
+2026-10-15 21:13:10,312 INFO    Q0966 T1 CAPTURED  40.2 s · 259 car.
+2026-10-15 21:13:29,768 INFO    Q0967 T2 CAPTURED  11.0 s · 657 car.
+2026-10-15 21:13:51,208 INFO    Q0968 T3 CAPTURED  12.8 s · 272 car.
+2026-10-15 21:14:12,435 INFO    Q0969 T4 CAPTURED  11.6 s · 295 car. · aucune info
+2026-10-15 21:14:31,707 INFO    Q0970 T5 CAPTURED   9.8 s · 202 car.
+2026-10-15 21:14:34,711 INFO ── C195 (répétition 1) · 149/254 · reste ~385 min
+2026-10-15 21:15:18,343 INFO    Q0971 T1 CAPTURED  33.2 s · 315 car.
+2026-10-15 21:15:38,486 INFO    Q0972 T2 CAPTURED  11.1 s · 338 car.
+2026-10-15 21:15:57,068 INFO    Q0973 T3 CAPTURED   9.8 s · 254 car.
+2026-10-15 21:16:15,828 INFO    Q0974 T4 CAPTURED   9.8 s · 259 car.
+2026-10-15 21:16:34,711 INFO    Q0975 T5 CAPTURED   9.9 s · 283 car.
+2026-10-15 21:16:37,717 INFO ── C196 (répétition 1) · 150/254 · reste ~380 min
+2026-10-15 21:17:22,633 INFO    Q0976 T1 CAPTURED  33.9 s · 475 car.
+2026-10-15 21:17:40,534 INFO    Q0977 T2 CAPTURED   9.2 s · 171 car.
+2026-10-15 21:18:00,734 INFO    Q0978 T3 CAPTURED  11.3 s · 235 car.
+2026-10-15 21:18:23,416 INFO    Q0979 T4 CAPTURED  13.4 s · 404 car.
+2026-10-15 21:18:44,090 INFO    Q0980 T5 CAPTURED  11.4 s · 141 car.
+2026-10-15 21:18:47,094 INFO ── C197 (répétition 1) · 151/254 · reste ~375 min
+2026-10-15 21:19:21,543 INFO    Q0981 T1 CAPTURED  23.5 s · 295 car.
+2026-10-15 21:19:39,171 INFO    Q0982 T2 CAPTURED   9.2 s · 253 car.
+2026-10-15 21:20:03,441 INFO    Q0983 T3 CAPTURED  15.4 s · 377 car. · aucune info
+2026-10-15 21:20:21,596 INFO    Q0984 T4 CAPTURED   9.4 s · 327 car.
+2026-10-15 21:20:40,614 INFO    Q0985 T5 CAPTURED   9.8 s · 671 car.
+2026-10-15 21:20:43,623 INFO ── C198 (répétition 1) · 152/254 · reste ~371 min
+2026-10-15 21:21:28,039 INFO    Q0986 T1 CAPTURED  33.4 s · 331 car.
+2026-10-15 21:21:47,716 INFO    Q0987 T2 CAPTURED  11.1 s · 300 car.
+2026-10-15 21:22:06,741 INFO    Q0988 T3 CAPTURED  10.2 s · 310 car.
+2026-10-15 21:22:26,883 INFO    Q0989 T4 CAPTURED  10.8 s · 249 car.
+2026-10-15 21:22:47,037 INFO    Q0990 T5 CAPTURED  11.2 s · 267 car.
+2026-10-15 21:22:50,041 INFO ── C199 (répétition 1) · 153/254 · reste ~366 min
+2026-10-15 21:28:53,661 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 21:28:53,663 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 21:30:04,708 INFO    Q0991 T1 CAPTURED  27.1 s · 335 car.
+2026-10-15 21:30:33,417 INFO    Q0992 T2 CAPTURED  20.3 s · 474 car. · aucune info
+2026-10-15 21:32:02,179 INFO    Q0993 T3 CAPTURED  80.2 s · 338 car.
+2026-10-15 21:32:21,558 INFO    Q0994 T4 CAPTURED  10.4 s · 371 car. · aucune info
+2026-10-15 21:32:39,409 INFO    Q0995 T5 CAPTURED   9.0 s · 313 car.
+2026-10-15 21:32:42,413 INFO ── C200 (répétition 1) · 154/254 · reste ~367 min
+2026-10-15 21:33:33,149 INFO    Q0996 T1 CAPTURED  38.8 s · 448 car.
+2026-10-15 21:33:53,959 INFO    Q0997 T2 CAPTURED  11.7 s · 284 car.
+2026-10-15 21:34:14,000 INFO    Q0998 T3 CAPTURED  11.2 s · 353 car.
+2026-10-15 21:34:32,487 INFO    Q0999 T4 CAPTURED   9.2 s · 452 car.
+2026-10-15 21:34:52,012 INFO    Q1000 T5 CAPTURED  10.7 s · 331 car.
+2026-10-15 21:34:55,016 INFO ── C201 (répétition 1) · 155/254 · reste ~362 min
+2026-10-15 21:36:32,676 INFO    Q1001 T1 CAPTURED  85.7 s · 547 car.
+2026-10-15 21:36:51,263 INFO    Q1002 T2 CAPTURED  10.2 s · 387 car.
+2026-10-15 21:37:21,255 INFO    Q1003 T3 CAPTURED  21.3 s · 387 car.
+2026-10-15 21:37:40,490 INFO    Q1004 T4 CAPTURED  10.6 s · 321 car.
+2026-10-15 21:38:01,909 INFO    Q1005 T5 CAPTURED  12.4 s · 383 car.
+2026-10-15 21:38:04,916 INFO ── C202 (répétition 1) · 156/254 · reste ~358 min
+2026-10-15 21:38:49,271 INFO    Q1006 T1 CAPTURED  31.9 s · 367 car.
+2026-10-15 21:39:09,622 INFO    Q1007 T2 CAPTURED  11.5 s · 182 car.
+2026-10-15 21:39:36,502 INFO    Q1008 T3 CAPTURED  18.1 s · 400 car. · aucune info
+2026-10-15 21:39:56,980 INFO    Q1009 T4 CAPTURED  11.2 s · 276 car.
+2026-10-15 21:40:16,461 INFO    Q1010 T5 CAPTURED  10.2 s · 252 car.
+2026-10-15 21:40:19,469 INFO ── C203 (répétition 1) · 157/254 · reste ~354 min
+2026-10-15 21:40:53,660 INFO    Q1011 T1 CAPTURED  20.2 s · 229 car. · aucune info
+2026-10-15 21:41:11,365 INFO    Q1012 T2 CAPTURED   9.1 s · 261 car. · aucune info
+2026-10-15 21:41:29,729 INFO    Q1013 T3 CAPTURED   9.3 s · 267 car. · aucune info
+2026-10-15 21:41:47,874 INFO    Q1014 T4 CAPTURED   9.4 s · 101 car. · aucune info
+2026-10-15 21:42:07,490 INFO    Q1015 T5 CAPTURED  10.0 s · 101 car. · aucune info
+2026-10-15 21:42:10,494 INFO ── C204 (répétition 1) · 158/254 · reste ~349 min
+2026-10-15 21:42:52,281 INFO    Q1016 T1 CAPTURED  29.7 s · 399 car.
+2026-10-15 21:43:11,146 INFO    Q1017 T2 CAPTURED  10.3 s · 296 car.
+2026-10-15 21:43:29,375 INFO    Q1018 T3 CAPTURED   9.5 s · 284 car.
+2026-10-15 21:43:59,682 INFO    Q1019 T4 CAPTURED  21.6 s · 368 car. · aucune info
+2026-10-15 21:44:18,938 INFO    Q1020 T5 CAPTURED  10.4 s · 357 car.
+2026-10-15 21:44:21,942 INFO ── C205 (répétition 1) · 159/254 · reste ~345 min
+2026-10-15 21:50:25,630 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 21:50:25,632 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 21:51:53,348 INFO    Q1021 T1 CAPTURED  43.8 s · 333 car.
+2026-10-15 21:52:13,731 INFO    Q1022 T2 CAPTURED  11.5 s · 271 car.
+2026-10-15 21:52:33,111 INFO    Q1023 T3 CAPTURED  10.3 s · 211 car.
+2026-10-15 21:52:55,317 INFO    Q1024 T4 CAPTURED  13.4 s · 1119 car.
+2026-10-15 21:53:14,790 INFO    Q1025 T5 CAPTURED  10.1 s · 257 car.
+2026-10-15 21:53:17,798 INFO ── C206 (répétition 1) · 160/254 · reste ~344 min
+2026-10-15 21:53:57,914 INFO    Q1026 T1 CAPTURED  27.8 s · 316 car.
+2026-10-15 21:54:16,464 INFO    Q1027 T2 CAPTURED  10.1 s · 381 car.
+2026-10-15 21:54:35,120 INFO    Q1028 T3 CAPTURED   9.5 s · 358 car.
+2026-10-15 21:54:54,191 INFO    Q1029 T4 CAPTURED  10.2 s · 315 car.
+2026-10-15 21:55:12,628 INFO    Q1030 T5 CAPTURED   9.0 s · 272 car.
+2026-10-15 21:55:15,633 INFO ── C207 (répétition 1) · 161/254 · reste ~340 min
+2026-10-15 21:55:58,432 INFO    Q1031 T1 CAPTURED  31.2 s · 367 car.
+2026-10-15 21:56:18,316 INFO    Q1032 T2 CAPTURED  11.2 s · 305 car.
+2026-10-15 21:56:37,039 INFO    Q1033 T3 CAPTURED   9.8 s · 301 car. · aucune info
+2026-10-15 21:56:59,621 INFO    Q1034 T4 CAPTURED  13.0 s · 427 car.
+2026-10-15 21:57:19,435 INFO    Q1035 T5 CAPTURED  11.0 s · 296 car.
+2026-10-15 21:57:22,440 INFO ── C208 (répétition 1) · 162/254 · reste ~335 min
+2026-10-15 21:57:56,040 INFO    Q1036 T1 CAPTURED  22.2 s · 357 car.
+2026-10-15 21:58:15,404 INFO    Q1037 T2 CAPTURED  10.8 s · 335 car.
+2026-10-15 21:58:33,742 INFO    Q1038 T3 CAPTURED   9.2 s · 292 car.
+2026-10-15 21:59:05,479 INFO    Q1039 T4 CAPTURED  22.6 s · 407 car.
+2026-10-15 21:59:25,986 INFO    Q1040 T5 CAPTURED  11.6 s · 283 car.
+2026-10-15 21:59:28,993 INFO ── C209 (répétition 1) · 163/254 · reste ~331 min
+2026-10-15 22:05:32,891 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 22:05:32,892 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 22:07:06,628 INFO    Q1041 T1 CAPTURED  50.3 s · 769 car.
+2026-10-15 22:07:24,933 INFO    Q1042 T2 CAPTURED   9.9 s · 340 car.
+2026-10-15 22:07:44,577 INFO    Q1043 T3 CAPTURED  10.8 s · 357 car.
+2026-10-15 22:08:03,300 INFO    Q1044 T4 CAPTURED   9.3 s · 496 car. · aucune info
+2026-10-15 22:08:28,213 INFO    Q1045 T5 CAPTURED  15.8 s · 335 car.
+2026-10-15 22:08:31,217 INFO ── C210 (répétition 1) · 164/254 · reste ~330 min
+2026-10-15 22:09:20,906 INFO    Q1046 T1 CAPTURED  36.4 s · 340 car.
+2026-10-15 22:09:40,131 INFO    Q1047 T2 CAPTURED  10.5 s · 271 car.
+2026-10-15 22:10:07,165 INFO    Q1048 T3 CAPTURED  17.9 s · 308 car.
+2026-10-15 22:10:27,774 INFO    Q1049 T4 CAPTURED  11.2 s · 248 car.
+2026-10-15 22:10:47,191 INFO    Q1050 T5 CAPTURED  10.1 s · 315 car.
+2026-10-15 22:10:50,195 INFO ── C211 (répétition 1) · 165/254 · reste ~326 min
+2026-10-15 22:11:35,712 INFO    Q1051 T1 CAPTURED  33.4 s · 446 car.
+2026-10-15 22:11:54,380 INFO    Q1052 T2 CAPTURED  10.2 s · 339 car.
+2026-10-15 22:12:13,854 INFO    Q1053 T3 CAPTURED  10.1 s · 309 car.
+2026-10-15 22:12:33,315 INFO    Q1054 T4 CAPTURED  10.2 s · 845 car.
+2026-10-15 22:12:52,500 INFO    Q1055 T5 CAPTURED  10.0 s · 334 car.
+2026-10-15 22:12:55,503 INFO ── C212 (répétition 1) · 166/254 · reste ~321 min
+2026-10-15 22:18:59,659 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 22:18:59,660 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 22:20:17,490 INFO    Q1056 T1 TECH_ERROR  39.5 s · 177 car.
+2026-10-15 22:20:17,716 WARNING    ✗ tentative 2/3 : AgentTechnicalError: TECH_ERROR: Product Info Assistant said:
+Oops! Something happened. Can you try again?Share feedback
+
+Product Info Assistant said:
+
+O
+2026-10-15 22:20:17,717 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-15 22:22:07,490 INFO    Q1056 T1 CAPTURED  33.7 s · 549 car. · aucune info
+2026-10-15 22:22:25,608 INFO    Q1057 T2 CAPTURED   9.5 s · 682 car.
+2026-10-15 22:22:48,503 INFO    Q1058 T3 CAPTURED  14.2 s · 467 car. · aucune info
+2026-10-15 22:23:07,069 INFO    Q1059 T4 CAPTURED   9.2 s · 294 car.
+2026-10-15 22:23:27,016 INFO    Q1060 T5 CAPTURED  10.9 s · 536 car. · aucune info
+2026-10-15 22:23:30,020 INFO ── C213 (répétition 1) · 167/254 · reste ~321 min
+2026-10-15 22:24:12,915 INFO    Q1061 T1 CAPTURED  30.3 s · 560 car.
+2026-10-15 22:24:33,299 INFO    Q1062 T2 CAPTURED  11.5 s · 408 car.
+2026-10-15 22:24:57,918 INFO    Q1063 T3 CAPTURED  15.4 s · 2777 car.
+2026-10-15 22:25:17,366 INFO    Q1064 T4 CAPTURED  10.8 s · 258 car.
+2026-10-15 22:25:36,810 INFO    Q1065 T5 CAPTURED  10.2 s · 324 car.
+2026-10-15 22:25:39,815 INFO ── C214 (répétition 1) · 168/254 · reste ~317 min
+2026-10-15 22:26:32,172 INFO    Q1066 T1 CAPTURED  42.1 s · 251 car.
+2026-10-15 22:26:52,698 INFO    Q1067 T2 CAPTURED  12.1 s · 362 car.
+2026-10-15 22:27:14,196 INFO    Q1068 T3 CAPTURED  12.6 s · 348 car.
+2026-10-15 22:27:33,993 INFO    Q1069 T4 CAPTURED  10.7 s · 425 car. · aucune info
+2026-10-15 22:27:53,233 INFO    Q1070 T5 CAPTURED  10.0 s · 302 car.
+2026-10-15 22:27:56,235 INFO ── C215 (répétition 1) · 169/254 · reste ~313 min
+2026-10-15 22:34:00,245 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 22:34:00,246 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 22:35:15,298 INFO    Q1071 T1 CAPTURED  30.7 s · 384 car.
+2026-10-15 22:35:35,758 INFO    Q1072 T2 CAPTURED  11.9 s · 298 car.
+2026-10-15 22:35:54,751 INFO    Q1073 T3 CAPTURED  10.0 s · 343 car.
+2026-10-15 22:36:13,359 INFO    Q1074 T4 CAPTURED   9.2 s · 276 car.
+2026-10-15 22:36:32,522 INFO    Q1075 T5 CAPTURED  10.4 s · 375 car.
+2026-10-15 22:36:35,528 INFO ── C216 (répétition 1) · 170/254 · reste ~312 min
+2026-10-15 22:37:25,133 INFO    Q1076 T1 CAPTURED  37.8 s · 478 car. · aucune info
+2026-10-15 22:37:39,921 INFO    Q1077 T2 CAPTURED   6.3 s · 369 car. · aucune info
+2026-10-15 22:37:59,593 INFO    Q1078 T3 CAPTURED  11.2 s · 477 car. · aucune info
+2026-10-15 22:38:16,238 INFO    Q1079 T4 CAPTURED   7.2 s · 410 car. · aucune info
+2026-10-15 22:38:35,239 INFO    Q1080 T5 CAPTURED   9.5 s · 443 car. · aucune info
+2026-10-15 22:38:38,244 INFO ── C217 (répétition 1) · 171/254 · reste ~307 min
+2026-10-15 22:39:22,582 INFO    Q1081 T1 CAPTURED  33.1 s · 481 car.
+2026-10-15 22:39:40,339 INFO    Q1082 T2 CAPTURED   9.2 s · 270 car.
+2026-10-15 22:39:59,605 INFO    Q1083 T3 CAPTURED  10.7 s · 347 car. · aucune info
+2026-10-15 22:40:19,802 INFO    Q1084 T4 CAPTURED  11.4 s · 297 car.
+2026-10-15 22:40:41,896 INFO    Q1085 T5 CAPTURED  13.2 s · 499 car. · aucune info
+2026-10-15 22:40:44,902 INFO ── C218 (répétition 1) · 172/254 · reste ~303 min
+2026-10-15 22:46:48,356 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 22:46:48,357 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 22:48:13,389 INFO    Q1086 T1 CAPTURED  41.8 s · 374 car.
+2026-10-15 22:48:31,646 INFO    Q1087 T2 CAPTURED   9.8 s · 287 car.
+2026-10-15 22:48:50,577 INFO    Q1088 T3 CAPTURED  10.0 s · 253 car.
+2026-10-15 22:49:10,147 INFO    Q1089 T4 CAPTURED  10.5 s · 976 car.
+2026-10-15 22:49:38,790 INFO    Q1090 T5 CAPTURED  19.4 s · 267 car.
+2026-10-15 22:49:41,794 INFO ── C219 (répétition 1) · 173/254 · reste ~302 min
+2026-10-15 22:50:14,113 INFO    Q1091 T1 CAPTURED  18.6 s · 501 car. · aucune info
+2026-10-15 22:50:43,780 INFO    Q1092 T2 CAPTURED  21.0 s · 1730 car.
+2026-10-15 22:51:05,838 INFO    Q1093 T3 CAPTURED  13.0 s · 497 car.
+2026-10-15 22:51:25,150 INFO    Q1094 T4 CAPTURED  10.2 s · 328 car. · aucune info
+2026-10-15 22:51:43,948 INFO    Q1095 T5 CAPTURED   9.2 s · 261 car.
+2026-10-15 22:51:46,952 INFO ── C220 (répétition 1) · 174/254 · reste ~297 min
+2026-10-15 22:52:24,990 INFO    Q1096 T1 CAPTURED  25.4 s · 309 car.
+2026-10-15 22:52:50,874 INFO    Q1097 T2 CAPTURED  17.4 s · 328 car.
+2026-10-15 22:53:09,844 INFO    Q1098 T3 CAPTURED  10.1 s · 358 car.
+2026-10-15 22:53:29,165 INFO    Q1099 T4 CAPTURED   9.9 s · 337 car.
+2026-10-15 22:53:48,688 INFO    Q1100 T5 CAPTURED  10.4 s · 304 car.
+2026-10-15 22:53:51,691 INFO ── C221 (répétition 1) · 175/254 · reste ~293 min
+2026-10-15 22:59:56,851 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 22:59:56,851 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 23:01:06,576 INFO    Q1101 T1 CAPTURED  26.8 s · 284 car.
+2026-10-15 23:01:25,990 INFO    Q1102 T2 CAPTURED  10.8 s · 353 car. · aucune info
+2026-10-15 23:01:49,358 INFO    Q1103 T3 CAPTURED  14.4 s · 475 car. · aucune info
+2026-10-15 23:02:07,825 INFO    Q1104 T4 CAPTURED   9.8 s · 463 car. · aucune info
+2026-10-15 23:02:29,204 INFO    Q1105 T5 CAPTURED  12.6 s · 443 car.
+2026-10-15 23:02:32,210 INFO ── C222 (répétition 1) · 176/254 · reste ~291 min
+2026-10-15 23:08:35,342 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 23:08:35,344 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 23:09:53,676 INFO    Q1106 T1 CAPTURED  34.4 s · 306 car.
+2026-10-15 23:10:12,566 INFO    Q1107 T2 CAPTURED  10.0 s · 234 car.
+2026-10-15 23:10:34,054 INFO    Q1108 T3 CAPTURED  12.6 s · 462 car. · aucune info
+2026-10-15 23:10:51,930 INFO    Q1109 T4 CAPTURED   8.8 s · 303 car.
+2026-10-15 23:11:10,934 INFO    Q1110 T5 CAPTURED  10.2 s · 414 car.
+2026-10-15 23:11:13,936 INFO ── C223 (répétition 1) · 177/254 · reste ~290 min
+2026-10-15 23:12:13,922 INFO    Q1111 T1 CAPTURED  48.5 s · 515 car.
+2026-10-15 23:12:29,513 INFO    Q1112 T2 CAPTURED   7.1 s · 571 car.
+2026-10-15 23:12:45,338 INFO    Q1113 T3 CAPTURED   7.1 s · 334 car.
+2026-10-15 23:13:00,736 INFO    Q1114 T4 CAPTURED   6.7 s · 484 car.
+2026-10-15 23:13:18,786 INFO    Q1115 T5 CAPTURED   9.2 s · 342 car.
+2026-10-15 23:13:21,793 INFO ── C224 (répétition 1) · 178/254 · reste ~285 min
+2026-10-15 23:14:33,943 INFO    Q1116 T1 CAPTURED  62.1 s · 685 car.
+2026-10-15 23:14:52,345 INFO    Q1117 T2 CAPTURED  10.1 s · 310 car.
+2026-10-15 23:15:11,504 INFO    Q1118 T3 CAPTURED  10.2 s · 235 car.
+2026-10-15 23:15:36,047 INFO    Q1119 T4 CAPTURED  15.3 s · 424 car. · aucune info
+2026-10-15 23:15:55,971 INFO    Q1120 T5 CAPTURED  10.7 s · 278 car.
+2026-10-15 23:15:58,975 INFO ── C225 (répétition 1) · 179/254 · reste ~281 min
+2026-10-15 23:22:02,868 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 23:22:02,869 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 23:23:15,921 INFO    Q1121 T1 CAPTURED  28.8 s · 473 car.
+2026-10-15 23:23:36,229 INFO    Q1122 T2 CAPTURED  11.3 s · 867 car.
+2026-10-15 23:23:54,754 INFO    Q1123 T3 CAPTURED   9.8 s · 267 car.
+2026-10-15 23:24:13,467 INFO    Q1124 T4 CAPTURED   9.7 s · 263 car.
+2026-10-15 23:24:34,690 INFO    Q1125 T5 CAPTURED  12.0 s · 284 car.
+2026-10-15 23:24:37,697 INFO ── C226 (répétition 1) · 180/254 · reste ~280 min
+2026-10-15 23:25:20,241 INFO    Q1126 T1 CAPTURED  31.1 s · 245 car.
+2026-10-15 23:25:39,313 INFO    Q1127 T2 CAPTURED  10.2 s · 992 car.
+2026-10-15 23:25:57,357 INFO    Q1128 T3 CAPTURED   9.1 s · 249 car.
+2026-10-15 23:26:22,796 INFO    Q1129 T4 CAPTURED  15.9 s · 286 car.
+2026-10-15 23:26:42,464 INFO    Q1130 T5 CAPTURED  10.4 s · 275 car.
+2026-10-15 23:26:45,470 INFO ── C227 (répétition 1) · 181/254 · reste ~275 min
+2026-10-15 23:27:32,914 INFO    Q1131 T1 CAPTURED  36.5 s · 337 car.
+2026-10-15 23:27:57,013 INFO    Q1132 T2 CAPTURED  15.0 s · 365 car. · aucune info
+2026-10-15 23:28:20,295 INFO    Q1133 T3 CAPTURED  14.1 s · 588 car.
+2026-10-15 23:28:41,577 INFO    Q1134 T4 CAPTURED  12.5 s · 325 car.
+2026-10-15 23:29:00,643 INFO    Q1135 T5 CAPTURED   9.6 s · 283 car.
+2026-10-15 23:29:03,650 INFO ── C228 (répétition 1) · 182/254 · reste ~271 min
+2026-10-15 23:29:44,300 INFO    Q1136 T1 CAPTURED  28.9 s · 240 car.
+2026-10-15 23:30:03,634 INFO    Q1137 T2 CAPTURED  10.4 s · 273 car.
+2026-10-15 23:30:24,000 INFO    Q1138 T3 CAPTURED  11.5 s · 280 car.
+2026-10-15 23:30:43,577 INFO    Q1139 T4 CAPTURED  10.6 s · 822 car.
+2026-10-15 23:31:01,474 INFO    Q1140 T5 CAPTURED   8.9 s · 269 car.
+2026-10-15 23:31:04,482 INFO ── C229 (répétition 1) · 183/254 · reste ~267 min
+2026-10-15 23:31:45,891 INFO    Q1141 T1 CAPTURED  30.2 s · 341 car.
+2026-10-15 23:32:04,408 INFO    Q1142 T2 CAPTURED  10.0 s · 305 car.
+2026-10-15 23:32:23,655 INFO    Q1143 T3 CAPTURED  10.5 s · 288 car.
+2026-10-15 23:32:42,270 INFO    Q1144 T4 CAPTURED   9.3 s · 292 car. · aucune info
+2026-10-15 23:33:03,113 INFO    Q1145 T5 CAPTURED  11.1 s · 304 car.
+2026-10-15 23:33:06,116 INFO ── C230 (répétition 1) · 184/254 · reste ~262 min
+2026-10-15 23:39:09,806 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 23:39:09,807 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 23:40:28,287 INFO    Q1146 T1 CAPTURED  34.1 s · 413 car.
+2026-10-15 23:40:48,704 INFO    Q1147 T2 CAPTURED  11.4 s · 415 car.
+2026-10-15 23:41:07,382 INFO    Q1148 T3 CAPTURED   9.6 s · 382 car.
+2026-10-15 23:41:25,872 INFO    Q1149 T4 CAPTURED   9.3 s · 339 car. · aucune info
+2026-10-15 23:41:46,895 INFO    Q1150 T5 CAPTURED  11.9 s · 370 car.
+2026-10-15 23:41:49,899 INFO ── C231 (répétition 1) · 185/254 · reste ~260 min
+2026-10-15 23:42:28,960 INFO    Q1151 T1 CAPTURED  28.1 s · 298 car.
+2026-10-15 23:42:50,179 INFO    Q1152 T2 CAPTURED  12.8 s · 1595 car.
+2026-10-15 23:43:08,980 INFO    Q1153 T3 CAPTURED  10.0 s · 363 car.
+2026-10-15 23:43:29,874 INFO    Q1154 T4 CAPTURED  11.7 s · 326 car.
+2026-10-15 23:43:49,118 INFO    Q1155 T5 CAPTURED  10.2 s · 349 car.
+2026-10-15 23:43:52,125 INFO ── C232 (répétition 1) · 186/254 · reste ~256 min
+2026-10-15 23:44:37,708 INFO    Q1156 T1 CAPTURED  34.4 s · 447 car.
+2026-10-15 23:44:57,616 INFO    Q1157 T2 CAPTURED  11.2 s · 343 car. · aucune info
+2026-10-15 23:45:19,808 INFO    Q1158 T3 CAPTURED  13.2 s · 424 car. · aucune info
+2026-10-15 23:45:38,354 INFO    Q1159 T4 CAPTURED   9.4 s · 362 car.
+2026-10-15 23:45:58,216 INFO    Q1160 T5 CAPTURED  10.9 s · 375 car.
+2026-10-15 23:46:01,221 INFO ── C233 (répétition 1) · 187/254 · reste ~252 min
+2026-10-15 23:46:41,299 INFO    Q1161 T1 CAPTURED  27.8 s · 437 car.
+2026-10-15 23:47:00,106 INFO    Q1162 T2 CAPTURED  10.3 s · 336 car.
+2026-10-15 23:47:19,383 INFO    Q1163 T3 CAPTURED  10.4 s · 384 car.
+2026-10-15 23:47:38,147 INFO    Q1164 T4 CAPTURED   9.7 s · 301 car.
+2026-10-15 23:47:57,956 INFO    Q1165 T5 CAPTURED  10.6 s · 339 car.
+2026-10-15 23:48:00,962 INFO ── C234 (répétition 1) · 188/254 · reste ~247 min
+2026-10-15 23:54:04,616 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-15 23:54:04,618 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-15 23:55:15,879 INFO    Q1166 T1 CAPTURED  25.9 s · 294 car.
+2026-10-15 23:55:34,492 INFO    Q1167 T2 CAPTURED  10.1 s · 257 car.
+2026-10-15 23:55:54,061 INFO    Q1168 T3 CAPTURED  10.5 s · 357 car.
+2026-10-15 23:56:14,446 INFO    Q1169 T4 CAPTURED  11.2 s · 269 car. · aucune info
+2026-10-15 23:56:33,422 INFO    Q1170 T5 CAPTURED   9.7 s · 274 car.
+2026-10-15 23:56:36,426 INFO ── C235 (répétition 1) · 189/254 · reste ~246 min
+2026-10-15 23:57:15,516 INFO    Q1171 T1 CAPTURED  27.1 s · 292 car.
+2026-10-15 23:57:45,660 INFO    Q1172 T2 CAPTURED  21.6 s · 453 car. · aucune info
+2026-10-15 23:58:16,600 INFO    Q1173 T3 CAPTURED  22.1 s · 370 car.
+2026-10-15 23:58:40,369 INFO    Q1174 T4 CAPTURED  14.6 s · 1503 car.
+2026-10-15 23:59:01,387 INFO    Q1175 T5 CAPTURED  11.3 s · 256 car.
+2026-10-15 23:59:04,391 INFO ── C236 (répétition 1) · 190/254 · reste ~241 min
+2026-10-15 23:59:42,925 INFO    Q1176 T1 CAPTURED  27.3 s · 328 car.
+2026-10-16 00:00:00,861 INFO    Q1177 T2 CAPTURED   9.3 s · 274 car.
+2026-10-16 00:00:22,136 INFO    Q1178 T3 CAPTURED  12.0 s · 277 car.
+2026-10-16 00:00:41,381 INFO    Q1179 T4 CAPTURED  10.0 s · 283 car.
+2026-10-16 00:01:02,326 INFO    Q1180 T5 CAPTURED  11.4 s · 442 car. · aucune info
+2026-10-16 00:01:05,330 INFO ── C237 (répétition 1) · 191/254 · reste ~237 min
+2026-10-16 00:07:10,049 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 00:07:10,050 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 00:08:39,119 INFO    Q1181 T1 CAPTURED  45.1 s · 318 car.
+2026-10-16 00:08:57,418 INFO    Q1182 T2 CAPTURED   9.7 s · 361 car.
+2026-10-16 00:09:15,427 INFO    Q1183 T3 CAPTURED   9.2 s · 306 car. · aucune info
+2026-10-16 00:09:34,214 INFO    Q1184 T4 CAPTURED  10.0 s · 295 car.
+2026-10-16 00:09:53,188 INFO    Q1185 T5 CAPTURED  10.0 s · 293 car.
+2026-10-16 00:09:56,191 INFO ── C238 (répétition 1) · 192/254 · reste ~235 min
+2026-10-16 00:10:40,237 INFO    Q1186 T1 CAPTURED  33.2 s · 284 car.
+2026-10-16 00:10:59,634 INFO    Q1187 T2 CAPTURED  10.5 s · 274 car.
+2026-10-16 00:11:18,083 INFO    Q1188 T3 CAPTURED   9.4 s · 262 car.
+2026-10-16 00:11:36,637 INFO    Q1189 T4 CAPTURED   9.7 s · 277 car.
+2026-10-16 00:11:59,009 INFO    Q1190 T5 CAPTURED  12.9 s · 1068 car.
+2026-10-16 00:12:02,016 INFO ── C239 (répétition 1) · 193/254 · reste ~231 min
+2026-10-16 00:12:39,793 INFO    Q1191 T1 CAPTURED  25.9 s · 359 car.
+2026-10-16 00:12:57,768 INFO    Q1192 T2 CAPTURED   9.4 s · 306 car.
+2026-10-16 00:13:16,646 INFO    Q1193 T3 CAPTURED   9.5 s · 251 car.
+2026-10-16 00:13:34,371 INFO    Q1194 T4 CAPTURED   8.4 s · 380 car. · aucune info
+2026-10-16 00:13:56,470 INFO    Q1195 T5 CAPTURED  12.7 s · 535 car.
+2026-10-16 00:13:59,475 INFO ── C240 (répétition 1) · 194/254 · reste ~227 min
+2026-10-16 00:14:36,306 INFO    Q1196 T1 CAPTURED  25.2 s · 296 car.
+2026-10-16 00:14:55,116 INFO    Q1197 T2 CAPTURED  10.2 s · 353 car. · aucune info
+2026-10-16 00:15:15,148 INFO    Q1198 T3 CAPTURED  10.3 s · 322 car.
+2026-10-16 00:15:33,944 INFO    Q1199 T4 CAPTURED   9.6 s · 376 car.
+2026-10-16 00:15:56,591 INFO    Q1200 T5 CAPTURED  13.4 s · 312 car.
+2026-10-16 00:15:59,598 INFO ── C241 (répétition 1) · 195/254 · reste ~222 min
+2026-10-16 00:16:37,313 INFO    Q1201 T1 CAPTURED  26.4 s · 1069 car.
+2026-10-16 00:16:55,630 INFO    Q1202 T2 CAPTURED   9.9 s · 426 car.
+2026-10-16 00:17:14,738 INFO    Q1203 T3 CAPTURED   9.8 s · 302 car.
+2026-10-16 00:17:34,632 INFO    Q1204 T4 CAPTURED  11.0 s · 629 car. · aucune info
+2026-10-16 00:17:56,408 INFO    Q1205 T5 CAPTURED  12.3 s · 534 car.
+2026-10-16 00:17:59,413 INFO ── C242 (répétition 1) · 196/254 · reste ~218 min
+2026-10-16 00:18:37,668 INFO    Q1206 T1 CAPTURED  26.5 s · 110 car. · aucune info
+2026-10-16 00:19:03,560 INFO    Q1207 T2 CAPTURED  17.3 s · 221 car.
+2026-10-16 00:19:22,904 INFO    Q1208 T3 CAPTURED  10.2 s · 307 car. · aucune info
+2026-10-16 00:19:44,068 INFO    Q1209 T4 CAPTURED  11.9 s · 261 car.
+2026-10-16 00:20:03,984 INFO    Q1210 T5 CAPTURED  10.8 s · 298 car.
+2026-10-16 00:20:06,988 INFO ── C243 (répétition 1) · 197/254 · reste ~214 min
+2026-10-16 00:26:11,818 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 00:26:11,819 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 00:32:48,623 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 00:32:48,624 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-16 00:34:32,796 INFO    Q1211 T1 CAPTURED  30.7 s · 373 car.
+2026-10-16 00:34:51,534 INFO    Q1212 T2 CAPTURED   9.5 s · 311 car.
+2026-10-16 00:35:10,150 INFO    Q1213 T3 CAPTURED   9.6 s · 317 car.
+2026-10-16 00:35:28,544 INFO    Q1214 T4 CAPTURED   9.9 s · 250 car.
+2026-10-16 00:35:47,484 INFO    Q1215 T5 CAPTURED  10.2 s · 445 car.
+2026-10-16 00:35:50,488 INFO ── C244 (répétition 1) · 198/254 · reste ~214 min
+2026-10-16 00:36:12,607 INFO    Q1216 T1 CAPTURED  11.2 s · 229 car.
+2026-10-16 00:36:29,527 INFO    Q1217 T2 CAPTURED   8.1 s · 1045 car.
+2026-10-16 00:37:04,255 INFO    Q1218 T3 CAPTURED  25.7 s · 695 car. · aucune info
+2026-10-16 00:37:25,130 INFO    Q1219 T4 CAPTURED  12.0 s · 915 car. · aucune info
+2026-10-16 00:37:45,721 INFO    Q1220 T5 CAPTURED  10.8 s · 458 car.
+2026-10-16 00:37:48,727 INFO ── C245 (répétition 1) · 199/254 · reste ~209 min
+2026-10-16 00:38:36,544 INFO    Q1221 T1 CAPTURED  34.9 s · 1571 car.
+2026-10-16 00:39:22,063 INFO    Q1222 T2 CAPTURED  36.8 s · 345 car.
+2026-10-16 00:39:48,631 INFO    Q1223 T3 CAPTURED  17.6 s · 298 car.
+2026-10-16 00:40:08,741 INFO    Q1224 T4 CAPTURED  11.0 s · 380 car.
+2026-10-16 00:40:31,342 INFO    Q1225 T5 CAPTURED  13.2 s · 309 car.
+2026-10-16 00:40:34,348 INFO ── C246 (répétition 1) · 200/254 · reste ~205 min
+2026-10-16 00:41:53,587 INFO    Q1226 T1 CAPTURED  66.8 s · 522 car. · aucune info
+2026-10-16 00:42:17,296 INFO    Q1227 T2 CAPTURED  14.6 s · 328 car.
+2026-10-16 00:42:35,712 INFO    Q1228 T3 CAPTURED   9.3 s · 376 car.
+2026-10-16 00:43:01,056 INFO    Q1229 T4 CAPTURED  16.3 s · 287 car.
+2026-10-16 00:43:20,115 INFO    Q1230 T5 CAPTURED   9.6 s · 294 car.
+2026-10-16 00:43:23,119 INFO ── C247 (répétition 1) · 201/254 · reste ~201 min
+2026-10-16 00:44:05,498 INFO    Q1231 T1 CAPTURED  30.2 s · 595 car. · aucune info
+2026-10-16 00:44:23,723 INFO    Q1232 T2 CAPTURED   9.7 s · 417 car.
+2026-10-16 00:44:44,229 INFO    Q1233 T3 CAPTURED  11.9 s · 380 car. · aucune info
+2026-10-16 00:45:02,002 INFO    Q1234 T4 CAPTURED   8.8 s · 291 car.
+2026-10-16 00:45:21,372 INFO    Q1235 T5 CAPTURED  10.0 s · 333 car.
+2026-10-16 00:45:24,376 INFO ── C248 (répétition 1) · 202/254 · reste ~197 min
+2026-10-16 00:45:54,711 INFO    Q1236 T1 CAPTURED  18.9 s · 399 car. · aucune info
+2026-10-16 00:46:14,430 INFO    Q1237 T2 CAPTURED  11.3 s · 454 car. · aucune info
+2026-10-16 00:46:33,718 INFO    Q1238 T3 CAPTURED  10.5 s · 368 car. · aucune info
+2026-10-16 00:46:55,895 INFO    Q1239 T4 CAPTURED  12.9 s · 541 car. · aucune info
+2026-10-16 00:47:16,565 INFO    Q1240 T5 CAPTURED  11.6 s · 432 car. · aucune info
+2026-10-16 00:47:19,570 INFO ── C249 (répétition 1) · 203/254 · reste ~193 min
+2026-10-16 00:48:18,622 INFO    Q1241 T1 CAPTURED  46.9 s · 606 car.
+2026-10-16 00:48:39,395 INFO    Q1242 T2 CAPTURED  12.2 s · 589 car.
+2026-10-16 00:48:58,758 INFO    Q1243 T3 CAPTURED  10.5 s · 527 car. · aucune info
+2026-10-16 00:49:17,673 INFO    Q1244 T4 CAPTURED   9.7 s · 483 car. · aucune info
+2026-10-16 00:49:36,475 INFO    Q1245 T5 CAPTURED   9.4 s · 284 car.
+2026-10-16 00:49:39,478 INFO ── C250 (répétition 1) · 204/254 · reste ~189 min
+2026-10-16 00:50:31,509 INFO    Q1246 T1 CAPTURED  41.5 s · 338 car.
+2026-10-16 00:50:51,732 INFO    Q1247 T2 CAPTURED  11.8 s · 284 car.
+2026-10-16 00:51:10,366 INFO    Q1248 T3 CAPTURED   9.8 s · 290 car.
+2026-10-16 00:51:30,670 INFO    Q1249 T4 CAPTURED  11.2 s · 279 car.
+2026-10-16 00:51:50,160 INFO    Q1250 T5 CAPTURED  10.8 s · 289 car.
+2026-10-16 00:51:53,164 INFO ── C251 (répétition 1) · 205/254 · reste ~185 min
+2026-10-16 00:52:30,883 INFO    Q1251 T1 CAPTURED  24.5 s · 249 car. · aucune info
+2026-10-16 00:52:48,605 INFO    Q1252 T2 CAPTURED   9.0 s · 367 car. · aucune info
+2026-10-16 00:53:25,273 INFO    Q1253 T3 CAPTURED  27.9 s · 702 car. · aucune info
+2026-10-16 00:53:47,139 INFO    Q1254 T4 CAPTURED  13.1 s · 204 car.
+2026-10-16 00:54:04,212 INFO    Q1255 T5 CAPTURED   8.2 s · 615 car.
+2026-10-16 00:54:07,219 INFO ── C252 (répétition 1) · 206/254 · reste ~181 min
+2026-10-16 00:54:43,307 INFO    Q1256 T1 CAPTURED  24.6 s · 308 car.
+2026-10-16 00:55:01,972 INFO    Q1257 T2 CAPTURED  10.2 s · 394 car.
+2026-10-16 00:55:20,787 INFO    Q1258 T3 CAPTURED  10.0 s · 340 car. · aucune info
+2026-10-16 00:55:39,733 INFO    Q1259 T4 CAPTURED   9.9 s · 354 car.
+2026-10-16 00:55:58,486 INFO    Q1260 T5 CAPTURED   9.4 s · 298 car.
+2026-10-16 00:56:01,489 INFO ── C253 (répétition 1) · 207/254 · reste ~177 min
+2026-10-16 01:02:09,208 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:02:09,210 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 01:03:34,968 INFO    Q1261 T1 CAPTURED  37.2 s · 512 car.
+2026-10-16 01:03:55,394 INFO    Q1262 T2 CAPTURED  11.9 s · 261 car.
+2026-10-16 01:04:13,456 INFO    Q1263 T3 CAPTURED   9.2 s · 536 car.
+2026-10-16 01:04:32,021 INFO    Q1264 T4 CAPTURED   9.4 s · 231 car.
+2026-10-16 01:04:51,598 INFO    Q1265 T5 CAPTURED  10.7 s · 542 car.
+2026-10-16 01:04:54,603 INFO ── C254 (répétition 1) · 208/254 · reste ~174 min
+2026-10-16 01:10:59,590 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:10:59,591 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 01:17:36,998 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:17:36,999 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-16 01:19:27,152 INFO    Q1266 T1 CAPTURED  35.7 s · 323 car.
+2026-10-16 01:19:47,582 INFO    Q1267 T2 CAPTURED  12.1 s · 287 car.
+2026-10-16 01:20:11,227 INFO    Q1268 T3 CAPTURED  14.7 s · 314 car.
+2026-10-16 01:20:33,040 INFO    Q1269 T4 CAPTURED  12.8 s · 329 car. · aucune info
+2026-10-16 01:20:53,448 INFO    Q1270 T5 CAPTURED  11.4 s · 420 car.
+2026-10-16 01:20:56,452 INFO ── C255 (répétition 1) · 209/254 · reste ~173 min
+2026-10-16 01:21:35,678 INFO    Q1271 T1 CAPTURED  29.1 s · 293 car.
+2026-10-16 01:21:54,335 INFO    Q1272 T2 CAPTURED   9.9 s · 300 car.
+2026-10-16 01:22:12,675 INFO    Q1273 T3 CAPTURED   9.2 s · 270 car.
+2026-10-16 01:22:31,614 INFO    Q1274 T4 CAPTURED   9.6 s · 294 car.
+2026-10-16 01:22:51,040 INFO    Q1275 T5 CAPTURED  10.1 s · 235 car.
+2026-10-16 01:22:54,046 INFO ── C256 (répétition 1) · 210/254 · reste ~169 min
+2026-10-16 01:28:57,568 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:28:57,569 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 01:30:16,117 INFO    Q1276 T1 CAPTURED  34.1 s · 318 car.
+2026-10-16 01:30:34,304 INFO    Q1277 T2 CAPTURED   9.5 s · 272 car.
+2026-10-16 01:30:53,032 INFO    Q1278 T3 CAPTURED   9.8 s · 258 car.
+2026-10-16 01:31:11,875 INFO    Q1279 T4 CAPTURED   9.6 s · 265 car.
+2026-10-16 01:31:32,266 INFO    Q1280 T5 CAPTURED  11.1 s · 1334 car.
+2026-10-16 01:31:35,272 INFO ── C257 (répétition 1) · 211/254 · reste ~166 min
+2026-10-16 01:37:39,496 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:37:39,497 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 01:38:32,705 INFO    Q1281 T1 CAPTURED  10.0 s · 220 car.
+2026-10-16 01:38:48,536 INFO    Q1282 T2 CAPTURED   7.3 s · 263 car.
+2026-10-16 01:39:31,187 INFO    Q1283 T3 CAPTURED  33.5 s · 685 car. · aucune info
+2026-10-16 01:39:54,240 INFO    Q1284 T4 CAPTURED  13.9 s · 282 car.
+2026-10-16 01:40:15,144 INFO    Q1285 T5 CAPTURED  11.6 s · 315 car.
+2026-10-16 01:40:18,150 INFO ── C258 (répétition 1) · 212/254 · reste ~164 min
+2026-10-16 01:46:22,884 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:46:22,884 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 01:53:03,974 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 01:53:03,975 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-16 01:55:02,280 INFO    Q1286 T1 CAPTURED  43.6 s · 243 car.
+2026-10-16 01:55:29,494 INFO    Q1287 T2 CAPTURED  18.8 s · 290 car.
+2026-10-16 01:55:48,899 INFO    Q1288 T3 CAPTURED  10.2 s · 308 car.
+2026-10-16 01:56:11,050 INFO    Q1289 T4 CAPTURED  13.0 s · 262 car.
+2026-10-16 01:56:30,735 INFO    Q1290 T5 CAPTURED  10.2 s · 267 car.
+2026-10-16 01:56:33,739 INFO ── C259 (répétition 1) · 213/254 · reste ~162 min
+2026-10-16 01:57:06,540 INFO    Q1291 T1 CAPTURED  21.4 s · 250 car.
+2026-10-16 01:57:23,377 INFO    Q1292 T2 CAPTURED   7.8 s · 222 car.
+2026-10-16 01:58:47,348 INFO    Q1293 T3 CAPTURED  75.2 s · 101 car. · aucune info
+2026-10-16 01:59:07,600 INFO    Q1294 T4 CAPTURED  10.9 s · 388 car. · aucune info
+2026-10-16 01:59:25,283 INFO    Q1295 T5 CAPTURED   9.0 s · 101 car. · aucune info
+2026-10-16 01:59:28,288 INFO ── C260 (répétition 1) · 214/254 · reste ~158 min
+2026-10-16 02:00:15,184 INFO    Q1296 T1 CAPTURED  35.2 s · 376 car. · aucune info
+2026-10-16 02:00:33,817 INFO    Q1297 T2 CAPTURED  10.3 s · 308 car.
+2026-10-16 02:00:52,243 INFO    Q1298 T3 CAPTURED   9.7 s · 367 car.
+2026-10-16 02:01:10,957 INFO    Q1299 T4 CAPTURED   9.9 s · 332 car.
+2026-10-16 02:01:31,536 INFO    Q1300 T5 CAPTURED  11.7 s · 252 car.
+2026-10-16 02:01:34,538 INFO ── C261 (répétition 1) · 215/254 · reste ~154 min
+2026-10-16 02:02:19,199 INFO    Q1301 T1 CAPTURED  33.5 s · 342 car.
+2026-10-16 02:02:38,162 INFO    Q1302 T2 CAPTURED   9.9 s · 297 car.
+2026-10-16 02:03:06,609 INFO    Q1303 T3 CAPTURED  19.8 s · 330 car.
+2026-10-16 02:03:27,077 INFO    Q1304 T4 CAPTURED  11.6 s · 663 car.
+2026-10-16 02:03:47,236 INFO    Q1305 T5 CAPTURED  10.7 s · 270 car.
+2026-10-16 02:03:50,240 INFO ── C262 (répétition 1) · 216/254 · reste ~150 min
+2026-10-16 02:04:37,435 INFO    Q1306 T1 CAPTURED  36.1 s · 329 car.
+2026-10-16 02:04:55,438 INFO    Q1307 T2 CAPTURED   9.6 s · 283 car.
+2026-10-16 02:05:13,871 INFO    Q1308 T3 CAPTURED   9.5 s · 286 car.
+2026-10-16 02:05:33,581 INFO    Q1309 T4 CAPTURED  10.6 s · 393 car.
+2026-10-16 02:05:52,808 INFO    Q1310 T5 CAPTURED  10.3 s · 297 car.
+2026-10-16 02:05:55,813 INFO ── C263 (répétition 1) · 217/254 · reste ~146 min
+2026-10-16 02:12:03,863 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 02:12:03,863 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 02:18:42,178 WARNING    ✗ tentative 2/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 02:18:42,180 INFO    nouvelle tentative dans un chat neuf dans 60 s
+2026-10-16 02:20:31,508 INFO    Q1311 T1 CAPTURED  32.4 s · 369 car.
+2026-10-16 02:20:50,278 INFO    Q1312 T2 CAPTURED  10.1 s · 265 car.
+2026-10-16 02:21:14,663 INFO    Q1313 T3 CAPTURED  15.6 s · 487 car.
+2026-10-16 02:21:34,297 INFO    Q1314 T4 CAPTURED  10.3 s · 251 car.
+2026-10-16 02:21:53,469 INFO    Q1315 T5 CAPTURED  10.3 s · 299 car.
+2026-10-16 02:21:56,474 INFO ── C264 (répétition 1) · 218/254 · reste ~144 min
+2026-10-16 02:22:27,861 INFO    Q1316 T1 CAPTURED  17.5 s · 451 car. · aucune info
+2026-10-16 02:22:45,337 INFO    Q1317 T2 CAPTURED   8.3 s · 348 car. · aucune info
+2026-10-16 02:23:02,837 INFO    Q1318 T3 CAPTURED   8.5 s · 233 car. · aucune info
+2026-10-16 02:23:23,717 INFO    Q1319 T4 CAPTURED  12.1 s · 312 car. · aucune info
+2026-10-16 02:23:43,217 INFO    Q1320 T5 CAPTURED  10.1 s · 340 car. · aucune info
+2026-10-16 02:23:46,222 INFO ── C265 (répétition 1) · 219/254 · reste ~140 min
+2026-10-16 02:25:17,188 INFO    Q1321 T1 CAPTURED  78.5 s · 719 car.
+2026-10-16 02:25:35,836 INFO    Q1322 T2 CAPTURED  10.1 s · 498 car.
+2026-10-16 02:25:54,953 INFO    Q1323 T3 CAPTURED  10.2 s · 274 car.
+2026-10-16 02:26:14,222 INFO    Q1324 T4 CAPTURED  10.1 s · 290 car.
+2026-10-16 02:26:34,621 INFO    Q1325 T5 CAPTURED  11.2 s · 407 car.
+2026-10-16 02:26:37,627 INFO ── C266 (répétition 1) · 220/254 · reste ~136 min
+2026-10-16 02:27:14,048 INFO    Q1326 T1 CAPTURED  24.4 s · 336 car.
+2026-10-16 02:27:38,546 INFO    Q1327 T2 CAPTURED  15.9 s · 400 car.
+2026-10-16 02:28:02,017 INFO    Q1328 T3 CAPTURED  14.5 s · 303 car.
+2026-10-16 02:28:22,673 INFO    Q1329 T4 CAPTURED  11.4 s · 636 car.
+2026-10-16 02:28:41,909 INFO    Q1330 T5 CAPTURED  10.0 s · 276 car.
+2026-10-16 02:28:44,914 INFO ── C267 (répétition 1) · 221/254 · reste ~132 min
+2026-10-16 02:34:51,415 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 02:34:51,417 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 02:36:04,549 INFO    Q1331 T1 CAPTURED  28.4 s · 289 car.
+2026-10-16 02:36:22,936 INFO    Q1332 T2 CAPTURED   9.9 s · 296 car.
+2026-10-16 02:36:41,110 INFO    Q1333 T3 CAPTURED   9.2 s · 360 car. · aucune info
+2026-10-16 02:36:59,587 INFO    Q1334 T4 CAPTURED   9.8 s · 260 car.
+2026-10-16 02:37:20,977 INFO    Q1335 T5 CAPTURED  11.4 s · 382 car. · aucune info
+2026-10-16 02:37:23,981 INFO ── C268 (répétition 1) · 222/254 · reste ~128 min
+2026-10-16 02:38:00,725 INFO    Q1336 T1 CAPTURED  24.6 s · 314 car.
+2026-10-16 02:38:19,206 INFO    Q1337 T2 CAPTURED  10.1 s · 411 car.
+2026-10-16 02:38:46,867 INFO    Q1338 T3 CAPTURED  18.7 s · 454 car.
+2026-10-16 02:39:05,816 INFO    Q1339 T4 CAPTURED  10.0 s · 402 car.
+2026-10-16 02:39:24,694 INFO    Q1340 T5 CAPTURED  10.2 s · 340 car.
+2026-10-16 02:39:27,699 INFO ── C269 (répétition 1) · 223/254 · reste ~124 min
+2026-10-16 02:40:05,447 INFO    Q1341 T1 CAPTURED  25.8 s · 495 car. · aucune info
+2026-10-16 02:40:23,514 INFO    Q1342 T2 CAPTURED   9.4 s · 304 car.
+2026-10-16 02:40:43,176 INFO    Q1343 T3 CAPTURED  10.2 s · 282 car.
+2026-10-16 02:41:05,238 INFO    Q1344 T4 CAPTURED  13.0 s · 337 car. · aucune info
+2026-10-16 02:41:24,985 INFO    Q1345 T5 CAPTURED  10.4 s · 272 car.
+2026-10-16 02:41:27,989 INFO ── C270 (répétition 1) · 224/254 · reste ~120 min
+2026-10-16 02:42:10,354 INFO    Q1346 T1 CAPTURED  30.7 s · 450 car.
+2026-10-16 02:42:29,564 INFO    Q1347 T2 CAPTURED  10.7 s · 333 car.
+2026-10-16 02:42:51,260 INFO    Q1348 T3 CAPTURED  13.0 s · 400 car.
+2026-10-16 02:43:09,301 INFO    Q1349 T4 CAPTURED   9.1 s · 307 car.
+2026-10-16 02:43:27,408 INFO    Q1350 T5 CAPTURED   9.3 s · 349 car.
+2026-10-16 02:43:30,414 INFO ── C271 (répétition 1) · 225/254 · reste ~116 min
+2026-10-16 02:44:49,002 INFO    Q1351 T1 CAPTURED  67.3 s · 408 car.
+2026-10-16 02:45:07,954 INFO    Q1352 T2 CAPTURED  10.5 s · 286 car.
+2026-10-16 02:45:30,430 INFO    Q1353 T3 CAPTURED  13.7 s · 515 car. · aucune info
+2026-10-16 02:45:48,835 INFO    Q1354 T4 CAPTURED   9.9 s · 293 car.
+2026-10-16 02:46:07,635 INFO    Q1355 T5 CAPTURED   9.7 s · 250 car.
+2026-10-16 02:46:10,639 INFO ── C272 (répétition 1) · 226/254 · reste ~112 min
+2026-10-16 02:46:46,758 INFO    Q1356 T1 CAPTURED  24.0 s · 426 car. · aucune info
+2026-10-16 02:47:07,815 INFO    Q1357 T2 CAPTURED  12.5 s · 370 car. · aucune info
+2026-10-16 02:47:44,503 INFO    Q1358 T3 CAPTURED  27.8 s · 611 car. · aucune info
+2026-10-16 02:48:07,411 INFO    Q1359 T4 CAPTURED  13.5 s · 455 car.
+2026-10-16 02:48:42,279 INFO    Q1360 T5 CAPTURED  25.6 s · 596 car. · aucune info
+2026-10-16 02:48:45,290 INFO ── C273 (répétition 1) · 227/254 · reste ~108 min
+2026-10-16 02:54:49,203 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 02:54:49,204 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 02:56:37,604 INFO    Q1361 T1 CAPTURED  62.6 s · 759 car.
+2026-10-16 02:56:58,370 INFO    Q1362 T2 CAPTURED  12.2 s · 255 car.
+2026-10-16 02:57:24,311 INFO    Q1363 T3 CAPTURED  17.3 s · 263 car.
+2026-10-16 02:57:43,172 INFO    Q1364 T4 CAPTURED   9.6 s · 347 car.
+2026-10-16 02:58:02,703 INFO    Q1365 T5 CAPTURED  10.6 s · 607 car.
+2026-10-16 02:58:05,707 INFO ── C274 (répétition 1) · 228/254 · reste ~105 min
+2026-10-16 02:58:35,387 INFO    Q1366 T1 CAPTURED  18.7 s · 101 car. · aucune info
+2026-10-16 02:58:52,720 INFO    Q1367 T2 CAPTURED   8.7 s · 101 car. · aucune info
+2026-10-16 02:59:11,144 INFO    Q1368 T3 CAPTURED   9.5 s · 101 car. · aucune info
+2026-10-16 02:59:30,655 INFO    Q1369 T4 CAPTURED  10.1 s · 322 car. · aucune info
+2026-10-16 02:59:49,332 INFO    Q1370 T5 CAPTURED   9.6 s · 101 car. · aucune info
+2026-10-16 02:59:52,337 INFO ── C275 (répétition 1) · 229/254 · reste ~101 min
+2026-10-16 03:00:26,979 INFO    Q1371 T1 CAPTURED  22.4 s · 442 car. · aucune info
+2026-10-16 03:00:58,750 INFO    Q1372 T2 CAPTURED  23.1 s · 356 car.
+2026-10-16 03:01:17,811 INFO    Q1373 T3 CAPTURED  10.2 s · 241 car.
+2026-10-16 03:01:38,550 INFO    Q1374 T4 CAPTURED  11.8 s · 397 car.
+2026-10-16 03:01:58,505 INFO    Q1375 T5 CAPTURED  10.6 s · 255 car.
+2026-10-16 03:02:01,511 INFO ── C276 (répétition 1) · 230/254 · reste ~97 min
+2026-10-16 03:02:37,205 INFO    Q1376 T1 CAPTURED  24.1 s · 487 car.
+2026-10-16 03:02:57,371 INFO    Q1377 T2 CAPTURED  11.1 s · 366 car.
+2026-10-16 03:03:16,619 INFO    Q1378 T3 CAPTURED  10.3 s · 346 car.
+2026-10-16 03:03:34,914 INFO    Q1379 T4 CAPTURED   9.5 s · 355 car. · aucune info
+2026-10-16 03:03:54,975 INFO    Q1380 T5 CAPTURED  11.3 s · 337 car.
+2026-10-16 03:03:57,978 INFO ── C277 (répétition 1) · 231/254 · reste ~93 min
+2026-10-16 03:10:01,887 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 03:10:01,888 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 03:11:25,890 INFO    Q1381 T1 CAPTURED  38.3 s · 266 car.
+2026-10-16 03:11:45,625 INFO    Q1382 T2 CAPTURED  11.3 s · 313 car.
+2026-10-16 03:12:11,712 INFO    Q1383 T3 CAPTURED  16.8 s · 297 car. · aucune info
+2026-10-16 03:12:31,694 INFO    Q1384 T4 CAPTURED  10.8 s · 259 car.
+2026-10-16 03:12:50,589 INFO    Q1385 T5 CAPTURED   9.5 s · 262 car.
+2026-10-16 03:12:53,593 INFO ── C278 (répétition 1) · 232/254 · reste ~89 min
+2026-10-16 03:13:40,459 INFO    Q1386 T1 CAPTURED  35.8 s · 370 car.
+2026-10-16 03:13:58,903 INFO    Q1387 T2 CAPTURED  10.0 s · 177 car.
+2026-10-16 03:14:18,707 INFO    Q1388 T3 CAPTURED  10.7 s · 298 car.
+2026-10-16 03:14:37,510 INFO    Q1389 T4 CAPTURED  10.2 s · 294 car.
+2026-10-16 03:14:58,419 INFO    Q1390 T5 CAPTURED  12.0 s · 383 car.
+2026-10-16 03:15:01,423 INFO ── C279 (répétition 1) · 233/254 · reste ~85 min
+2026-10-16 03:18:20,987 INFO    Q1391 T1 CAPTURED 188.6 s · 359 car.
+2026-10-16 03:18:39,765 INFO    Q1392 T2 CAPTURED  10.0 s · 391 car.
+2026-10-16 03:18:59,365 INFO    Q1393 T3 CAPTURED  10.5 s · 511 car.
+2026-10-16 03:19:18,200 INFO    Q1394 T4 CAPTURED   9.5 s · 415 car. · aucune info
+2026-10-16 03:19:48,239 INFO    Q1395 T5 CAPTURED  20.5 s · 267 car. · aucune info
+2026-10-16 03:19:51,244 INFO ── C280 (répétition 1) · 234/254 · reste ~81 min
+2026-10-16 03:25:56,452 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 03:25:56,454 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 03:27:12,218 INFO    Q1396 T1 CAPTURED  31.0 s · 422 car.
+2026-10-16 03:27:33,955 INFO    Q1397 T2 CAPTURED  13.2 s · 1658 car.
+2026-10-16 03:27:52,618 INFO    Q1398 T3 CAPTURED   9.6 s · 273 car.
+2026-10-16 03:28:09,764 INFO    Q1399 T4 CAPTURED   8.5 s · 317 car. · aucune info
+2026-10-16 03:28:29,507 INFO    Q1400 T5 CAPTURED  10.9 s · 498 car. · aucune info
+2026-10-16 03:28:32,512 INFO ── C281 (répétition 1) · 235/254 · reste ~78 min
+2026-10-16 03:29:09,391 INFO    Q1401 T1 CAPTURED  24.5 s · 353 car.
+2026-10-16 03:29:28,847 INFO    Q1402 T2 CAPTURED  10.5 s · 335 car.
+2026-10-16 03:29:47,092 INFO    Q1403 T3 CAPTURED   9.4 s · 262 car.
+2026-10-16 03:30:06,616 INFO    Q1404 T4 CAPTURED  10.6 s · 295 car.
+2026-10-16 03:30:24,876 INFO    Q1405 T5 CAPTURED   9.6 s · 276 car.
+2026-10-16 03:30:27,880 INFO ── C282 (répétition 1) · 236/254 · reste ~74 min
+2026-10-16 03:30:49,477 INFO    Q1406 T1 CAPTURED  10.2 s · 213 car.
+2026-10-16 03:31:04,933 INFO    Q1407 T2 CAPTURED   7.0 s · 276 car. · aucune info
+2026-10-16 03:31:45,575 INFO    Q1408 T3 CAPTURED  31.7 s · 679 car.
+2026-10-16 03:32:03,436 INFO    Q1409 T4 CAPTURED   9.3 s · 252 car.
+2026-10-16 03:32:23,395 INFO    Q1410 T5 CAPTURED  10.9 s · 253 car.
+2026-10-16 03:32:26,401 INFO ── C283 (répétition 1) · 237/254 · reste ~70 min
+2026-10-16 03:33:09,800 INFO    Q1411 T1 CAPTURED  31.8 s · 299 car.
+2026-10-16 03:33:30,358 INFO    Q1412 T2 CAPTURED  12.2 s · 316 car.
+2026-10-16 03:33:55,741 INFO    Q1413 T3 CAPTURED  16.5 s · 341 car.
+2026-10-16 03:34:28,598 INFO    Q1414 T4 CAPTURED  23.8 s · 537 car.
+2026-10-16 03:34:47,956 INFO    Q1415 T5 CAPTURED  10.2 s · 248 car.
+2026-10-16 03:34:50,960 INFO ── C284 (répétition 1) · 238/254 · reste ~66 min
+2026-10-16 03:35:32,570 INFO    Q1416 T1 CAPTURED  30.0 s · 444 car.
+2026-10-16 03:35:56,190 INFO    Q1417 T2 CAPTURED  15.2 s · 393 car.
+2026-10-16 03:36:16,318 INFO    Q1418 T3 CAPTURED  11.3 s · 314 car.
+2026-10-16 03:36:43,318 INFO    Q1419 T4 CAPTURED  18.4 s · 434 car. · aucune info
+2026-10-16 03:37:06,296 INFO    Q1420 T5 CAPTURED  13.8 s · 409 car.
+2026-10-16 03:37:09,300 INFO ── C285 (répétition 1) · 239/254 · reste ~62 min
+2026-10-16 03:37:44,602 INFO    Q1421 T1 CAPTURED  22.9 s · 238 car.
+2026-10-16 03:38:02,720 INFO    Q1422 T2 CAPTURED   9.6 s · 283 car.
+2026-10-16 03:38:25,207 INFO    Q1423 T3 CAPTURED  13.5 s · 276 car.
+2026-10-16 03:38:43,726 INFO    Q1424 T4 CAPTURED   9.6 s · 328 car.
+2026-10-16 03:39:03,072 INFO    Q1425 T5 CAPTURED  10.0 s · 342 car.
+2026-10-16 03:39:06,074 INFO ── C286 (répétition 1) · 240/254 · reste ~58 min
+2026-10-16 03:39:45,276 INFO    Q1426 T1 CAPTURED  27.8 s · 228 car.
+2026-10-16 03:40:08,893 INFO    Q1427 T2 CAPTURED  14.6 s · 446 car.
+2026-10-16 03:40:28,649 INFO    Q1428 T3 CAPTURED  11.2 s · 271 car.
+2026-10-16 03:40:47,043 INFO    Q1429 T4 CAPTURED   9.2 s · 392 car.
+2026-10-16 03:41:05,319 INFO    Q1430 T5 CAPTURED   9.3 s · 250 car.
+2026-10-16 03:41:08,322 INFO ── C287 (répétition 1) · 241/254 · reste ~54 min
+2026-10-16 03:41:44,641 INFO    Q1431 T1 CAPTURED  23.9 s · 329 car.
+2026-10-16 03:42:04,962 INFO    Q1432 T2 CAPTURED  11.7 s · 431 car.
+2026-10-16 03:42:23,055 INFO    Q1433 T3 CAPTURED   9.2 s · 316 car. · aucune info
+2026-10-16 03:42:42,597 INFO    Q1434 T4 CAPTURED  10.8 s · 269 car.
+2026-10-16 03:43:01,191 INFO    Q1435 T5 CAPTURED   9.4 s · 299 car.
+2026-10-16 03:43:04,195 INFO ── C288 (répétition 1) · 242/254 · reste ~50 min
+2026-10-16 03:43:41,245 INFO    Q1436 T1 CAPTURED  24.7 s · 342 car.
+2026-10-16 03:43:59,491 INFO    Q1437 T2 CAPTURED   9.6 s · 284 car.
+2026-10-16 03:44:27,199 INFO    Q1438 T3 CAPTURED  18.5 s · 314 car.
+2026-10-16 03:44:46,017 INFO    Q1439 T4 CAPTURED   9.6 s · 337 car.
+2026-10-16 03:45:08,561 INFO    Q1440 T5 CAPTURED  13.0 s · 298 car.
+2026-10-16 03:45:11,565 INFO ── C289 (répétition 1) · 243/254 · reste ~46 min
+2026-10-16 03:51:16,117 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 03:51:16,118 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 03:52:26,989 INFO    Q1441 T1 CAPTURED  28.6 s · 652 car.
+2026-10-16 03:52:45,785 INFO    Q1442 T2 CAPTURED   9.9 s · 387 car.
+2026-10-16 03:53:03,962 INFO    Q1443 T3 CAPTURED   9.0 s · 265 car.
+2026-10-16 03:53:22,837 INFO    Q1444 T4 CAPTURED  10.3 s · 342 car. · aucune info
+2026-10-16 03:53:42,423 INFO    Q1445 T5 CAPTURED  10.0 s · 346 car.
+2026-10-16 03:53:45,427 INFO ── C290 (répétition 1) · 244/254 · reste ~42 min
+2026-10-16 03:54:24,711 INFO    Q1446 T1 CAPTURED  26.9 s · 255 car.
+2026-10-16 03:54:42,485 INFO    Q1447 T2 CAPTURED   9.4 s · 277 car.
+2026-10-16 03:55:08,855 INFO    Q1448 T3 CAPTURED  17.6 s · 372 car.
+2026-10-16 03:55:27,984 INFO    Q1449 T4 CAPTURED  10.1 s · 307 car.
+2026-10-16 03:55:47,593 INFO    Q1450 T5 CAPTURED  10.4 s · 217 car.
+2026-10-16 03:55:50,598 INFO ── C291 (répétition 1) · 245/254 · reste ~38 min
+2026-10-16 03:57:14,622 INFO    Q1451 T1 CAPTURED  72.9 s · 509 car.
+2026-10-16 03:57:39,149 INFO    Q1452 T2 CAPTURED  15.8 s · 486 car.
+2026-10-16 03:57:54,203 INFO    Q1453 T3 CAPTURED   6.2 s · 295 car.
+2026-10-16 03:58:09,981 INFO    Q1454 T4 CAPTURED   7.0 s · 379 car. · aucune info
+2026-10-16 03:58:26,645 INFO    Q1455 T5 CAPTURED   7.5 s · 364 car.
+2026-10-16 03:58:29,648 INFO ── C292 (répétition 1) · 246/254 · reste ~35 min
+2026-10-16 03:59:16,576 INFO    Q1456 T1 CAPTURED  33.7 s · 576 car. · aucune info
+2026-10-16 03:59:35,592 INFO    Q1457 T2 CAPTURED  10.1 s · 419 car.
+2026-10-16 03:59:58,704 INFO    Q1458 T3 CAPTURED  14.0 s · 500 car. · aucune info
+2026-10-16 04:00:20,186 INFO    Q1459 T4 CAPTURED  12.3 s · 471 car.
+2026-10-16 04:00:41,163 INFO    Q1460 T5 CAPTURED  11.7 s · 361 car.
+2026-10-16 04:00:44,180 INFO ── C293 (répétition 1) · 247/254 · reste ~31 min
+2026-10-16 04:01:23,697 INFO    Q1461 T1 CAPTURED  27.0 s · 1464 car.
+2026-10-16 04:01:44,661 INFO    Q1462 T2 CAPTURED  12.6 s · 1451 car.
+2026-10-16 04:02:04,572 INFO    Q1463 T3 CAPTURED  10.9 s · 732 car.
+2026-10-16 04:02:26,217 INFO    Q1464 T4 CAPTURED  12.5 s · 306 car.
+2026-10-16 04:02:44,740 INFO    Q1465 T5 CAPTURED   8.8 s · 298 car.
+2026-10-16 04:02:47,749 INFO ── C294 (répétition 1) · 248/254 · reste ~27 min
+2026-10-16 04:08:51,885 WARNING    ✗ tentative 1/3 : AnswerTimeout: Pas de réponse finale stable en 360 s
+2026-10-16 04:08:51,887 INFO    nouvelle tentative dans un chat neuf dans 30 s
+2026-10-16 04:10:03,572 INFO    Q1466 T1 CAPTURED  25.1 s · 238 car.
+2026-10-16 04:10:21,527 INFO    Q1467 T2 CAPTURED   9.2 s · 239 car.
+2026-10-16 04:10:43,209 INFO    Q1468 T3 CAPTURED  12.7 s · 521 car.
+2026-10-16 04:11:02,585 INFO    Q1469 T4 CAPTURED  10.3 s · 379 car. · aucune info
+2026-10-16 04:11:22,645 INFO    Q1470 T5 CAPTURED  11.2 s · 533 car.
+2026-10-16 04:11:25,648 INFO ── C295 (répétition 1) · 249/254 · reste ~23 min
+2026-10-16 04:12:10,182 INFO    Q1471 T1 CAPTURED  31.6 s · 306 car.
+2026-10-16 04:12:29,658 INFO    Q1472 T2 CAPTURED  10.9 s · 632 car.
+2026-10-16 04:12:51,069 INFO    Q1473 T3 CAPTURED  12.5 s · 357 car.
+2026-10-16 04:13:10,722 INFO    Q1474 T4 CAPTURED  11.0 s · 279 car.
+2026-10-16 04:13:35,711 INFO    Q1475 T5 CAPTURED  16.1 s · 450 car.
+2026-10-16 04:13:38,716 INFO ── C296 (répétition 1) · 250/254 · reste ~19 min
+2026-10-16 04:14:48,948 INFO    Q1476 T1 CAPTURED  56.6 s · 375 car.
+2026-10-16 04:15:06,981 INFO    Q1477 T2 CAPTURED   9.7 s · 239 car.
+2026-10-16 04:15:26,356 INFO    Q1478 T3 CAPTURED  10.3 s · 399 car.
+2026-10-16 04:15:45,807 INFO    Q1479 T4 CAPTURED  10.4 s · 408 car.
+2026-10-16 04:16:06,332 INFO    Q1480 T5 CAPTURED  11.3 s · 363 car.
+2026-10-16 04:16:09,337 INFO ── C297 (répétition 1) · 251/254 · reste ~15 min
+2026-10-16 04:16:30,899 INFO    Q1481 T1 CAPTURED  10.9 s · 223 car.
+2026-10-16 04:16:47,283 INFO    Q1482 T2 CAPTURED   7.7 s · 258 car.
+2026-10-16 04:17:21,483 INFO    Q1483 T3 CAPTURED  25.2 s · 672 car. · aucune info
+2026-10-16 04:17:48,995 INFO    Q1484 T4 CAPTURED  18.6 s · 274 car.
+2026-10-16 04:18:13,907 INFO    Q1485 T5 CAPTURED  15.6 s · 292 car.
+2026-10-16 04:18:16,910 INFO ── C298 (répétition 1) · 252/254 · reste ~11 min
+2026-10-16 04:19:01,993 INFO    Q1486 T1 CAPTURED  31.9 s · 327 car.
+2026-10-16 04:19:21,155 INFO    Q1487 T2 CAPTURED  10.0 s · 282 car.
+2026-10-16 04:19:40,030 INFO    Q1488 T3 CAPTURED   9.7 s · 241 car.
+2026-10-16 04:19:58,098 INFO    Q1489 T4 CAPTURED   9.0 s · 265 car.
+2026-10-16 04:20:20,514 INFO    Q1490 T5 CAPTURED  13.5 s · 279 car.
+2026-10-16 04:20:23,518 INFO ── C299 (répétition 1) · 253/254 · reste ~8 min
+2026-10-16 04:21:05,559 INFO    Q1491 T1 CAPTURED  29.5 s · 324 car.
+2026-10-16 04:21:23,906 INFO    Q1492 T2 CAPTURED   9.8 s · 395 car.
+2026-10-16 04:21:50,228 INFO    Q1493 T3 CAPTURED  17.1 s · 292 car.
+2026-10-16 04:22:12,033 INFO    Q1494 T4 CAPTURED  13.0 s · 374 car. · aucune info
+2026-10-16 04:22:31,636 INFO    Q1495 T5 CAPTURED  10.2 s · 372 car.
+2026-10-16 04:22:34,641 INFO ── C300 (répétition 1) · 254/254 · reste ~4 min
+2026-10-16 04:22:59,467 INFO    Q1496 T1 CAPTURED  12.8 s · 241 car.
+2026-10-16 04:23:16,691 INFO    Q1497 T2 CAPTURED   8.2 s · 1093 car.
+2026-10-16 04:24:11,766 INFO    Q1498 T3 CAPTURED  45.8 s · 101 car. · aucune info
+2026-10-16 04:24:39,618 INFO    Q1499 T4 CAPTURED  19.0 s · 267 car.
+2026-10-16 04:24:59,461 INFO    Q1500 T5 CAPTURED  10.9 s · 379 car.
+2026-10-16 04:24:59,465 INFO Fin : {'complete': 251, 'failed': 3, 'attempts': 306, 'turns': 1258}
+2026-10-16 04:25:07,306 INFO Exactitude 83.5 % (IC 95 % 80.4 % – 86.3 %) · pas d’info à tort 14.5 % · précision 97.7 % · à confirmer 120
+2026-10-16 04:25:07,307 INFO Rapports : C:\Users\RP119879\OneDrive - Rothschild & Co\bot4PItesting-claude-eager-davinci-lgjr5y (2)\bot4PItesting-claude-eager-davinci-lgjr5y\runs\octobre\resultats.xlsx et C:\Users\RP119879\OneDrive - Rothschild & Co\bot4PItesting-claude-eager-davinci-lgjr5y (2)\bot4PItesting-claude-eager-davinci-lgjr5y\runs\octobre\rapport.html

@@ -103,3 +103,29 @@ def test_technical_and_flags():
     assert S.technical_kind("Too many requests, please wait") == "RATE_LIMIT"
     r = S.score("SICAV", True, "Résultat Information trouvée Aucune information disponible. SICAV", eq=EQ)
     assert "contradictoire" in r.flags
+
+
+def test_raw_english_values_of_the_new_workbook():
+    assert v("5 years", "La durée de détention recommandée est de 5 ans.") == S.CORRECT
+    assert v("No AMF Classification", "la classification AMF renseignée est : Pas de Classification AMF") == S.CORRECT
+    assert v("Last open business day of December", "clôture annuelle : Dernier jour ouvré de décembre") == S.CORRECT
+
+
+def test_off_topic_answers():
+    for answer in ("Quel est le scope de recherche que vous souhaitez utiliser pour la recherche de données ?",
+                   "Je n’ai pas reçu de demande exploitable. Pouvez-vous indiquer le fonds ?",
+                   "Pouvez-vous fournir la requête SQL SELECT que vous souhaitez exécuter ?",
+                   "Product Info Assistant said:\nProduct Info Assistant\n"):
+        assert v("SICAV", answer) == S.OFF_TOPIC
+    assert S.score("", False, "La réaffectation à un représentant n’est pas configurée pour ce copilote.", eq=EQ).verdict == S.OFF_TOPIC
+
+
+def test_yes_no_reversed_is_incorrect():
+    assert v("No", "Résultat Information trouvée l’indicateur est renseigné à « Oui ».") == S.INCORRECT
+    assert v("Yes", "Résultat la valeur enregistrée pour l’indicateur est : Non.") == S.INCORRECT
+
+
+def test_bubble_label_and_system_error():
+    assert S.strip_label("Product Info Assistant said:\nProduct Info Assistant\nRésultat SICAV") == "Résultat SICAV"
+    assert v("SICAV", "Product Info Assistant said:\nProduct Info Assistant\nRésultat La forme juridique est : SICAV") == S.CORRECT
+    assert v("0.043", "Désolé, une erreur inattendue s’est produite. Code d’erreur : SystemError.") == S.TECH
