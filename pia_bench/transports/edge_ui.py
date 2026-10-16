@@ -33,7 +33,7 @@ import time
 import urllib.request
 from pathlib import Path
 
-from ..scoring import norm, technical_kind
+from ..scoring import norm, strip_label, technical_kind
 from .base import AnswerTimeout, Conversation, Reply, SendError, Transport, TransportError
 
 
@@ -79,7 +79,7 @@ class EdgeConversation(Conversation):
         else:
             raise AnswerTimeout(f"Pas de réponse finale stable en {timeout:.0f} s")
         return Reply(
-            text=last,
+            text=strip_label(last),
             latency=round(since - sent_clock, 2),
             meta={"first_content_s": round(first_content - sent_clock, 2), "selector": selector, "url": self.url},
         )

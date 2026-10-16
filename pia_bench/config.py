@@ -122,6 +122,15 @@ TECH_ERROR_PATTERNS = [
     "une erreur s'est produite", "une erreur s’est produite", "un problème est survenu",
     "un probleme est survenu", "réessayez plus tard", "reessayez plus tard",
     "sorry, something went wrong", "we're having trouble", "nous rencontrons un problème",
+    "une erreur inattendue s’est produite", "une erreur inattendue s'est produite", "code d’erreur : systemerror",
+]
+# L'agent ne traite pas la question : demande de « scope », question non reçue, contexte perdu,
+# renvoi vers un représentant. Comparaison sur le texte normalisé (sans accents ni ponctuation).
+OFF_TOPIC_PATTERNS = [
+    r"scope de recherche", r"scope dans lequel", r"requete sql", r"reaffectation a un representant",
+    r"pas recu de demande exploitable", r"je n ai recu que", r"je n ai pas identifie de demande",
+    r"je n ai pas l identification du fonds", r"^pour quel fonds", r"la requete a ete (modifiee|mise a jour)",
+    r"je suis a votre disposition pour rechercher", r"pouvez vous (indiquer|preciser) le fonds",
 ]
 RATE_LIMIT_PATTERNS = [
     "too many requests", "trop de requêtes", "trop de demandes", "rate limit",
