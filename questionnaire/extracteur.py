@@ -26,8 +26,10 @@ import argparse
 import csv
 import datetime as dt
 import json
+import queue
 import re
 import sys
+import threading
 import time
 from collections import deque
 from pathlib import Path
@@ -420,6 +422,8 @@ class Extracteur:
         self.requetes_bloquees: list[str] = []
         self.soumissions_bloquees = 0
         self.brut_precedent: str | None = None
+        self.contexte = None
+        self.lignes: queue.Queue = queue.Queue()
 
     # ------------------------------------------------------------------ journal et saisie
 
@@ -429,12 +433,33 @@ class Extracteur:
         with self.journal_fichier.open("a", encoding="utf-8") as f:
             f.write(ligne + "\n")
 
-    @staticmethod
-    def demander(message: str) -> str:
+    def lire_stdin(self) -> None:
+        """Lit le clavier dans un thread à part, pour que le navigateur reste réactif pendant l'attente."""
+        for ligne in sys.stdin:
+            self.lignes.put(ligne)
+        self.lignes.put(None)
+
+    def faire_tourner_playwright(self) -> None:
+        """Traite les événements Playwright en attente. Sans cela, le navigateur est bloqué pendant l'attente."""
+        if self.contexte is None:
+            time.sleep(0.1)
+            return
         try:
-            return input(message).strip().lower()
-        except EOFError:
-            return "q"
+            self.contexte.wait_for_event("page", timeout=100)
+        except ErreurPlaywright:
+            pass
+
+    def demander(self, message: str) -> str:
+        print(message, end="", flush=True)
+        while True:
+            try:
+                ligne = self.lignes.get(timeout=0.1)
+            except queue.Empty:
+                self.faire_tourner_playwright()
+                continue
+            if ligne is None:
+                return "q"
+            return ligne.strip().lower()
 
     # ------------------------------------------------------------------ navigateur
 
@@ -513,6 +538,8 @@ class Extracteur:
                 self.journal(f"Impossible d'ouvrir le navigateur : {erreur}")
                 self.journal("Essayez --navigateur chromium (après « playwright install chromium »).")
                 return
+            self.contexte = contexte
+            threading.Thread(target=self.lire_stdin, daemon=True).start()
             try:
                 if self.args.url and not self.args.cdp:
                     contexte.pages[0].goto(self.args.url)
