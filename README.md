@@ -1,3 +1,7 @@
+![Uploading {DB2E134C-34F6-440A-BD21-65739CAB24AB}.png…]()
+
+
+
 # bot4PItesting : banc de test du Product Info Assistant
 
 `pia_bench` pose les 1 500 questions du benchmark au Product Info Assistant (Copilot Studio) et
