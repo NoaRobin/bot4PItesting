@@ -57,8 +57,8 @@
 
     <div class="q">
       <b>GEA - La società è gestita da soggetti terzi? -082GEA1080570-</b>
-      <label><input type="radio" name="terzi" value="si"> Sì</label>
-      <label><input type="radio" name="terzi" value="no"> No</label>
+      <label><input type="radio" name="terzi" value="si" onclick="fetch('/log?c=radio')"> Sì</label>
+      <label><input type="radio" name="terzi" value="no" onclick="fetch('/log?c=radio')"> No</label>
     </div>
 
     <div class="q cache" id="q-tipo">
@@ -79,7 +79,7 @@
 
     <div class="q">
       <b>GEA - Dichiaro la veridicità delle informazioni -082GEA1080600-</b>
-      <input type="checkbox" name="dich">
+      <input type="checkbox" name="dich" onclick="fetch('/log?c=case')">
     </div>
 
     <div class="q cache" id="q-motif">
@@ -135,7 +135,7 @@
   <div class="rubrique cache" id="rub-rb1">
     <h2>3. RB1 - Risultati finanziari - Bilanciato 1</h2>
     <div class="q">
-      <b>RB1 - Periodo di riferimento *</b>
+      <b>Periodo di riferimento *</b>
       <i>Indicare la data di chiusura</i>
       <input type="date" name="periode">
     </div>

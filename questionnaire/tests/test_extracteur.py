@@ -171,7 +171,7 @@ def test_question_sans_code_recuperee(execution):
     rb1 = next(s for s in execution["donnees"]["sections"] if s["code"] == "RB1")
     periode = rb1["questions"][0]
     assert periode["code"] == ""
-    assert periode["libelle"] == "RB1 - Periodo di riferimento"
+    assert periode["libelle"] == "Periodo di riferimento"
     assert periode["type"] == "date"
     assert periode["obligatoire"] is True
 

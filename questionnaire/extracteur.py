@@ -64,15 +64,7 @@ JS_LIB = r"""(function () {
   const estPlaceholder = (o) =>
     o.value === '' || /^\s*[-–—]*\s*$/.test(o.text) || /^\s*(seleziona|scegli|select|choose)\b/i.test(o.text);
 
-  const BLOCS = new Set(['DIV', 'TD', 'TH', 'LI', 'TR', 'P', 'SECTION', 'FORM', 'TABLE', 'UL', 'OL', 'BODY']);
-  const blocDe = (el) => {
-    let b = el;
-    while (b && !BLOCS.has(b.tagName)) b = b.parentElement;
-    return b || document.body;
-  };
-
-  // Rubriques : éléments les plus internes dont le texte commence par un code (GEA - ..., RB1 - ...).
-  // Un libellé de question n'est pas une rubrique : son bloc contient un champ de saisie. On les écarte.
+  // Rubriques bleues : éléments les plus internes dont le texte commence par un code de section (GEA - ..., RFA - ...).
   function liensRubriques() {
     const candidats = [...document.querySelectorAll('*')].filter((el) => {
       if (IGNORES.has(el.tagName)) return false;
@@ -81,9 +73,7 @@ JS_LIB = r"""(function () {
       return t.length > 0 && t.length < 160 && RE_RUBRIQUE.test(t) && !RE_CODE.test(t) &&
              el.getClientRects().length > 0;
     });
-    return candidats
-      .filter((el) => !candidats.some((autre) => autre !== el && el.contains(autre)))
-      .filter((el) => !blocDe(el).querySelector('select, textarea, input:not([type=hidden])'));
+    return candidats.filter((el) => !candidats.some((autre) => autre !== el && el.contains(autre)));
   }
 
   // Zone du menu : plus petit conteneur commun aux rubriques, s'il ne contient aucun champ de saisie.
@@ -340,11 +330,13 @@ JS_LIB = r"""(function () {
       }
       const cible = els.find((e) => e.getAttribute('data-qx-idx') === valeur);
       if (!cible) return false;
-      if (!cible.checked) cible.click();
+      // Pas de clic : la valeur est posée et l'événement change est envoyé.
+      if (!cible.checked) { cible.checked = true; declencher(cible, 'input'); declencher(cible, 'change'); }
       return true;
     }
     if (estCase(el)) {
-      if (el.checked !== (valeur === 'true')) el.click();
+      const voulu = valeur === 'true';
+      if (el.checked !== voulu) { el.checked = voulu; declencher(el, 'input'); declencher(el, 'change'); }
       return true;
     }
     return false;
@@ -524,11 +516,16 @@ class Extracteur:
 
     def parcourir(self, contexte) -> None:
         while True:
-            _, cadre = self.localiser(contexte)
+            cadre = None
+            fin = time.monotonic() + 15   # la page peut encore charger juste après l'Entrée
+            while cadre is None and time.monotonic() < fin:
+                _, cadre = self.localiser(contexte)
+                if cadre is None:
+                    time.sleep(0.5)
             if cadre is not None:
                 break
             self.diagnostiquer(contexte)
-            if self.demander("Menu bleu introuvable : vérifiez la page, puis Entrée (q = quitter) > ") == "q":
+            if self.demander("Menu bleu introuvable (diagnostic.txt écrit) : vérifiez la page, puis Entrée (q = quitter) > ") == "q":
                 return
 
         noms = qx(cadre, "nomsRubriques")
