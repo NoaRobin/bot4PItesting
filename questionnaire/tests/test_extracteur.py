@@ -22,6 +22,7 @@ EXTRACTEUR = ICI.parent / "extracteur.py"
 
 # Variante : rubriques en <div>, tiret typographique et espace insécable dans le texte.
 MENU_VARIANTE = """<div id="menu">
+  <div class="titre"><span>Sezioni Questionario</span></div>
   <div class="rub" data-rub="gea"><span>GEA&nbsp;&#8211;&nbsp;Informazioni generali sulla società candidata</span></div>
   <div class="rub" data-rub="gek"><span>GEK&#8209;Deleghe di gestione</span></div>
   <div class="rub" data-rub="rb1"><span>RB1 - Risultati finanziari - Bilanciato 1</span></div>

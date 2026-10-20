@@ -73,7 +73,17 @@ JS_LIB = r"""(function () {
       return t.length > 0 && t.length < 160 && RE_RUBRIQUE.test(t) && !RE_CODE.test(t) &&
              el.getClientRects().length > 0;
     });
-    return candidats.filter((el) => !candidats.some((autre) => autre !== el && el.contains(autre)));
+    const internes = candidats.filter((el) => !candidats.some((autre) => autre !== el && el.contains(autre)));
+    // Le menu des rubriques est sous le titre « Sezioni Questionario ». S'il existe, on ne garde que ce qui suit.
+    const titre = [...document.querySelectorAll('*')].find((el) => {
+      const t = norm(el.textContent);
+      return t.length < 60 && /^sezioni\s+questionario$/i.test(t) && el.getClientRects().length > 0;
+    });
+    if (titre) {
+      const sous = internes.filter((el) => titre.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+      if (sous.length) return sous;
+    }
+    return internes;
   }
 
   // Zone du menu : plus petit conteneur commun aux rubriques, s'il ne contient aucun champ de saisie.
