@@ -116,9 +116,12 @@ def uninstall_task() -> None:
 
 
 def task_exists() -> bool:
-    return subprocess.run(
-        ["schtasks", "/Query", "/TN", TASK_NAME], capture_output=True
-    ).returncode == 0
+    try:
+        return subprocess.run(
+            ["schtasks", "/Query", "/TN", TASK_NAME], capture_output=True
+        ).returncode == 0
+    except OSError:  # schtasks absent (hors Windows)
+        return False
 
 
 def check_writable(folder: Path) -> None:

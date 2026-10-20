@@ -17,7 +17,6 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import os
 import shutil
 import sys
 import time
@@ -30,6 +29,7 @@ import openpyxl
 import office
 import rules
 import system
+from config import load_config
 from rules import ValidationError
 
 HERE = Path(__file__).resolve().parent
@@ -37,21 +37,6 @@ log = logging.getLogger("tis")
 
 
 # ---------------------------------------------------------------- configuration
-
-def load_config() -> dict:
-    raw = json.loads((HERE / "config.json").read_text(encoding="utf-8"))
-
-    def expand(value):
-        if isinstance(value, str):
-            return os.path.expandvars(value)
-        if isinstance(value, list):
-            return [expand(v) for v in value]
-        if isinstance(value, dict):
-            return {k: expand(v) for k, v in value.items()}
-        return value
-
-    return expand(raw)
-
 
 @dataclass
 class Layout:

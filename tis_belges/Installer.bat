@@ -32,8 +32,14 @@ echo Creation de la tache planifiee...
 if errorlevel 1 goto :error
 
 echo.
-echo Installation terminee. Lire la section "Premiere execution" du README.
-pause
+echo.
+echo Creation du raccourci TIS Belges sur le bureau...
+powershell -NoProfile -ExecutionPolicy Bypass -File "dashboard\create_shortcut.ps1" -Folder "%~dp0"
+if errorlevel 1 echo Raccourci non cree : vous pouvez lancer Lancer.bat directement.
+
+echo.
+echo Installation terminee. Ouverture de l'application TIS Belges...
+start "" "%~dp0Lancer.bat"
 exit /b 0
 
 :find_python

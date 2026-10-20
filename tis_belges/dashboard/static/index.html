@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIS Belges</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">TB</span>
+      <div>
+        <h1>TIS Belges</h1>
+        <p>Data Team · envoi quotidien à Six Financial Information</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="clock" class="clock" aria-live="off"></span>
+      <span id="taskPill" class="pill">Chargement…</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Colonne principale -->
+    <section class="col-main">
+
+      <article class="card hero" id="heroCard">
+        <div class="hero-text">
+          <p class="eyebrow" id="heroEyebrow">Prochain envoi</p>
+          <p class="hero-time" id="heroTime">—</p>
+          <p class="hero-sub" id="heroSub">Lecture de l'état du jour…</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary btn-xl" id="btnRun" type="button">
+            <span class="btn-ico" aria-hidden="true">▶</span>
+            Lancer l'envoi maintenant
+          </button>
+          <div class="btn-row">
+            <button class="btn btn-ghost" id="btnTest" type="button">Essai sans envoi</button>
+            <button class="btn btn-ghost" id="btnCheck" type="button">Vérifier l'installation</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" aria-labelledby="pipeTitle">
+        <div class="card-head">
+          <h2 id="pipeTitle">Progression du jour</h2>
+          <span class="muted" id="pipeDate"></span>
+        </div>
+        <ol class="pipeline" id="pipeline"></ol>
+      </article>
+
+      <article class="card console-card">
+        <div class="card-head">
+          <h2>Console</h2>
+          <div class="console-tools">
+            <span class="muted" id="jobState">Aucune opération en cours</span>
+            <button class="btn btn-small btn-ghost" id="btnCopy" type="button">Copier</button>
+            <button class="btn btn-small btn-ghost" id="btnClear" type="button">Effacer</button>
+          </div>
+        </div>
+        <pre class="console" id="console" aria-live="polite" aria-label="Sortie de l'opération"></pre>
+      </article>
+    </section>
+
+    <!-- Colonne latérale -->
+    <aside class="col-side">
+
+      <article class="card" aria-labelledby="schedTitle">
+        <div class="card-head">
+          <h2 id="schedTitle">Programmation</h2>
+          <span class="pill pill-soft" id="schedPill">—</span>
+        </div>
+        <p class="muted small">Envoi automatique du lundi au vendredi. Le poste doit être allumé et la session ouverte.</p>
+
+        <label class="field">
+          <span>Heure de calcul</span>
+          <input type="time" id="runAt" step="60" required>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" id="schedEnabled" role="switch">
+          <span class="switch-track" aria-hidden="true"></span>
+          <span>Envoi automatique</span>
+        </label>
+
+        <p class="next" id="nextRun"></p>
+
+        <button class="btn btn-primary btn-block" id="btnSaveSched" type="button">Enregistrer la programmation</button>
+      </article>
+
+      <article class="card" aria-labelledby="guideTitle">
+        <div class="card-head">
+          <h2 id="guideTitle">Avant 17h</h2>
+          <span class="muted small" id="checkedAt">Non vérifié</span>
+        </div>
+        <ul class="checklist" id="checklist">
+          <li class="check-empty">Lancez « Vérifier l'installation » pour contrôler le poste.</li>
+        </ul>
+      </article>
+
+      <article class="card" aria-labelledby="runsTitle">
+        <div class="card-head">
+          <h2 id="runsTitle">Derniers jours</h2>
+        </div>
+        <ul class="runs" id="runs"></ul>
+      </article>
+
+      <details class="card settings">
+        <summary><h2>Réglages</h2><span class="muted small">lecture seule</span></summary>
+        <dl id="settings"></dl>
+        <p class="muted small">Pour modifier les destinataires, les seuils ou les jours fériés, éditer <code>config.json</code>.</p>
+      </details>
+    </aside>
+  </main>
+
+  <!-- Confirmation -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Confirmer</h2>
+      <p id="modalText"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modalCancel" type="button">Annuler</button>
+        <button class="btn btn-primary" id="modalOk" type="button">Confirmer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
