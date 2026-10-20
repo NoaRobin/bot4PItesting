@@ -4,12 +4,14 @@ cd /d "%~dp0"
 echo === Installation TIS Belges ===
 echo.
 
-where py >nul 2>&1
-if errorlevel 1 goto :no_python
+call :find_python
+if not defined PY goto :no_python
+echo Python trouve : %PY%
+echo.
 
 if not exist ".venv\Scripts\python.exe" (
     echo Creation de l'environnement Python...
-    py -3 -m venv .venv
+    %PY% -m venv .venv
     if errorlevel 1 goto :error
 )
 
@@ -34,10 +36,27 @@ echo Installation terminee. Lire la section "Premiere execution" du README.
 pause
 exit /b 0
 
+:find_python
+set PY=
+py -3 -c "import sys" >nul 2>&1
+if not errorlevel 1 set PY=py -3
+if defined PY exit /b 0
+python -c "import sys" >nul 2>&1
+if not errorlevel 1 set PY=python
+exit /b 0
+
 :no_python
-echo Python n'est pas installe sur ce poste.
-echo Installez-le depuis https://www.python.org/downloads/ en cochant
-echo "Add python.exe to PATH", puis relancez Installer.bat.
+echo Python n'a pas ete trouve sur ce poste (ni "py" ni "python" ne fonctionnent).
+echo.
+echo Cas le plus frequent : Python est installe mais le PATH n'est pas enregistre.
+echo  1. Relancer le programme d'installation de Python depuis https://www.python.org/downloads/
+echo     et choisir "Modify" ou "Repair", en cochant "Add python.exe to PATH".
+echo  2. Ou installer Python depuis le Microsoft Store.
+echo  3. Si "python" renvoie vers le Microsoft Store : Parametres Windows ^> Applications ^>
+echo     Parametres avances ^> Alias d'execution d'applications, puis desactiver python.exe.
+echo.
+echo Ouvrir ensuite une NOUVELLE fenetre de commandes et taper : py --version
+echo Puis relancer Installer.bat.
 pause
 exit /b 1
 
