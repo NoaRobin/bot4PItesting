@@ -15,3 +15,7 @@ pia_bench.toml
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Questionnaire : sorties et profil de navigateur (données internes)
+questionnaire/sortie/
+questionnaire/profil_navigateur/

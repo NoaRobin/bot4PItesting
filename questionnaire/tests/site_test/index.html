@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Questionario di prova</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; }
+  #menu { float: left; width: 260px; background: #eef; min-height: 100vh; padding: 10px; box-sizing: border-box; }
+  #menu a { display: block; color: #00c; text-decoration: underline; margin: 8px 0; }
+  #menu .rouge { color: red; border: 1px solid red; padding: 4px; margin-top: 20px; }
+  #contenu { margin-left: 280px; padding: 20px; }
+  .q { margin: 14px 0; }
+  .q b { display: block; }
+  .q i { display: block; color: #555; }
+  textarea, select, input[type=text] { background: #ffc; width: 480px; }
+  .cache { display: none; }
+  .rubrique.cache { display: none; }
+</style>
+</head>
+<body>
+<div id="menu">
+  <a href="#" data-rub="gea">GEA - Informazioni generali sulla società candidata</a>
+  <a href="#" data-rub="gek">GEK - Deleghe di gestione</a>
+  <a href="#" data-rub="rb1">RB1 - Risultati finanziari - Bilanciato 1</a>
+  <a href="#" data-rub="aiuto">Aiuto</a>
+  <div class="rouge">Salvare le modifiche prima di cambiare sezione</div>
+</div>
+
+<form id="f" method="post" action="/post">
+<div id="contenu">
+
+  <div class="rubrique" id="rub-gea">
+    <h2>1. GEA - Informazioni generali sulla società candidata</h2>
+
+    <div class="q">
+      <b>GEA - Ragione sociale della società candidata -082GEA1080508-</b>
+      <i>Riportare per esteso la ragione sociale</i>
+      <textarea name="ragione"></textarea>
+    </div>
+
+    <div class="q">
+      <b>GEA - Stato dell'Unione Europea in cui la società ha sede -082GEA1080559-</b>
+      <i>Rispondere utilizzando esclusivamente l'elenco proposto</i>
+      <select name="stato" id="stato">
+        <option value="">-- Seleziona --</option>
+        <option>France</option>
+        <option>Italia</option>
+        <option>Germania</option>
+      </select>
+    </div>
+
+    <div class="q cache" id="q-succ">
+      <b>GEA - Indirizzo della succursale in Italia -082GEA1080561-</b>
+      <i>Indicare l'indirizzo della sede legale: via, numero civico, Cap, città</i>
+      <input type="text" name="succ">
+    </div>
+
+    <div class="q">
+      <b>GEA - La società è gestita da soggetti terzi? -082GEA1080570-</b>
+      <label><input type="radio" name="terzi" value="si"> Sì</label>
+      <label><input type="radio" name="terzi" value="no"> No</label>
+    </div>
+
+    <div class="q cache" id="q-tipo">
+      <b>GEA - Tipo di gestione -082GEA1240626-</b>
+      <i>Chi svolge l'attività</i>
+      <select name="tipo">
+        <option value="">-- Seleziona --</option>
+        <option value="1">1 - Svolta direttamente dalla società candidata</option>
+        <option value="2">2 - Affidata a società del gruppo</option>
+        <option value="3">3 - Affidata a società non appartenente al gruppo</option>
+      </select>
+    </div>
+
+    <div class="q cache" id="q-nome">
+      <b>GEA - Nome del soggetto a cui è affidata l'attività -082GEA1240627-</b>
+      <textarea name="nome"></textarea>
+    </div>
+
+    <div class="q">
+      <b>GEA - Dichiaro la veridicità delle informazioni -082GEA1080600-</b>
+      <input type="checkbox" name="dich">
+    </div>
+
+    <div class="q cache" id="q-motif">
+      <b>GEA - Motivo della dichiarazione -082GEA1080601-</b>
+      <textarea name="motif"></textarea>
+    </div>
+
+    <div class="q">
+      <b>GEA - Campo di sola lettura -082GEA1080700-</b>
+      <span>Valore esistente</span>
+    </div>
+
+    <div class="q">
+      <b>GEA - Azione con invio automatico -082GEA1080800-</b>
+      <select name="post" onchange="this.form.submit()">
+        <option value="">-- Seleziona --</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+      </select>
+    </div>
+
+    <div class="q">
+      <b>GEA - Codice LEI della società -082GEA1082149-</b>
+      <i>L'informazione viene richiesta in modo univoco</i>
+      <div>*</div>
+      <input type="text" name="lei">
+    </div>
+
+    <div class="q">
+      <a href="#" onclick="fetch('/log?c=lien-contenu'); return false;">Dettagli</a>
+      <button type="submit" name="invia">Invia il questionario</button>
+      <button type="button" onclick="fetch('/log?c=salva')">Salva</button>
+    </div>
+  </div>
+
+  <div class="rubrique cache" id="rub-gek">
+    <h2>2. GEK - Deleghe di gestione</h2>
+    <div class="q">
+      <b>- Altri mandati - Chi svolge l'attività di relazione con l'investitore -082GEA1240622-</b>
+      <select name="rel" id="rel">
+        <option value="">-- Seleziona --</option>
+        <option value="1">1 - Svolta direttamente dalla società candidata</option>
+        <option value="2">2 - Affidata a società del gruppo</option>
+        <option value="3">3 - Affidata a società non appartenente al gruppo</option>
+      </select>
+    </div>
+    <div class="q cache" id="q-rel-nome">
+      <b>- Altri mandati - Relazioni con l'investitore - Nome del soggetto -082GEA1240623-</b>
+      <textarea name="relnome"></textarea>
+    </div>
+  </div>
+
+  <div class="rubrique cache" id="rub-rb1">
+    <h2>3. RB1 - Risultati finanziari - Bilanciato 1</h2>
+    <div class="q">
+      <b>RB1 - Periodo di riferimento *</b>
+      <i>Indicare la data di chiusura</i>
+      <input type="date" name="periode">
+    </div>
+    <div class="q">
+      <b>RB1 - Commento libero -082RB11000001-</b>
+      <textarea name="commento"></textarea>
+    </div>
+  </div>
+
+</div>
+</form>
+
+<script>
+  function majGea() {
+    const v = document.getElementById('stato').value;
+    document.getElementById('q-succ').classList.toggle('cache', v !== 'Italia');
+    const terzi = document.querySelector('input[name=terzi]:checked');
+    const siTerzi = !!(terzi && terzi.value === 'si');
+    document.getElementById('q-tipo').classList.toggle('cache', !siTerzi);
+    const tipo = document.querySelector('select[name=tipo]').value;
+    document.getElementById('q-nome').classList.toggle('cache', !(siTerzi && (tipo === '2' || tipo === '3')));
+    document.getElementById('q-motif').classList.toggle('cache', !document.querySelector('input[name=dich]').checked);
+  }
+  function majRelation() {
+    const v = document.getElementById('rel').value;
+    document.getElementById('q-rel-nome').classList.toggle('cache', !(v === '2' || v === '3'));
+  }
+  function afficher(rub) {
+    document.querySelectorAll('.rubrique').forEach((r) => r.classList.toggle('cache', r.id !== 'rub-' + rub));
+  }
+  document.querySelectorAll('#menu a').forEach((a) => a.addEventListener('click', (e) => {
+    e.preventDefault();
+    afficher(a.dataset.rub);
+  }));
+  document.addEventListener('change', () => { majGea(); majRelation(); });
+  document.addEventListener('click', () => { majGea(); majRelation(); });
+</script>
+</body>
+</html>
