@@ -42,7 +42,7 @@ TYPES_AVEC_OPTIONS = ("liste déroulante", "choix unique")
 
 # Utilitaire injecté dans chaque cadre de la page. Tout passe par window.__qx.
 JS_LIB = r"""(function () {
-  const RE_RUBRIQUE = /^[A-Z]{2,3}\d?\s*-\s*\S/;
+  const RE_RUBRIQUE = /^[A-Z]{2,3}\d?\s*[-‐‑‒–—−]\s*\S/;
   const RE_CODE = /\b(\d{2,4}[A-Z]{2,6}\d{4,})\b/;
   const RE_CODE_G = /\b\d{2,4}[A-Z]{2,6}\d{4,}\b/g;
   const IGNORES = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'HEAD', 'META', 'LINK', 'OPTION']);
@@ -64,23 +64,53 @@ JS_LIB = r"""(function () {
   const estPlaceholder = (o) =>
     o.value === '' || /^\s*[-–—]*\s*$/.test(o.text) || /^\s*(seleziona|scegli|select|choose)\b/i.test(o.text);
 
-  // Rubriques bleues : liens de la colonne de gauche dont le texte commence par un code (GEA - ..., RB1 - ...).
+  const BLOCS = new Set(['DIV', 'TD', 'TH', 'LI', 'TR', 'P', 'SECTION', 'FORM', 'TABLE', 'UL', 'OL', 'BODY']);
+  const blocDe = (el) => {
+    let b = el;
+    while (b && !BLOCS.has(b.tagName)) b = b.parentElement;
+    return b || document.body;
+  };
+
+  // Rubriques : éléments les plus internes dont le texte commence par un code (GEA - ..., RB1 - ...).
+  // Un libellé de question n'est pas une rubrique : son bloc contient un champ de saisie. On les écarte.
   function liensRubriques() {
-    const largeur = window.innerWidth;
-    return [...document.querySelectorAll('a')].filter(
-      (a) => RE_RUBRIQUE.test(norm(a.textContent)) && a.getClientRects().length > 0 &&
-             a.getBoundingClientRect().left < 0.35 * largeur
-    );
+    const candidats = [...document.querySelectorAll('*')].filter((el) => {
+      if (IGNORES.has(el.tagName)) return false;
+      const t = norm(el.textContent);
+      // Une rubrique n'a pas de code de question (-082GEA…-) : un texte qui en contient un est une question.
+      return t.length > 0 && t.length < 160 && RE_RUBRIQUE.test(t) && !RE_CODE.test(t) &&
+             el.getClientRects().length > 0;
+    });
+    return candidats
+      .filter((el) => !candidats.some((autre) => autre !== el && el.contains(autre)))
+      .filter((el) => !blocDe(el).querySelector('select, textarea, input:not([type=hidden])'));
   }
 
-  // Plus grand conteneur de la colonne de gauche : il est ignoré lors de l'analyse du contenu.
-  function barreLaterale(liens) {
-    if (!liens.length) return null;
-    let el = liens[0];
-    while (el.parentElement && el.parentElement.getBoundingClientRect().width < 0.35 * window.innerWidth) {
-      el = el.parentElement;
+  // Zone du menu : plus petit conteneur commun aux rubriques, s'il ne contient aucun champ de saisie.
+  // Sinon, seules les rubriques elles-mêmes sont ignorées lors de l'analyse du contenu.
+  function zoneMenu(liens) {
+    if (!liens.length) return new Set();
+    let anc = liens[0].parentElement;
+    while (anc && !liens.every((l) => anc.contains(l))) anc = anc.parentElement;
+    if (anc && anc !== document.body && !anc.querySelector('select, textarea, input:not([type=hidden])')) {
+      return new Set([anc]);
     }
-    return el;
+    return new Set(liens);
+  }
+
+  // Informations pour le diagnostic quand aucune rubrique n'est trouvée.
+  function diagnostic() {
+    const textes = [...document.querySelectorAll('*')]
+      .filter((el) => el.children.length === 0 && el.getClientRects().length > 0)
+      .map((el) => norm(el.textContent))
+      .filter((t) => t.length > 0 && t.length < 160);
+    return {
+      url: location.href,
+      titre: document.title,
+      nbAncres: document.querySelectorAll('a').length,
+      nbChamps: document.querySelectorAll('select, textarea, input').length,
+      textes: [...new Set(textes)].slice(0, 400),
+    };
   }
 
   function typeDe(el) {
@@ -101,7 +131,7 @@ JS_LIB = r"""(function () {
   }
 
   // Parcourt le DOM dans l'ordre : lignes de texte (avec gras/italique) et contrôles de saisie.
-  function collecte(racine, barre) {
+  function collecte(racine, exclus) {
     const jetons = [];
     const parcours = (noeud) => {
       for (const n of noeud.childNodes) {
@@ -112,7 +142,7 @@ JS_LIB = r"""(function () {
             jetons.push({ s, gras: estGras(cs), italique: cs.fontStyle === 'italic' });
           }
         } else if (n.nodeType === Node.ELEMENT_NODE) {
-          if (IGNORES.has(n.tagName) || n === barre) continue;
+          if (IGNORES.has(n.tagName) || exclus.has(n)) continue;
           const cs = getComputedStyle(n);
           if (cs.display === 'none' || cs.visibility === 'hidden') continue;
           if (n.tagName === 'BR') { jetons.push({ saut: true }); continue; }
@@ -209,8 +239,7 @@ JS_LIB = r"""(function () {
 
   function analyser() {
     const liens = liensRubriques();
-    const barre = barreLaterale(liens);
-    const items = collecte(document.body, barre);
+    const items = collecte(document.body || document.documentElement, zoneMenu(liens));
 
     // Les boutons radio d'un même name forment une seule question.
     const groupes = new Map();
@@ -339,11 +368,12 @@ JS_LIB = r"""(function () {
   return {
     nomsRubriques: () => [...new Set(liensRubriques().map((a) => norm(a.textContent)))],
     marqueLien: (texte) => {
-      document.querySelectorAll('a[data-qx-nav]').forEach((a) => a.removeAttribute('data-qx-nav'));
+      document.querySelectorAll('[data-qx-nav]').forEach((a) => a.removeAttribute('data-qx-nav'));
       const lien = liensRubriques().find((a) => norm(a.textContent) === texte);
       if (lien) lien.setAttribute('data-qx-nav', '1');
       return !!lien;
     },
+    diagnostic,
     analyser,
     valeurs,
     definir: ([cle, valeur]) => definir(cle, valeur),
@@ -497,6 +527,7 @@ class Extracteur:
             _, cadre = self.localiser(contexte)
             if cadre is not None:
                 break
+            self.diagnostiquer(contexte)
             if self.demander("Menu bleu introuvable : vérifiez la page, puis Entrée (q = quitter) > ") == "q":
                 return
 
@@ -523,13 +554,30 @@ class Extracteur:
             except (ErreurPlaywright, TimeoutError) as erreur:
                 self.journal(f"  Erreur sur cette rubrique, rien n'est enregistré : {erreur}")
 
+    def diagnostiquer(self, contexte) -> None:
+        """Écrit diagnostic.txt : textes visibles et cadres de chaque page, pour adapter la détection du menu."""
+        lignes: list[str] = []
+        for numero, page in enumerate(contexte.pages, 1):
+            for cadre in page.frames:
+                try:
+                    info = qx(cadre, "diagnostic")
+                except ErreurPlaywright as erreur:
+                    lignes.append(f"Page {numero}, cadre {cadre.url} : illisible ({erreur})")
+                    continue
+                lignes += ["", f"Page {numero}, cadre : {info['url']}", f"titre : {info['titre']}",
+                           f"liens <a> : {info['nbAncres']}   champs de saisie : {info['nbChamps']}"]
+                lignes += [f"  {t!r}" for t in info["textes"]]
+        chemin = self.dossier / "diagnostic.txt"
+        chemin.write_text("\n".join(lignes) + "\n", encoding="utf-8")
+        self.journal(f"Diagnostic écrit : {chemin}")
+
     def traiter_rubrique(self, contexte, nom: str) -> None:
         _, cadre = self.localiser(contexte)
         if cadre is None or not qx(cadre, "marqueLien", nom):
             self.journal(f"  Rubrique introuvable : {nom}")
             return
         self.journal(f"Rubrique : {nom}")
-        cadre.locator('a[data-qx-nav="1"]').click()
+        cadre.locator('[data-qx-nav="1"]').click()
         _, cadre = self.attendre_rubrique(contexte)
 
         base = qx(cadre, "analyser")
@@ -543,7 +591,7 @@ class Extracteur:
         if self.soumissions_bloquees > soumissions_avant:
             self.journal(f"  {self.soumissions_bloquees - soumissions_avant} soumission(s) de formulaire bloquée(s) "
                          "pendant les essais (aucun envoi)")
-        code = nom.split(" - ")[0].strip()
+        code = re.split(r"\s*[-‐-―−]\s*", nom, maxsplit=1)[0].strip()
         section = {"code": code, "nom": nom, "questions": resultat["questions"], "tests": resultat["tests"]}
         self.sections = [s for s in self.sections if s["code"] != code] + [section]
         self.verifier(section, base["brut"])
