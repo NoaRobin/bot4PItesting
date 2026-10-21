@@ -27,3 +27,9 @@ All three have the same 19-option list (video ~238–241 s). The second factor's
 ## Still to check on the portal
 - Lists whose option text is taken from the DOCX (e.g. 082GEA1240622–1240628, 082GEK2201672): match the video, not re-read frame by frame.
 - Questions added from the Italian print preview (65 codes, translated from Italian): proofread.
+
+## Recheck (latest)
+- Translation file compared with the Word: the same 703 question codes, every title identical, every instruction line present. The translation's answer wording is now used for the lists it covers.
+- Dropdowns: 132 lists. 76 checked frame by frame against the video (options identical), plus the EU list (26), the group country list (34) and the delegated-company country list (34, top and bottom entries not visible), the government factors (19), and 24 RB1 / GEC / GEF / GEK lists read from open popups. The 5 rating questions GEA 2802045/2802048/2802049/2802050/2802051 are shown as lists in the video but their options were not read: "Yes / No" taken from the translation instruction, to check on the portal.
+- Not converted (not reliable from the video): about 167 further fields that look like lists in the video. Several are numeric fields ("2 cifre decimali"), so the list is not final. To check on the portal, one by one: GEA 1240627/1240629/1250637/2802046/2802055, GEB 1090509/1095108, GEC 1100513/1101127 and the rest of the RB1, GEC, GEF, GEG, GEH, GEI, GEJ, GEK and RFx questions with a small box after the title.
+- GEA 4293773 (ISO 9001) is shown as two radio buttons (Si / No) in the portal, not a list.
