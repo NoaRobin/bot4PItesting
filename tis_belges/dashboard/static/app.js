@@ -19,7 +19,6 @@
     job: { label: null, running: false, offset: 0, lines: [] },
     checkLines: [],
     schedDirty: false,
-    prevAllDone: null,
     stationsBuilt: false,
   };
 
@@ -45,10 +44,7 @@
     el.className = `toast ${kind}`;
     el.innerHTML = `${icon(kind === "err" ? "x" : "check")}<span>${esc(message)}</span>`;
     $("toasts").appendChild(el);
-    setTimeout(() => {
-      el.classList.add("leaving");
-      el.addEventListener("animationend", () => el.remove(), { once: true });
-    }, 4200);
+    setTimeout(() => el.remove(), 4200);
   }
 
   function confirmBox({ title, text, ok, iconName = "send", tone = "" }) {
@@ -120,12 +116,13 @@
   }
 
   function buildStations(steps) {
-    $("stations").innerHTML = steps.map((s) => `
+    $("stations").innerHTML = steps.map((s, i) => `
       <li class="station" data-id="${s.id}">
         <div class="st-dot">
           ${icon(STATION_ICONS[s.id] || "file")}
           <span class="st-badge"></span>
         </div>
+        <span class="st-num" aria-hidden="true">0${i + 1}</span>
         <p class="st-label"><span class="st-full">${esc(s.label)}</span><span class="st-short" aria-hidden="true">${esc(SHORT_LABELS[s.id] || s.label)}</span></p>
         <p class="st-meta"></p>
         <span class="sr-only st-sr"></span>
@@ -161,14 +158,7 @@
     $("trackFill").style.transform = `scaleX(${allDone ? 1 : d / (steps.length - 1)})`;
     $("journey").classList.toggle("is-failed", haloState === "failed");
 
-    // L'avion ne part qu'au moment où l'envoi se termine sous nos yeux.
-    if (ui.prevAllDone === false && allDone && !reducedMotion.matches) {
-      const plane = $("plane");
-      plane.classList.remove("fly");
-      void plane.offsetWidth;  // relance l'animation
-      plane.classList.add("fly");
-    }
-    ui.prevAllDone = allDone;
+    renderStamp(s, steps, allDone, haloState);
   }
 
   function positionToken(idx, state) {
@@ -188,7 +178,43 @@
       }
     }
     halo.style.setProperty("--x", x);
-    $("plane").style.setProperty("--x", x);
+    ui.tokenX = parseFloat(x);
+    placeStamp();
+  }
+
+  // Centre le tampon sur l'étape, sans jamais le laisser sortir du parcours.
+  function placeStamp() {
+    const stamp = $("stamp");
+    if (stamp.hidden || ui.tokenX === undefined) return;
+    const half = stamp.offsetWidth / 2 + 8;
+    const max = $("journey").clientWidth - half;
+    const x = Math.min(Math.max(ui.tokenX, half), max);
+    stamp.style.setProperty("--x", `${Math.round(x)}px`);
+  }
+
+  // Tampon posé sur l'étape concernée : le résultat se lit à l'endroit où il s'est produit.
+  function renderStamp(s, steps, allDone, haloState) {
+    let text = "";
+    let tone = "";
+    if (allDone && s.mode === "test") { text = "Essai OK"; tone = "test"; }
+    else if (allDone) { text = `Envoyé ${hhmm(new Date(steps[steps.length - 1].at))}`; tone = "ok"; }
+    else if (haloState === "failed") { text = "Échec"; tone = "err"; }
+    else if (haloState === "warning") { text = "À vérifier"; tone = "warn"; }
+
+    const stamp = $("stamp");
+    const key = `${tone}|${text}`;
+    if (key === ui.stampKey) return;
+    const firstRender = ui.stampKey === undefined;
+    ui.stampKey = key;
+    stamp.hidden = !text;
+    stamp.textContent = text;
+    stamp.className = `stamp ${tone}`;
+    placeStamp();
+    // Le tampon ne « tombe » que lorsqu'il apparaît sous nos yeux, pas au chargement.
+    if (text && !firstRender && !reducedMotion.matches) {
+      void stamp.offsetWidth;
+      stamp.classList.add("slam");
+    }
   }
 
   // ---------------------------------------------------------------- scène
@@ -292,6 +318,7 @@
     const end = Math.min(24 * 60, Math.max(20 * 60, Math.ceil(until / 60) * 60 + 120));
     const pct = (m) => `${((Math.min(Math.max(m, start), end) - start) / (end - start)) * 100}%`;
 
+    $("rail").style.setProperty("--hours", (end - start) / 60);
     $("railWindow").style.left = pct(run);
     $("railWindow").style.width = `calc(${pct(until)} - ${pct(run)})`;
     $("railMark").style.left = pct(run);

@@ -115,10 +115,12 @@ dans sa propre fenêtre. Elle fonctionne entièrement en local : rien ne sort du
 - **Essai sans envoi** : même déroulé, dans le dossier de test ; le mail part seulement vers
   l'adresse opérateur.
 - **Vérifier le poste** : contrôle Excel, Outlook, la base et les dossiers, résultat en liste.
-- **Parcours du fichier** : les cinq étapes (Actualisation, Archive, Valor, Fichier final, Six).
-  Le halo indique où se trouve le fichier : il tourne pendant le traitement, devient rouge sur
-  l'étape en échec, vert quand le fichier est parti. L'heure de chaque étape s'affiche dessous.
-- **Rail de la journée** : l'heure actuelle, l'heure de calcul et la fenêtre de reprise (17h-18h).
+- **Parcours du fichier** : les cinq étapes numérotées (Actualisation, Archive, Valor, Fichier
+  final, Six). Un bloc avance case par case jusqu'à l'étape où se trouve le fichier : jaune et
+  clignotant pendant le traitement, rouge sur l'étape en échec, bleu quand tout est fait. Un tampon
+  « ENVOYÉ 17:01 » ou « ÉCHEC » se pose sur l'étape concernée. L'heure de chaque étape s'affiche dessous.
+- **Règle de la journée** : l'heure actuelle (bleu), l'heure de calcul et la fenêtre de reprise
+  17h-18h (hachures jaunes).
 - **Programmation** : changer l'heure de calcul et activer ou couper l'envoi automatique ;
   la tâche planifiée Windows est mise à jour immédiatement.
 - **Console** : la sortie de l'opération en direct, copiable pour le support.
