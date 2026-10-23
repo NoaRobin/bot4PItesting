@@ -26,18 +26,32 @@ toutes les 15 minutes jusqu'à 18h.
 | Boîte `AMEUDataTeam@rmm-co.com` ajoutée dans Outlook, avec le droit d'envoi | Voir étape 4 |
 | Le poste reste **allumé et la session ouverte** à 17h | Voir section 5 |
 
-## 2. Emplacement du dossier
+## 2. Installation en un double-clic
 
-Copier le dossier `tis_belges` dans **un dossier local, hors OneDrive / SharePoint**, par
-exemple `C:\Users\greffier\TISBelges`.
+Seul prérequis : **Python 3.9 ou plus récent**, installé depuis https://www.python.org/downloads/
+en cochant **« Add python.exe to PATH »**.
 
-Ne pas l'installer dans `Rothschild & Co - Documents` : les fichiers de travail y seraient
-synchronisés en permanence.
+Ensuite, double-cliquer sur **`Installer_TIS_Belges.bat`**. Ce fichier est autonome : il peut
+être posé n'importe où (bureau, Téléchargements, ou même lancé depuis un zip). Il :
 
-## 3. Installation pas à pas
+1. télécharge la dernière version de l'application depuis GitHub ;
+2. l'installe dans `%LOCALAPPDATA%\TISBelges\app` (dossier local, hors OneDrive) ;
+3. crée l'environnement Python et installe les composants (openpyxl, pywin32) ;
+4. contrôle le poste (Excel, Outlook, base RMMPRD, dossiers) ;
+5. programme l'envoi automatique si le contrôle ne signale aucun point bloquant ;
+6. crée le raccourci **TIS Belges** sur le bureau et ouvre l'application.
 
-**a. Installer Python** (une seule fois) : https://www.python.org/downloads/ → version 3.12
-ou plus récente. À l'écran d'installation, **cocher « Add python.exe to PATH »**.
+**Mise à jour** : relancer le même fichier. Les réglages de `config.json` sont conservés et
+les nouvelles options éventuelles y sont ajoutées.
+
+Au premier lancement, Windows peut afficher « Windows a protégé votre ordinateur » (fichier
+téléchargé) : cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
+
+## 3. Réglages à vérifier une fois
+
+**a. Si le contrôle du poste signale des points bloquants**, ils s'affichent dans la fenêtre
+d'installation et dans l'application (bouton « Vérifier le poste »). L'envoi automatique ne
+s'active qu'une fois ces points corrigés : l'activer ensuite depuis l'application.
 
 **b. Vérifier le DSN RMMPRD**
 1. Ouvrir « Sources de données ODBC » (taper `odbcad32` dans la recherche Windows).
@@ -45,11 +59,7 @@ ou plus récente. À l'écran d'installation, **cocher « Add python.exe to PATH
 3. Tester la connexion. Cocher **« Se souvenir du mot de passe »** (ou équivalent) pour que
    l'outil se connecte sans invite.
 
-**c. Lancer l'installation** : double-cliquer sur `Installer.bat`.
-Il crée l'environnement Python, installe les composants, lance le contrôle de l'installation
-et crée la tâche planifiée.
-
-Si le contrôle affiche des lignes **ECHEC**, le message indique ce qui manque. Une ligne
+**c. Lire le contrôle du poste.** Si le contrôle affiche des lignes **ECHEC**, le message indique ce qui manque. Une ligne
 **ATTENTION** pour la boîte expéditrice signifie que l'envoi se fera « de la part de » la
 boîte : il faut alors vérifier le droit d'envoi dans Outlook.
 
@@ -58,7 +68,7 @@ de la structure actuelle.
 
 ## 4. Première exécution : essai sans envoi à Six
 
-Ouvrir un terminal dans le dossier `tis_belges` (barre d'adresse de l'explorateur → `cmd`)
+Ouvrir un terminal dans le dossier `%LOCALAPPDATA%\TISBelges\app` (barre d'adresse de l'explorateur → `cmd`)
 et lancer :
 
 ```
@@ -130,7 +140,7 @@ ou sombre (bouton en haut à droite).
 
 ## 7. Commandes utiles
 
-Toutes à lancer depuis le dossier `tis_belges` :
+Toutes à lancer depuis le dossier `%LOCALAPPDATA%\TISBelges\app` :
 
 ```
 .venv\Scripts\python.exe tis_belges.py check                  contrôle de l'installation
@@ -156,7 +166,9 @@ simplement à l'étape qui n'était pas terminée.
 
 | Fichier | Rôle |
 |---|---|
-| `Installer.bat` | Installation et création de la tâche planifiée |
+| `Installer_TIS_Belges.bat` | Téléchargement, installation et mise à jour en un double-clic |
+| `Installer.bat` | Installation depuis un dossier déjà présent |
+| `deploy.py` | Logique d'installation commune aux deux installeurs |
 | `Lancer.bat` | Ouvre l'application TIS Belges |
 | `dashboard/` | Application locale : serveur (`server.py`) et interface (`static/`) |
 | `tis_belges.py` | Point d'entrée : commandes, orchestration, reprise |
