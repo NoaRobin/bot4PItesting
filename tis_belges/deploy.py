@@ -76,7 +76,16 @@ def stop_dashboard() -> None:
     """Arrête une application déjà ouverte, pour que la version installée soit rechargée."""
     if not WINDOWS:
         return
-    out = subprocess.run(["netstat", "-ano", "-p", "TCP"], capture_output=True, text=True).stdout
+    # netstat écrit dans la page de code de la console (cp850 sur un Windows français) :
+    # on décode avec la page OEM et on remplace tout caractère illisible.
+    try:
+        result = subprocess.run(
+            ["netstat", "-ano", "-p", "TCP"],
+            capture_output=True, text=True, encoding="oem", errors="replace",
+        )
+    except OSError:
+        return
+    out = result.stdout or ""
     for line in out.splitlines():
         parts = line.split()
         # Le libellé d'état est traduit selon la langue de Windows : on repère l'écoute
