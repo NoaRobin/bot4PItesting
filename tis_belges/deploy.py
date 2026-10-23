@@ -26,9 +26,24 @@ from pathlib import Path
 
 WINDOWS = os.name == "nt"
 APP = Path(__file__).resolve().parent
-HOME = Path(os.environ.get("LOCALAPPDATA") or Path.home()) / "TISBelges"
-VENV = HOME / "venv"
+# Python du Microsoft Store redirige en silence les écritures dans AppData vers son dossier
+# privé (AppData\Local\Packages\PythonSoftwareFoundation...). Le dossier personnel n'est pas
+# redirigé : l'état d'installation y est rangé, et l'emplacement du venv est choisi en vérifiant
+# qu'il existe vraiment là où on l'a demandé.
+HOME = Path.home() / ".tisbelges"
 MARKER = HOME / "installation.json"
+VENV_FILE = APP / ".venv_path"     # lu par TIS_Belges.bat pour lancer l'application
+
+
+def _saved_venv() -> Path | None:
+    try:
+        text = VENV_FILE.read_text(encoding="utf-8").strip()
+    except OSError:
+        return None
+    return Path(text) if text else None
+
+
+VENV = _saved_venv()
 PORT = 8765
 
 
@@ -36,10 +51,64 @@ def say(message: str = "") -> None:
     print(message, flush=True)
 
 
-def venv_python(windowed: bool = False) -> Path:
+def venv_python(windowed: bool = False, venv: Path | None = None) -> Path:
+    venv = venv or VENV or Path("venv-introuvable")
     if WINDOWS:
-        return VENV / "Scripts" / ("pythonw.exe" if windowed else "python.exe")
-    return VENV / "bin" / "python"
+        return venv / "Scripts" / ("pythonw.exe" if windowed else "python.exe")
+    return venv / "bin" / "python"
+
+
+def venv_candidates() -> list[Path]:
+    """Emplacements essayés dans l'ordre : dossier personnel (jamais redirigé), dossier de
+    l'application, puis AppData."""
+    candidates = [HOME / "venv", APP / ".venv"]
+    if os.environ.get("LOCALAPPDATA"):
+        candidates.append(Path(os.environ["LOCALAPPDATA"]) / "TISBelges" / "venv")
+    return candidates
+
+
+def _same(a: Path, b: Path) -> bool:
+    a, b = str(a.resolve()), str(b.resolve())
+    return a.lower() == b.lower() if WINDOWS else a == b
+
+
+def venv_ok(venv: Path) -> bool:
+    """Le venv existe vraiment à cet endroit et son Python se reconnaît comme tel."""
+    py = venv_python(venv=venv)
+    if not (venv / "pyvenv.cfg").is_file() or not py.is_file():
+        return False
+    try:
+        out = subprocess.run(
+            [str(py), "-c", "import sys; print(sys.prefix)"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    return out.returncode == 0 and _same(Path(out.stdout.strip()), venv)
+
+
+def build_venv() -> Path:
+    """Trouve ou crée un venv utilisable et retient son emplacement."""
+    global VENV
+    for venv in ([VENV] if VENV else []) + venv_candidates():
+        if venv_ok(venv):
+            break
+        say(f"    Essai : {venv}")
+        shutil.rmtree(venv, ignore_errors=True)
+        try:
+            venv.parent.mkdir(parents=True, exist_ok=True)
+            subprocess.run([sys.executable, "-m", "venv", str(venv)], capture_output=True, timeout=600)
+        except (OSError, subprocess.TimeoutExpired):
+            continue
+        if venv_ok(venv):
+            break
+        say("    Emplacement inutilisable (redirigé ou incomplet), essai suivant.")
+        shutil.rmtree(venv, ignore_errors=True)
+    else:
+        raise RuntimeError("Impossible de créer un environnement Python utilisable.")
+    VENV = venv
+    VENV_FILE.write_text(str(venv), encoding="utf-8")
+    return venv
 
 
 def fingerprint() -> dict:
@@ -52,7 +121,7 @@ def fingerprint() -> dict:
 
 
 def is_ready() -> bool:
-    if not MARKER.exists() or not venv_python().exists():
+    if not MARKER.exists() or VENV is None or not venv_python().exists():
         return False
     try:
         saved = json.loads(MARKER.read_text(encoding="utf-8"))
@@ -129,11 +198,7 @@ def setup(launcher: Path | None) -> int:
     HOME.mkdir(parents=True, exist_ok=True)
 
     say(f"\n[2/{total}] Environnement Python et composants (openpyxl, pywin32)")
-    if venv_python().exists() and subprocess.run([str(venv_python()), "-c", "pass"]).returncode != 0:
-        say("    Environnement existant inutilisable (Python mis à jour ?) : recréation.")
-        shutil.rmtree(VENV, ignore_errors=True)
-    if not venv_python().exists():
-        subprocess.run([sys.executable, "-m", "venv", str(VENV)], check=True)
+    say(f"    Environnement : {build_venv()}")
     pip = [str(venv_python()), "-m", "pip", "--disable-pip-version-check"]
     subprocess.run([*pip, "install", "-q", "--upgrade", "pip"], check=False)
     subprocess.run([*pip, "install", "-q", "-r", str(APP / "requirements.txt")], check=True)
@@ -198,4 +263,7 @@ if __name__ == "__main__":
         sys.exit(main())
     except subprocess.CalledProcessError as exc:
         say(f"\nERREUR : la commande a échoué ({exc.returncode}) : {' '.join(map(str, exc.cmd))}")
+        sys.exit(1)
+    except RuntimeError as exc:
+        say(f"\nERREUR : {exc}")
         sys.exit(1)

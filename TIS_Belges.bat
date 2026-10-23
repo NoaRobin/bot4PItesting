@@ -14,10 +14,12 @@ set "APPDIR=%~dp0tis_belges"
 if not exist "%APPDIR%\tis_belges.py" set "APPDIR=%~dp0."
 if not exist "%APPDIR%\tis_belges.py" goto :no_app
 
-set "VENV=%LOCALAPPDATA%\TISBelges\venv"
 set "URL=http://127.0.0.1:8765"
 
 rem ---------------------------------------------------------------- deja installe ?
+rem deploy.py retient l'emplacement du venv qu'il a choisi dans .venv_path
+call :read_venv
+if not defined VENV goto :setup
 if not exist "%VENV%\Scripts\python.exe" goto :setup
 "%VENV%\Scripts\python.exe" -I "%APPDIR%\deploy.py" --is-ready
 if errorlevel 1 goto :setup
@@ -35,6 +37,8 @@ if not defined PY goto :no_python
 echo Python trouve : %PY%
 %PY% -I "%APPDIR%\deploy.py" --setup --launcher "%~f0"
 if errorlevel 1 goto :setup_failed
+call :read_venv
+if not defined VENV goto :setup_failed
 echo.
 echo Ouverture de l'application...
 
@@ -60,6 +64,11 @@ start "" %URL%
 exit /b 0
 
 rem ============================================================================
+:read_venv
+set "VENV="
+if exist "%APPDIR%\.venv_path" set /p VENV=<"%APPDIR%\.venv_path"
+exit /b 0
+
 :find_python
 set "PY="
 py -3 -c "import sys; sys.exit(0 if sys.version_info >= (3, 9) else 1)" >nul 2>&1
@@ -94,7 +103,7 @@ exit /b 1
 :server_failed
 echo.
 echo L'application ne demarre pas. Pour la reparer, supprimez le fichier
-echo   %LOCALAPPDATA%\TISBelges\installation.json
+echo   %USERPROFILE%\.tisbelges\installation.json
 echo puis relancez TIS_Belges.bat : l'installation sera refaite.
 pause
 exit /b 1

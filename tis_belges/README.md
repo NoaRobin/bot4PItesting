@@ -37,7 +37,7 @@ en cochant **« Add python.exe to PATH »**.
 2. Double-cliquer sur **`TIS_Belges.bat`**, à la racine du dossier extrait.
 
 **Au premier double-clic**, il installe tout (quelques minutes) : environnement Python et
-composants (openpyxl, pywin32) dans `%LOCALAPPDATA%\TISBelges\venv`, contrôle du poste,
+composants (openpyxl, pywin32) dans `%USERPROFILE%\.tisbelges\venv`, contrôle du poste,
 envoi automatique de 17h si le contrôle ne signale aucun point bloquant, raccourci
 **TIS Belges** sur le bureau. Puis il ouvre l'application.
 
@@ -76,7 +76,7 @@ Ouvrir un terminal dans le dossier `tis_belges` extrait (barre d'adresse de l'ex
 et lancer :
 
 ```
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --test --now
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py run --test --now
 ```
 
 Mode test : **aucun envoi à Six, aucune écriture dans les dossiers réels**. Le mail part
@@ -147,12 +147,12 @@ ou sombre (bouton en haut à droite).
 Toutes à lancer depuis le dossier `tis_belges` extrait :
 
 ```
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py check                  contrôle de l'installation
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --now              relance immédiate, sans attendre 17h
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --date 20261016    relance pour une date donnée
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --test --now       essai sans envoi à Six
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py uninstall-task         arrêter la tâche planifiée
-%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py install-task           remettre la tâche planifiée
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py check                  contrôle de l'installation
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py run --now              relance immédiate, sans attendre 17h
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py run --date 20261016    relance pour une date donnée
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py run --test --now       essai sans envoi à Six
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py uninstall-task         arrêter la tâche planifiée
+%USERPROFILE%\.tisbelges\venv\Scripts\python.exe tis_belges.py install-task           remettre la tâche planifiée
 ```
 
 Une relance ne renvoie jamais un fichier déjà envoyé pour la même date. Elle reprend
