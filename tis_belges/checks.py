@@ -30,7 +30,7 @@ def run_checks(cfg: dict) -> int:
     if importlib.util.find_spec("win32com") is not None:
         results.append(_line("OK", "pywin32 installé"))
     else:
-        results.append(_line("ECHEC", "pywin32 installé", "relancer Installer.bat"))
+        results.append(_line("ECHEC", "pywin32 installé", "relancer TIS_Belges.bat"))
         return _summary(results)
 
     try:
@@ -96,7 +96,7 @@ def run_checks(cfg: dict) -> int:
         results.append(_line("OK", f"Tâche planifiée « {system.TASK_NAME} »"))
     else:
         results.append(_line(
-            "ATTENTION", "Tâche planifiée", "absente (lancer : tis_belges.py install-task)",
+            "ATTENTION", "Tâche planifiée", "absente : à activer dans l'application (Programmation)",
         ))
 
     return _summary(results)

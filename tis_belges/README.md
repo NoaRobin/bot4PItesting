@@ -26,26 +26,30 @@ toutes les 15 minutes jusqu'à 18h.
 | Boîte `AMEUDataTeam@rmm-co.com` ajoutée dans Outlook, avec le droit d'envoi | Voir étape 4 |
 | Le poste reste **allumé et la session ouverte** à 17h | Voir section 5 |
 
-## 2. Installation en un double-clic
+## 2. Installation et ouverture : un seul fichier
 
 Seul prérequis : **Python 3.9 ou plus récent**, installé depuis https://www.python.org/downloads/
 en cochant **« Add python.exe to PATH »**.
 
-Ensuite, double-cliquer sur **`Installer_TIS_Belges.bat`**. Ce fichier est autonome : il peut
-être posé n'importe où (bureau, Téléchargements, ou même lancé depuis un zip). Il :
+1. Sur GitHub, télécharger le dépôt en zip (bouton **Code → Download ZIP**, branche
+   `automatisation-stephanie`) et l'extraire dans un dossier stable, par exemple
+   `Documents\TIS Belges`.
+2. Double-cliquer sur **`TIS_Belges.bat`**, à la racine du dossier extrait.
 
-1. télécharge la dernière version de l'application depuis GitHub ;
-2. l'installe dans `%LOCALAPPDATA%\TISBelges\app` (dossier local, hors OneDrive) ;
-3. crée l'environnement Python et installe les composants (openpyxl, pywin32) ;
-4. contrôle le poste (Excel, Outlook, base RMMPRD, dossiers) ;
-5. programme l'envoi automatique si le contrôle ne signale aucun point bloquant ;
-6. crée le raccourci **TIS Belges** sur le bureau et ouvre l'application.
+**Au premier double-clic**, il installe tout (quelques minutes) : environnement Python et
+composants (openpyxl, pywin32) dans `%LOCALAPPDATA%\TISBelges\venv`, contrôle du poste,
+envoi automatique de 17h si le contrôle ne signale aucun point bloquant, raccourci
+**TIS Belges** sur le bureau. Puis il ouvre l'application.
 
-**Mise à jour** : relancer le même fichier. Les réglages de `config.json` sont conservés et
-les nouvelles options éventuelles y sont ajoutées.
+**Ensuite**, le même fichier (ou le raccourci du bureau) ouvre directement l'application.
+
+**Mise à jour** : remplacer le contenu du dossier par la nouvelle version extraite (en gardant
+`config.json` si on l'a modifié), puis double-cliquer comme d'habitude. Si les composants
+requis ont changé, ou si le dossier a été déplacé, l'installation se refait automatiquement.
 
 Au premier lancement, Windows peut afficher « Windows a protégé votre ordinateur » (fichier
-téléchargé) : cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
+venu d'Internet) : cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
+L'installation retire ensuite cette marque des fichiers du dossier.
 
 ## 3. Réglages à vérifier une fois
 
@@ -68,11 +72,11 @@ de la structure actuelle.
 
 ## 4. Première exécution : essai sans envoi à Six
 
-Ouvrir un terminal dans le dossier `%LOCALAPPDATA%\TISBelges\app` (barre d'adresse de l'explorateur → `cmd`)
+Ouvrir un terminal dans le dossier `tis_belges` extrait (barre d'adresse de l'explorateur → `cmd`)
 et lancer :
 
 ```
-.venv\Scripts\python.exe tis_belges.py run --test --now
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --test --now
 ```
 
 Mode test : **aucun envoi à Six, aucune écriture dans les dossiers réels**. Le mail part
@@ -117,7 +121,7 @@ planifiée est déjà en place, rien d'autre à faire.
 
 ## Application TIS Belges
 
-Le raccourci **TIS Belges** du bureau (créé par `Installer.bat`, ou `Lancer.bat`) ouvre l'application
+Le raccourci **TIS Belges** du bureau (ou `TIS_Belges.bat`) ouvre l'application
 dans sa propre fenêtre. Elle fonctionne entièrement en local : rien ne sort du poste.
 
 - **Envoyer à Six** : lance l'envoi réel, après confirmation. Le bouton se désactive une fois
@@ -140,15 +144,15 @@ ou sombre (bouton en haut à droite).
 
 ## 7. Commandes utiles
 
-Toutes à lancer depuis le dossier `%LOCALAPPDATA%\TISBelges\app` :
+Toutes à lancer depuis le dossier `tis_belges` extrait :
 
 ```
-.venv\Scripts\python.exe tis_belges.py check                  contrôle de l'installation
-.venv\Scripts\python.exe tis_belges.py run --now              relance immédiate, sans attendre 17h
-.venv\Scripts\python.exe tis_belges.py run --date 20261016    relance pour une date donnée
-.venv\Scripts\python.exe tis_belges.py run --test --now       essai sans envoi à Six
-.venv\Scripts\python.exe tis_belges.py uninstall-task         arrêter la tâche planifiée
-.venv\Scripts\python.exe tis_belges.py install-task           remettre la tâche planifiée
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py check                  contrôle de l'installation
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --now              relance immédiate, sans attendre 17h
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --date 20261016    relance pour une date donnée
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py run --test --now       essai sans envoi à Six
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py uninstall-task         arrêter la tâche planifiée
+%LOCALAPPDATA%\TISBelges\venv\Scripts\python.exe tis_belges.py install-task           remettre la tâche planifiée
 ```
 
 Une relance ne renvoie jamais un fichier déjà envoyé pour la même date. Elle reprend
@@ -166,10 +170,8 @@ simplement à l'étape qui n'était pas terminée.
 
 | Fichier | Rôle |
 |---|---|
-| `Installer_TIS_Belges.bat` | Téléchargement, installation et mise à jour en un double-clic |
-| `Installer.bat` | Installation depuis un dossier déjà présent |
-| `deploy.py` | Logique d'installation commune aux deux installeurs |
-| `Lancer.bat` | Ouvre l'application TIS Belges |
+| `../TIS_Belges.bat` | Installe au premier clic, puis ouvre l'application |
+| `deploy.py` | Préparation du poste (appelé par `TIS_Belges.bat`) |
 | `dashboard/` | Application locale : serveur (`server.py`) et interface (`static/`) |
 | `tis_belges.py` | Point d'entrée : commandes, orchestration, reprise |
 | `rules.py` | Règles de validation et sélection Valor (sans dépendance Windows) |

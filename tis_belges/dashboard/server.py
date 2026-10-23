@@ -4,7 +4,7 @@ Serveur HTTP de la bibliothèque standard, lié à 127.0.0.1 uniquement. Il ne f
 les commandes de tis_belges.py dans un sous-processus, lire l'état du jour et programmer la
 tâche planifiée. Aucune logique métier ici.
 
-Lancement : python dashboard/server.py   (ou Lancer.bat, qui ouvre la fenêtre)
+Lancement : TIS_Belges.bat (ouvre la fenêtre), ou python dashboard/server.py
 """
 
 from __future__ import annotations
