@@ -31,11 +31,11 @@ PORT = 8765
 CREATE_NO_WINDOW = 0x08000000 if os.name == "nt" else 0
 
 STEPS = [
-    ("validated", "Actualisation & contrôle", "Excel actualise la requête, les données sont vérifiées"),
-    ("archived", "Archivage", "Copie dans le dossier de l'année"),
-    ("valor_done", "Historique Valor", "Lignes R-co Valor ajoutées"),
-    ("am_built", "Fichier final", "Onglet Paramètres supprimé, fichier prêt"),
-    ("sent_at", "Envoi à Six", "Mail envoyé à Six Financial Information"),
+    ("validated", "Actualisation", "Requête RMMPRD actualisée et données contrôlées"),
+    ("archived", "Archive", "Copie datée dans le dossier de l'année"),
+    ("valor_done", "Valor", "Lignes R-co Valor ajoutées à l'historique"),
+    ("am_built", "Fichier final", "Onglet Paramètres retiré, fichier prêt"),
+    ("sent_at", "Six", "Mail envoyé à Six Financial Information"),
 ]
 
 
@@ -117,14 +117,28 @@ def _state_file(cfg: dict, key: str) -> Path:
     return Path(cfg["data_dir"]) / "state" / f"{key}.json"
 
 
-def today_state(cfg: dict) -> dict:
-    path = _state_file(cfg, date.today().strftime("%Y%m%d"))
+def today_state(cfg: dict, test: bool = False) -> dict:
+    key = date.today().strftime("%Y%m%d") + ("_test" if test else "")
+    path = _state_file(cfg, key)
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def _process_job() -> Job | None:
+    """Dernière opération d'envoi ou d'essai lancée depuis le dashboard (pas le contrôle)."""
+    return JOB if JOB and JOB.args and JOB.args[0] == "run" else None
+
+
+def current_mode() -> str:
+    job = _process_job()
+    return "test" if job and "--test" in job.args else "prod"
+
+
 def steps_view(cfg: dict) -> list[dict]:
-    state = today_state(cfg)
-    job_running = bool(JOB and JOB.running and JOB.label.startswith("Envoi"))
+    """Statut de chaque étape : done, running, failed, warning ou pending."""
+    state = today_state(cfg, test=current_mode() == "test")
+    job = _process_job()
+    running = bool(job and job.running)
+    failed = bool(job and not job.running and job.code not in (0, None))
     result = []
     previous_done = True
     for key, label, hint in STEPS:
@@ -133,11 +147,13 @@ def steps_view(cfg: dict) -> list[dict]:
             status = "warning"
         elif done:
             status = "done"
-        elif job_running and previous_done:
+        elif previous_done and running:
             status = "running"
+        elif previous_done and failed:
+            status = "failed"
         else:
             status = "pending"
-        result.append({"id": key, "label": label, "hint": hint, "status": status})
+        result.append({"id": key, "label": label, "hint": hint, "status": status, "at": state.get(key)})
         previous_done = done
     return result
 
@@ -182,11 +198,15 @@ def status_payload() -> dict:
     return {
         "today": date.today().isoformat(),
         "business_day": rules.is_business_day(date.today(), cfg["skip_dates"]),
+        "server_time": datetime.now().isoformat(timespec="seconds"),
+        "mode": current_mode(),
+        "prod_sent": bool(today_state(cfg).get("sent_at")),
         "steps": steps_view(cfg),
         "job": job,
         "schedule": {
             "enabled": system.task_exists(),
             "run_at": cfg["run_at"],
+            "retry_until": cfg["retry_until"],
             "next_run": next_run(cfg),
         },
         "runs": recent_runs(cfg),
@@ -234,6 +254,8 @@ CONTENT_TYPES = {
     ".css": "text/css; charset=utf-8",
     ".js": "application/javascript; charset=utf-8",
     ".svg": "image/svg+xml",
+    ".woff2": "font/woff2",
+    ".txt": "text/plain; charset=utf-8",
 }
 
 

@@ -105,6 +105,27 @@ planifiée est déjà en place, rien d'autre à faire.
 | « Un envoi a été démarré sans confirmation » | Même conduite que ci-dessus. |
 | « Aucune ligne « R-co Valor » » | Anomalie de données : vérifier le fichier avant de relancer. |
 
+## Application TIS Belges
+
+Le raccourci **TIS Belges** du bureau (créé par `Installer.bat`, ou `Lancer.bat`) ouvre l'application
+dans sa propre fenêtre. Elle fonctionne entièrement en local : rien ne sort du poste.
+
+- **Envoyer à Six** : lance l'envoi réel, après confirmation. Le bouton se désactive une fois
+  l'envoi du jour effectué.
+- **Essai sans envoi** : même déroulé, dans le dossier de test ; le mail part seulement vers
+  l'adresse opérateur.
+- **Vérifier le poste** : contrôle Excel, Outlook, la base et les dossiers, résultat en liste.
+- **Parcours du fichier** : les cinq étapes (Actualisation, Archive, Valor, Fichier final, Six).
+  Le halo indique où se trouve le fichier : il tourne pendant le traitement, devient rouge sur
+  l'étape en échec, vert quand le fichier est parti. L'heure de chaque étape s'affiche dessous.
+- **Rail de la journée** : l'heure actuelle, l'heure de calcul et la fenêtre de reprise (17h-18h).
+- **Programmation** : changer l'heure de calcul et activer ou couper l'envoi automatique ;
+  la tâche planifiée Windows est mise à jour immédiatement.
+- **Console** : la sortie de l'opération en direct, copiable pour le support.
+
+L'application respecte le réglage Windows « réduire les animations » et propose un thème clair
+ou sombre (bouton en haut à droite).
+
 ## 7. Commandes utiles
 
 Toutes à lancer depuis le dossier `tis_belges` :
@@ -134,6 +155,8 @@ simplement à l'étape qui n'était pas terminée.
 | Fichier | Rôle |
 |---|---|
 | `Installer.bat` | Installation et création de la tâche planifiée |
+| `Lancer.bat` | Ouvre l'application TIS Belges |
+| `dashboard/` | Application locale : serveur (`server.py`) et interface (`static/`) |
 | `tis_belges.py` | Point d'entrée : commandes, orchestration, reprise |
 | `rules.py` | Règles de validation et sélection Valor (sans dépendance Windows) |
 | `office.py` | Pilotage d'Excel et d'Outlook (COM) |
