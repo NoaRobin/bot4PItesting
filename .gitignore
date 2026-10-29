@@ -1,17 +1,8 @@
-# Données internes : ne jamais publier (dépôt public)
-*.xlsx
-*.xlsm
-*.docx
-*.sqlite3
-*.sqlite3-*
-*.csv
-!equivalences.csv
-runs/
-pia_bench.toml
-.pia_bench_state.json
-.edge_profile*/
-
 # Python
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Questionnaire : sorties et profil de navigateur (données internes, dépôt public)
+questionnaire/sortie/
+questionnaire/profil_navigateur/

@@ -1,8 +1,0 @@
-playwright>=1.45
-openpyxl>=3.1
-# Python 3.10 seulement : tomli
-tomli>=2.0; python_version < "3.11"
-# Optionnel : juge LLM (`python -m pia_bench judge`)
-# anthropic>=1.0
-# Tests
-pytest>=8
