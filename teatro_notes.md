@@ -43,3 +43,8 @@ Règle appliquée : une flèche déroulante visible = liste ; sinon texte.
 
 Liste à relever sur le portail :
 1240627, 2802046, 2802055, 1100513, 1101127, 1101129, 1101130, 1941259, 1941292, 1941297, 1941305, 1941307, 1941308, 1941310, 1941312, 1971320, 1971350, 2021417, 2031471, 2051492, 2071505, 1121071, 1121078, 1951264, 1030462, 1030463, 1050490, 1060499, 1060500, 1840904, 1840907, 1840912, 1840916, 1840919, 1894298, 1760721, 1810842, 1200589, 1200590, 2191665, 2191671, 2191699, 2191700, 2191705, 2191710, 2191712, 2192132, 2192452, 2281720, 2281734, 2281737, 3002369, 3002374, 3002375, 3002377, 3002380, 3002381, 3002382, 3002383, 3002384, 3002385, 3002386, 3002387, 3002389, 3003020, 3003021, 3003022, 3003026, 3003027, 3003028, 3003031, 3003032, 3004416, 3004417, 3004418, 3004419, 3004420, 3004421, 3004422, 3004423, 3004424, 3004427, 3004428, 3004429, 3004431, 3004432, 3004433, 3004434, 3004436, 3004438, 3004439, 3005260, 3005261, 3005262, 3005263, 1291387, 1471398, 1511333
+
+## Compatibilité Word / SharePoint
+- Cause de l'alerte « contenu illisible » : dans les paragraphes à fond gris et les titres soulignés, les propriétés `pBdr` et `shd` étaient écrites après `spacing`, ce que le schéma WordprocessingML refuse (779 paragraphes).
+- Correction de forme uniquement : ordre des propriétés de paragraphe conforme au schéma. Aucun texte, aucune question, aucune liste ni identifiant modifié.
+- Contrôles : validation XSD complète sans erreur ; texte des 2070 paragraphes, 761 contrôles de contenu (209 listes déroulantes, 552 champs texte) et identifiants identiques à la version précédente ; rendu PDF identique.
