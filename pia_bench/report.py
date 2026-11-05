@@ -20,7 +20,7 @@ from .catalogue import Catalogue
 from .store import Store
 
 PRIORITY = ("human", "llm", "rules")
-SCORED = (S.CORRECT, S.NO_INFO, S.INCORRECT)   # dénominateur de l'exactitude (questions NOTABLE notées)
+SCORED = (S.CORRECT, S.NO_INFO, S.INCORRECT, S.OFF_TOPIC)   # dénominateur de l'exactitude (questions NOTABLE notées)
 
 
 @dataclass

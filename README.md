@@ -27,7 +27,29 @@ Les scripts v21 à v28 sont rangés dans `legacy/`.
 py -m pip install -r requirements.txt
 ```
 
-Edge est utilisé tel quel (`channel = "msedge"`) : pas besoin de `playwright install`.
+Edge est utilisé tel quel : pas besoin de `playwright install`.
+
+### Connexion au compte Microsoft (bandeau « contrôlé par un logiciel de test automatisé »)
+
+Quand Playwright lance Edge lui-même, il ajoute le drapeau `--enable-automation` : bandeau
+« Microsoft Edge est contrôlé par un logiciel de test automatisé », et la connexion Microsoft
+d'entreprise (SSO, accès conditionnel) refuse souvent ce navigateur.
+
+Par défaut (`edge.mode = "attach"`), le script **démarre donc un Edge normal**, sans ce drapeau,
+sur un profil dédié (`.edge_profile_pia_bench`) avec un port de débogage local (127.0.0.1:9222),
+puis s'y connecte. Pas de bandeau, la connexion se fait comme d'habitude, une seule fois : elle reste
+mémorisée dans le profil. À la fin d'une campagne, Edge reste ouvert et connecté ; la campagne
+suivante s'y rattache.
+
+Si le port ne s'ouvre pas :
+
+- une fenêtre Edge utilise déjà le profil du benchmark : la fermer, relancer ;
+- la stratégie de l'entreprise interdit le débogage (`edge://policy`, `RemoteDebuggingAllowed`) :
+  mettre `mode = "launch"` dans la section `[edge]` de `pia_bench.toml` (ancien fonctionnement,
+  bandeau masqué autant que possible) ;
+- `msedge.exe` n'est pas trouvé : renseigner `executable_path`.
+
+Tant que le script est attaché, ne pas utiliser cette fenêtre Edge pour autre chose.
 
 ## Utilisation
 
@@ -38,7 +60,8 @@ Placer le classeur `Benchmark_Product_Info_1500_questions_COUVERTURE_ELARGIE.xls
 :: 1. Contrôler le classeur (questions, conversations, lignes orphelines recollées)
 py -m pia_bench check
 
-:: 2. Une seule fois : Edge s'ouvre, vous ouvrez l'agent dans un chat vierge, Entrée.
+:: 2. Une seule fois : Edge s'ouvre, vous vous connectez à votre compte Microsoft,
+::    vous ouvrez l'agent dans un chat vierge, puis Entrée dans la console.
 ::    L'URL de l'agent est mémorisée et le script vérifie qu'il sait ouvrir un chat neuf seul.
 py -m pia_bench setup
 
@@ -100,6 +123,22 @@ avant de l'utiliser sur des données internes.
   ou l'URL du « token endpoint », et que l'agent n'exige pas l'authentification Entra de l'utilisateur.
 - `fake` : agent simulé, pour essayer toute la chaîne sans solliciter l'agent :
   `py -m pia_bench run --transport fake --campaign essai`.
+
+## Vérifier son installation
+
+Le package compte 15 fichiers Python (`pia_bench/` et `pia_bench/transports/`). Si l'un manque
+(copie faite fichier par fichier depuis le site GitHub, par exemple), `python -m pia_bench` s'arrête
+en nommant les fichiers absents. Le plus sûr est de récupérer la branche complète :
+
+```bat
+git fetch origin claude/eager-davinci-lgjr5y
+git checkout claude/eager-davinci-lgjr5y
+git pull
+py -m pia_bench --help
+py -m pytest -q
+```
+
+Sans git : sur GitHub, choisir la branche `claude/eager-davinci-lgjr5y`, puis Code > Download ZIP.
 
 ## Tests
 

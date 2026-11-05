@@ -2,7 +2,7 @@
 """Notation automatique des réponses (pré-verdicts déterministes).
 
 Reprend les verdicts du classeur de résultats :
-  Correct · Pas d’info à tort · Incorrect · Abstention correcte ·
+  Correct · Pas d’info à tort · Incorrect · Hors sujet · Abstention correcte ·
   Valeur sur cellule vide · Échec technique · À confirmer · Non capturé
 
 Neutralise les défauts connus du benchmark (AUDIT_BENCHMARK) :
@@ -24,7 +24,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Iterable
 
-from .config import RATE_LIMIT_PATTERNS, TECH_ERROR_PATTERNS
+from .config import OFF_TOPIC_PATTERNS, RATE_LIMIT_PATTERNS, TECH_ERROR_PATTERNS
 
 CORRECT = "Correct"
 NO_INFO = "Pas d’info à tort"
@@ -32,9 +32,11 @@ INCORRECT = "Incorrect"
 ABSTENTION = "Abstention correcte"
 INVENTED = "Valeur sur cellule vide"
 TECH = "Échec technique"
+OFF_TOPIC = "Hors sujet"          # l'agent répond à côté : demande de « scope », question non reçue…
 REVIEW = "À confirmer"
 NOT_CAPTURED = "Non capturé"
-ALL_VERDICTS = [CORRECT, NO_INFO, INCORRECT, ABSTENTION, INVENTED, TECH, REVIEW, NOT_CAPTURED]
+ALL_VERDICTS = [CORRECT, NO_INFO, INCORRECT, OFF_TOPIC, ABSTENTION, INVENTED, TECH, REVIEW, NOT_CAPTURED]
+YES_NO = {"yes": "oui", "no": "non", "oui": "oui", "non": "non"}
 
 PARTICLES = {"de", "du", "des", "la", "le", "d", "van", "von", "der", "di", "da"}
 WEAK = {"non", "no", "oui", "yes", "e", "s", "g", "n", "y"}
@@ -72,6 +74,24 @@ def norm(text: str | None) -> str:
 
 def tokens(text: str) -> list[str]:
     return norm(text).split()
+
+
+_LABEL_RE = re.compile(r"^\s*(product info assistant said\s*:?\s*)?(product info assistant\s*)?", re.I)
+
+
+def strip_label(answer: str | None) -> str:
+    """Retire l'en-tête de bulle « Product Info Assistant said: Product Info Assistant »."""
+    return _LABEL_RE.sub("", answer or "", count=1).strip()
+
+
+def is_off_topic(answer: str | None) -> bool:
+    text = strip_label(answer)
+    if not text:
+        return True
+    n = norm(text).strip()
+    if re.search(FOUND_PATTERN, f" {n} "):
+        return False
+    return any(re.search(p, n) for p in OFF_TOPIC_PATTERNS)
 
 
 def main_part(answer: str) -> str:
@@ -207,6 +227,9 @@ def candidates(expected: str, eq: Equivalences) -> list[set[str]]:
     groups = []
     for part in parts:
         alts = {part}
+        y = re.fullmatch(r"(\d+)\s+years?", part.strip(), re.I)
+        if y:  # « 5 years » → « 5 ans »
+            alts.add(f"{y.group(1)} ans")
         m = re.fullmatch(r"(.+?)\s*\((.+)\)\s*", part)
         if m:  # « Unit Trust (FCP) », « LAFONT (DE) Alice » est traité par les noms
             alts |= {m.group(1).strip(), m.group(2).strip()}
@@ -310,6 +333,9 @@ def score(expected: str, notable: bool, answer: str | None, champ: str = "", pro
         return Verdict(NOT_CAPTURED, turn_status or "pas de réponse")
     if turn_status in ("TECH_ERROR", "RATE_LIMIT") or technical_kind(answer):
         return Verdict(TECH, "message d'erreur de la plateforme")
+    if is_off_topic(answer):
+        return Verdict(OFF_TOPIC, "l'agent ne traite pas la question (précision demandée, question non reçue ou réponse vide)")
+    answer = strip_label(answer)
     flags = ["contradictoire"] if is_contradictory(answer) else []
     no_info = is_no_info(answer)
 
@@ -324,6 +350,11 @@ def score(expected: str, notable: bool, answer: str | None, champ: str = "", pro
         return Verdict(CORRECT, m.how, flags)
     if no_info:
         return Verdict(NO_INFO, "l'agent dit ne pas avoir la donnée", flags)
+    expected_yn = YES_NO.get(norm(expected).strip())
+    if expected_yn:
+        said = {YES_NO[t] for t in tokens(main_part(answer)) if t in YES_NO}
+        if said and expected_yn not in said:
+            return Verdict(INCORRECT, f"répond « {said.pop()} » au lieu de « {expected_yn} »", flags)
     if m.competitor:
         return Verdict(INCORRECT, f"autre valeur du même champ : {m.competitor}", flags)
     if m.typed_mismatch:
