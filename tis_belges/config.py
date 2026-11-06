@@ -20,8 +20,22 @@ def _expand(value):
     return value
 
 
+def _outside_appdata(cfg: dict) -> dict:
+    """Le Python du Microsoft Store redirige en silence les écritures dans AppData vers son
+    dossier privé : Excel et Outlook, eux, ne voient pas ces fichiers. Les fichiers de travail
+    passés à Excel ne doivent donc jamais être dans AppData : on les range dans le dossier
+    personnel, jamais redirigé."""
+    data = os.path.normcase(os.path.abspath(cfg.get("data_dir", "")))
+    for var in ("LOCALAPPDATA", "APPDATA"):
+        root = os.environ.get(var)
+        if root and data.startswith(os.path.normcase(os.path.abspath(root))):
+            cfg["data_dir"] = str(Path.home() / ".tisbelges")
+            break
+    return cfg
+
+
 def load_config() -> dict:
-    return _expand(json.loads(CONFIG_PATH.read_text(encoding="utf-8")))
+    return _outside_appdata(_expand(json.loads(CONFIG_PATH.read_text(encoding="utf-8"))))
 
 
 def update_config(updates: dict) -> None:

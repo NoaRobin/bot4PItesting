@@ -5,7 +5,6 @@ from __future__ import annotations
 import os
 import subprocess
 import sys
-import tempfile
 from contextlib import contextmanager
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -100,7 +99,10 @@ def install_task(run_at: str) -> None:
     if not python_w.exists():
         python_w = Path(sys.executable)
 
-    xml_path = Path(tempfile.gettempdir()) / "tis_belges_task.xml"
+    # Pas dans %TEMP% : avec le Python du Microsoft Store, AppData (donc %TEMP%) est redirigé
+    # et schtasks ne verrait pas le fichier.
+    xml_path = Path.home() / ".tisbelges" / "tis_belges_task.xml"
+    xml_path.parent.mkdir(parents=True, exist_ok=True)
     xml_path.write_text(_task_xml(python_w, script, run_at), encoding="utf-16")
     try:
         subprocess.run(

@@ -1,6 +1,6 @@
 {
-  "base_dir": "C:\\Users\\greffier\\Rothschild & Co\\AM-DATATEAM-INT - Documents\\A - Data Vendors\\1. DATABASES\\2. BASES DE DONNEES GLOBALES\\Six Financial Information\\3. TIS Belges",
-  "data_dir": "%LOCALAPPDATA%\\TISBelges",
+  "base_dir": "%USERPROFILE%\\Rothschild & Co\\AM-DATATEAM-INT - Documents\\A - Data Vendors\\1. DATABASES\\2. BASES DE DONNEES GLOBALES\\Six Financial Information\\3. TIS Belges",
+  "data_dir": "%USERPROFILE%\\.tisbelges",
 
   "master_name": "TISBE_PROD.xlsx",
   "output_name": "TISBE_Rothschild & Co AM_File.xlsx",

@@ -255,7 +255,9 @@ def send(cfg: dict, lay: Layout, target: date, st: State, test: bool) -> None:
 
 def alert(cfg: dict, subject: str, body: str) -> None:
     try:
-        office.send_mail(cfg["sender"], cfg["alert_recipients"], f"[TIS Belges] {subject}", body, [])
+        # Depuis le compte de l'utilisatrice : une alerte doit partir même si le droit
+        # d'envoi au nom de la boîte partagée manque (c'est justement une cause d'échec).
+        office.send_mail(None, cfg["alert_recipients"], f"[TIS Belges] {subject}", body, [])
     except Exception:
         log.exception("Impossible d'envoyer l'alerte par mail.")
 

@@ -5,7 +5,7 @@ Appelé par TIS_Belges.bat :
   --setup         installation : environnement, composants, contrôle, tâche, raccourci
   --wait-server   attend que l'application réponde avant d'ouvrir sa fenêtre
 
-L'environnement Python est créé dans %LOCALAPPDATA%\\TISBelges\\venv, hors du dossier de
+L'environnement Python est créé dans %USERPROFILE%\\.tisbelges\\venv, hors du dossier de
 l'application : rien de lourd n'est synchronisé si le dossier est dans OneDrive. L'installation
 est refaite automatiquement si le dossier a été déplacé ou si les composants requis ont changé.
 """

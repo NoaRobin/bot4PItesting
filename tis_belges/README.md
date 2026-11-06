@@ -81,7 +81,7 @@ et lancer :
 
 Mode test : **aucun envoi à Six, aucune écriture dans les dossiers réels**. Le mail part
 seulement à l'adresse `operator_email`, avec le préfixe `[TEST]`. Le fichier de test est
-dans `%LOCALAPPDATA%\TISBelges\test\`.
+dans `%USERPROFILE%\.tisbelges\test\`.
 
 Pendant **3 à 5 jours ouvrés**, lancer ce test chaque jour et comparer le fichier produit
 avec celui fait à la main. Quand les deux concordent, passer en production : la tâche
@@ -104,7 +104,7 @@ planifiée est déjà en place, rien d'autre à faire.
 | Archive | `…\3. TIS Belges\2026\TISBE_PROD_yyyymmdd.xlsx` (dossier de l'année créé automatiquement) |
 | Fichier envoyé | `…\3. TIS Belges\TISBE_Rothschild & Co AM_File.xlsx` (écrasé chaque jour) |
 | Historique Valor | `…\3. TIS Belges\Historique TIS Belges\TIS BE_R-co Valor.xlsx` |
-| Journaux | `%LOCALAPPDATA%\TISBelges\logs\tis_belges_yyyymmdd.log` |
+| Journaux | `%USERPROFILE%\.tisbelges\logs\tis_belges_yyyymmdd.log` |
 
 ## 6. Si un mail d'alerte arrive
 
@@ -162,7 +162,7 @@ simplement à l'étape qui n'était pas terminée.
 
 - Aucun mot de passe n'est stocké dans les fichiers de l'outil. Les identifiants de la base
   restent dans le DSN ODBC de Windows.
-- Les fichiers de travail et les journaux sont dans `%LOCALAPPDATA%\TISBelges`, pas dans le
+- Les fichiers de travail et les journaux sont dans `%USERPROFILE%\.tisbelges`, pas dans le
   dossier partagé.
 - L'envoi ne se fait qu'après validation complète, et une seule fois par date.
 

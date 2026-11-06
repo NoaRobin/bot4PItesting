@@ -7,6 +7,7 @@ produit est identique à celui de la procédure manuelle (connexion et queryTabl
 from __future__ import annotations
 
 import logging
+import os
 import shutil
 import subprocess
 import threading
@@ -30,7 +31,9 @@ def _excel_pids() -> set[int]:
         ["tasklist", "/FI", "IMAGENAME eq EXCEL.EXE", "/FO", "CSV", "/NH"],
         capture_output=True,
         text=True,
-    ).stdout
+        encoding="oem" if os.name == "nt" else None,   # page de code de la console Windows
+        errors="replace",
+    ).stdout or ""
     pids = set()
     for line in out.splitlines():
         parts = [p.strip('"') for p in line.split('","')]
@@ -176,25 +179,27 @@ def _outlook_account(session, address: str):
 
 
 def send_mail(
-    sender: str,
+    sender: str | None,
     to: list[str],
     subject: str,
     body: str,
     attachments: list[Path],
 ) -> None:
     """Envoie le mail via Outlook. Utilise le compte de l'expéditeur s'il est configuré
-    dans Outlook, sinon « envoi de la part de » sur la boîte partagée."""
+    dans Outlook, sinon « envoi de la part de » sur la boîte partagée. Sans expéditeur
+    (sender=None), le mail part du compte Outlook par défaut de l'utilisatrice."""
     try:
         outlook = win32com.client.Dispatch("Outlook.Application")
     except Exception as exc:
         raise OfficeError(f"Outlook inaccessible : {exc}") from exc
 
     mail = outlook.CreateItem(0)
-    account = _outlook_account(outlook.Session, sender)
-    if account is not None:
-        mail.SendUsingAccount = account
-    else:
-        mail.SentOnBehalfOfName = sender
+    if sender:
+        account = _outlook_account(outlook.Session, sender)
+        if account is not None:
+            mail.SendUsingAccount = account
+        else:
+            mail.SentOnBehalfOfName = sender
     mail.To = "; ".join(to)
     mail.Subject = subject
     mail.Body = body
